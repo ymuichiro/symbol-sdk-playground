@@ -4,7 +4,8 @@
   "description": "今後の v3 以降を踏まえて効率的に開発する環境",
   "main": "index.js",
   "scripts": {
-    "oas": "npm run build -w packages/symbol-oas"
+    "oas": "npm run build -w packages/symbol-oas",
+    "preview": "npm run viewer -w packages/symbol-oas"
   },
   "keywords": [],
   "author": "faunsu19000",
