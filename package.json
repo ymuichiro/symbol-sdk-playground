@@ -1,0 +1,25 @@
+{
+  "name": "symbol-sdk-playground",
+  "version": "1.0.0",
+  "description": "今後の v3 以降を踏まえて効率的に開発する環境",
+  "main": "index.js",
+  "scripts": {
+    "oas": "npm run build -w packages/symbol-oas"
+  },
+  "keywords": [],
+  "author": "faunsu19000",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^7.8.0",
+    "symbol-sdk": "^2.0.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "workspaces": [
+    "packages/playground",
+    "packages/symbol-oas"
+  ],
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  }
+}
