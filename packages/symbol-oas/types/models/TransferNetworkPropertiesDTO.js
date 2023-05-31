@@ -28,13 +28,11 @@ function TransferNetworkPropertiesDTOFromJSON(json) {
 }
 exports.TransferNetworkPropertiesDTOFromJSON = TransferNetworkPropertiesDTOFromJSON;
 function TransferNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxMessageSize: !(0, runtime_1.exists)(json, "maxMessageSize")
-            ? undefined
-            : json["maxMessageSize"],
+        'maxMessageSize': !(0, runtime_1.exists)(json, 'maxMessageSize') ? undefined : json['maxMessageSize'],
     };
 }
 exports.TransferNetworkPropertiesDTOFromJSONTyped = TransferNetworkPropertiesDTOFromJSONTyped;
@@ -46,7 +44,7 @@ function TransferNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxMessageSize: value.maxMessageSize,
+        'maxMessageSize': value.maxMessageSize,
     };
 }
 exports.TransferNetworkPropertiesDTOToJSON = TransferNetworkPropertiesDTOToJSON;

@@ -31,12 +31,12 @@ function NamespacePageFromJSON(json) {
 }
 exports.NamespacePageFromJSON = NamespacePageFromJSON;
 function NamespacePageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(NamespaceInfoDTO_1.NamespaceInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(NamespaceInfoDTO_1.NamespaceInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.NamespacePageFromJSONTyped = NamespacePageFromJSONTyped;
@@ -48,8 +48,8 @@ function NamespacePageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(NamespaceInfoDTO_1.NamespaceInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(NamespaceInfoDTO_1.NamespaceInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.NamespacePageToJSON = NamespacePageToJSON;

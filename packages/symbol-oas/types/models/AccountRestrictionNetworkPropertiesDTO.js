@@ -28,13 +28,11 @@ function AccountRestrictionNetworkPropertiesDTOFromJSON(json) {
 }
 exports.AccountRestrictionNetworkPropertiesDTOFromJSON = AccountRestrictionNetworkPropertiesDTOFromJSON;
 function AccountRestrictionNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxAccountRestrictionValues: !(0, runtime_1.exists)(json, "maxAccountRestrictionValues")
-            ? undefined
-            : json["maxAccountRestrictionValues"],
+        'maxAccountRestrictionValues': !(0, runtime_1.exists)(json, 'maxAccountRestrictionValues') ? undefined : json['maxAccountRestrictionValues'],
     };
 }
 exports.AccountRestrictionNetworkPropertiesDTOFromJSONTyped = AccountRestrictionNetworkPropertiesDTOFromJSONTyped;
@@ -46,7 +44,7 @@ function AccountRestrictionNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxAccountRestrictionValues: value.maxAccountRestrictionValues,
+        'maxAccountRestrictionValues': value.maxAccountRestrictionValues,
     };
 }
 exports.AccountRestrictionNetworkPropertiesDTOToJSON = AccountRestrictionNetworkPropertiesDTOToJSON;

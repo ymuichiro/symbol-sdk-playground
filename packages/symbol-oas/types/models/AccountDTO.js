@@ -42,21 +42,21 @@ function AccountDTOFromJSON(json) {
 }
 exports.AccountDTOFromJSON = AccountDTOFromJSON;
 function AccountDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        address: json["address"],
-        addressHeight: json["addressHeight"],
-        publicKey: json["publicKey"],
-        publicKeyHeight: json["publicKeyHeight"],
-        accountType: (0, AccountTypeEnum_1.AccountTypeEnumFromJSON)(json["accountType"]),
-        supplementalPublicKeys: (0, SupplementalPublicKeysDTO_1.SupplementalPublicKeysDTOFromJSON)(json["supplementalPublicKeys"]),
-        activityBuckets: json["activityBuckets"].map(ActivityBucketDTO_1.ActivityBucketDTOFromJSON),
-        mosaics: json["mosaics"].map(Mosaic_1.MosaicFromJSON),
-        importance: json["importance"],
-        importanceHeight: json["importanceHeight"],
+        'version': json['version'],
+        'address': json['address'],
+        'addressHeight': json['addressHeight'],
+        'publicKey': json['publicKey'],
+        'publicKeyHeight': json['publicKeyHeight'],
+        'accountType': (0, AccountTypeEnum_1.AccountTypeEnumFromJSON)(json['accountType']),
+        'supplementalPublicKeys': (0, SupplementalPublicKeysDTO_1.SupplementalPublicKeysDTOFromJSON)(json['supplementalPublicKeys']),
+        'activityBuckets': (json['activityBuckets'].map(ActivityBucketDTO_1.ActivityBucketDTOFromJSON)),
+        'mosaics': (json['mosaics'].map(Mosaic_1.MosaicFromJSON)),
+        'importance': json['importance'],
+        'importanceHeight': json['importanceHeight'],
     };
 }
 exports.AccountDTOFromJSONTyped = AccountDTOFromJSONTyped;
@@ -68,17 +68,17 @@ function AccountDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        address: value.address,
-        addressHeight: value.addressHeight,
-        publicKey: value.publicKey,
-        publicKeyHeight: value.publicKeyHeight,
-        accountType: (0, AccountTypeEnum_1.AccountTypeEnumToJSON)(value.accountType),
-        supplementalPublicKeys: (0, SupplementalPublicKeysDTO_1.SupplementalPublicKeysDTOToJSON)(value.supplementalPublicKeys),
-        activityBuckets: value.activityBuckets.map(ActivityBucketDTO_1.ActivityBucketDTOToJSON),
-        mosaics: value.mosaics.map(Mosaic_1.MosaicToJSON),
-        importance: value.importance,
-        importanceHeight: value.importanceHeight,
+        'version': value.version,
+        'address': value.address,
+        'addressHeight': value.addressHeight,
+        'publicKey': value.publicKey,
+        'publicKeyHeight': value.publicKeyHeight,
+        'accountType': (0, AccountTypeEnum_1.AccountTypeEnumToJSON)(value.accountType),
+        'supplementalPublicKeys': (0, SupplementalPublicKeysDTO_1.SupplementalPublicKeysDTOToJSON)(value.supplementalPublicKeys),
+        'activityBuckets': (value.activityBuckets.map(ActivityBucketDTO_1.ActivityBucketDTOToJSON)),
+        'mosaics': (value.mosaics.map(Mosaic_1.MosaicToJSON)),
+        'importance': value.importance,
+        'importanceHeight': value.importanceHeight,
     };
 }
 exports.AccountDTOToJSON = AccountDTOToJSON;

@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountMosaicRestrictionTransactionDTOToJSON = exports.AccountMosaicRestrictionTransactionDTOFromJSONTyped = exports.AccountMosaicRestrictionTransactionDTOFromJSON = exports.instanceOfAccountMosaicRestrictionTransactionDTO = void 0;
+const runtime_1 = require("../runtime");
 const AccountRestrictionFlagsEnum_1 = require("./AccountRestrictionFlagsEnum");
 const NetworkTypeEnum_1 = require("./NetworkTypeEnum");
 /**
@@ -30,8 +31,6 @@ function instanceOfAccountMosaicRestrictionTransactionDTO(value) {
     isInstance = isInstance && "maxFee" in value;
     isInstance = isInstance && "deadline" in value;
     isInstance = isInstance && "restrictionFlags" in value;
-    isInstance = isInstance && "restrictionAdditions" in value;
-    isInstance = isInstance && "restrictionDeletions" in value;
     return isInstance;
 }
 exports.instanceOfAccountMosaicRestrictionTransactionDTO = instanceOfAccountMosaicRestrictionTransactionDTO;
@@ -40,21 +39,21 @@ function AccountMosaicRestrictionTransactionDTOFromJSON(json) {
 }
 exports.AccountMosaicRestrictionTransactionDTOFromJSON = AccountMosaicRestrictionTransactionDTOFromJSON;
 function AccountMosaicRestrictionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json["restrictionFlags"]),
-        restrictionAdditions: json["restrictionAdditions"],
-        restrictionDeletions: json["restrictionDeletions"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json['restrictionFlags']),
+        'restrictionAdditions': !(0, runtime_1.exists)(json, 'restrictionAdditions') ? undefined : json['restrictionAdditions'],
+        'restrictionDeletions': !(0, runtime_1.exists)(json, 'restrictionDeletions') ? undefined : json['restrictionDeletions'],
     };
 }
 exports.AccountMosaicRestrictionTransactionDTOFromJSONTyped = AccountMosaicRestrictionTransactionDTOFromJSONTyped;
@@ -66,17 +65,17 @@ function AccountMosaicRestrictionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
-        restrictionAdditions: value.restrictionAdditions,
-        restrictionDeletions: value.restrictionDeletions,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
+        'restrictionAdditions': value.restrictionAdditions,
+        'restrictionDeletions': value.restrictionDeletions,
     };
 }
 exports.AccountMosaicRestrictionTransactionDTOToJSON = AccountMosaicRestrictionTransactionDTOToJSON;

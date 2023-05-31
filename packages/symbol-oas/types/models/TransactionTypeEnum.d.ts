@@ -65,7 +65,7 @@ export declare const TransactionTypeEnum: {
     readonly NUMBER_16977: 16977;
     readonly NUMBER_16724: 16724;
 };
-export type TransactionTypeEnum = (typeof TransactionTypeEnum)[keyof typeof TransactionTypeEnum];
+export type TransactionTypeEnum = typeof TransactionTypeEnum[keyof typeof TransactionTypeEnum];
 export declare function TransactionTypeEnumFromJSON(json: any): TransactionTypeEnum;
 export declare function TransactionTypeEnumFromJSONTyped(json: any, ignoreDiscriminator: boolean): TransactionTypeEnum;
 export declare function TransactionTypeEnumToJSON(value?: TransactionTypeEnum | null): any;

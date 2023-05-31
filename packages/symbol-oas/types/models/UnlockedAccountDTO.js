@@ -28,11 +28,11 @@ function UnlockedAccountDTOFromJSON(json) {
 }
 exports.UnlockedAccountDTOFromJSON = UnlockedAccountDTOFromJSON;
 function UnlockedAccountDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        unlockedAccount: json["unlockedAccount"],
+        'unlockedAccount': json['unlockedAccount'],
     };
 }
 exports.UnlockedAccountDTOFromJSONTyped = UnlockedAccountDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function UnlockedAccountDTOToJSON(value) {
         return null;
     }
     return {
-        unlockedAccount: value.unlockedAccount,
+        'unlockedAccount': value.unlockedAccount,
     };
 }
 exports.UnlockedAccountDTOToJSON = UnlockedAccountDTOToJSON;

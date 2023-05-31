@@ -46,8 +46,8 @@ export declare class BaseAPI {
     private middleware;
     constructor(configuration?: Configuration);
     withMiddleware<T extends BaseAPI>(this: T, ...middlewares: Middleware[]): T;
-    withPreMiddleware<T extends BaseAPI>(this: T, ...preMiddlewares: Array<Middleware["pre"]>): T;
-    withPostMiddleware<T extends BaseAPI>(this: T, ...postMiddlewares: Array<Middleware["post"]>): T;
+    withPreMiddleware<T extends BaseAPI>(this: T, ...preMiddlewares: Array<Middleware['pre']>): T;
+    withPostMiddleware<T extends BaseAPI>(this: T, ...postMiddlewares: Array<Middleware['post']>): T;
     protected request(context: RequestOpts, initOverrides?: RequestInit | InitOverrideFunction): Promise<Response>;
     private createFetchParams;
     private fetchApi;
@@ -78,9 +78,9 @@ export declare const COLLECTION_FORMATS: {
     tsv: string;
     pipes: string;
 };
-export type FetchAPI = WindowOrWorkerGlobalScope["fetch"];
+export type FetchAPI = WindowOrWorkerGlobalScope['fetch'];
 export type Json = any;
-export type HTTPMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE" | "OPTIONS" | "HEAD";
+export type HTTPMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'OPTIONS' | 'HEAD';
 export type HTTPHeaders = {
     [key: string]: string;
 };
@@ -94,7 +94,7 @@ export type HTTPRequestInit = {
     credentials?: RequestCredentials;
     body?: HTTPBody;
 };
-export type ModelPropertyNaming = "camelCase" | "snake_case" | "PascalCase" | "original";
+export type ModelPropertyNaming = 'camelCase' | 'snake_case' | 'PascalCase' | 'original';
 export type InitOverrideFunction = (requestContext: {
     init: HTTPRequestInit;
     context: RequestOpts;

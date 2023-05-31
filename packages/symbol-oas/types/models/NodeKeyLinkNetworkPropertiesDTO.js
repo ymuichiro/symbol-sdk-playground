@@ -28,11 +28,11 @@ function NodeKeyLinkNetworkPropertiesDTOFromJSON(json) {
 }
 exports.NodeKeyLinkNetworkPropertiesDTOFromJSON = NodeKeyLinkNetworkPropertiesDTOFromJSON;
 function NodeKeyLinkNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        dummy: !(0, runtime_1.exists)(json, "dummy") ? undefined : json["dummy"],
+        'dummy': !(0, runtime_1.exists)(json, 'dummy') ? undefined : json['dummy'],
     };
 }
 exports.NodeKeyLinkNetworkPropertiesDTOFromJSONTyped = NodeKeyLinkNetworkPropertiesDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function NodeKeyLinkNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        dummy: value.dummy,
+        'dummy': value.dummy,
     };
 }
 exports.NodeKeyLinkNetworkPropertiesDTOToJSON = NodeKeyLinkNetworkPropertiesDTOToJSON;

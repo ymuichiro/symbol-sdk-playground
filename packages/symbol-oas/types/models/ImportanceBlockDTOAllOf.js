@@ -31,14 +31,14 @@ function ImportanceBlockDTOAllOfFromJSON(json) {
 }
 exports.ImportanceBlockDTOAllOfFromJSON = ImportanceBlockDTOAllOfFromJSON;
 function ImportanceBlockDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        votingEligibleAccountsCount: json["votingEligibleAccountsCount"],
-        harvestingEligibleAccountsCount: json["harvestingEligibleAccountsCount"],
-        totalVotingBalance: json["totalVotingBalance"],
-        previousImportanceBlockHash: json["previousImportanceBlockHash"],
+        'votingEligibleAccountsCount': json['votingEligibleAccountsCount'],
+        'harvestingEligibleAccountsCount': json['harvestingEligibleAccountsCount'],
+        'totalVotingBalance': json['totalVotingBalance'],
+        'previousImportanceBlockHash': json['previousImportanceBlockHash'],
     };
 }
 exports.ImportanceBlockDTOAllOfFromJSONTyped = ImportanceBlockDTOAllOfFromJSONTyped;
@@ -50,10 +50,10 @@ function ImportanceBlockDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        votingEligibleAccountsCount: value.votingEligibleAccountsCount,
-        harvestingEligibleAccountsCount: value.harvestingEligibleAccountsCount,
-        totalVotingBalance: value.totalVotingBalance,
-        previousImportanceBlockHash: value.previousImportanceBlockHash,
+        'votingEligibleAccountsCount': value.votingEligibleAccountsCount,
+        'harvestingEligibleAccountsCount': value.harvestingEligibleAccountsCount,
+        'totalVotingBalance': value.totalVotingBalance,
+        'previousImportanceBlockHash': value.previousImportanceBlockHash,
     };
 }
 exports.ImportanceBlockDTOAllOfToJSON = ImportanceBlockDTOAllOfToJSON;

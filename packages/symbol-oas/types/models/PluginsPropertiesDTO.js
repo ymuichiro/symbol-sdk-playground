@@ -39,43 +39,21 @@ function PluginsPropertiesDTOFromJSON(json) {
 }
 exports.PluginsPropertiesDTOFromJSON = PluginsPropertiesDTOFromJSON;
 function PluginsPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        accountlink: !(0, runtime_1.exists)(json, "accountlink")
-            ? undefined
-            : (0, AccountKeyLinkNetworkPropertiesDTO_1.AccountKeyLinkNetworkPropertiesDTOFromJSON)(json["accountlink"]),
-        aggregate: !(0, runtime_1.exists)(json, "aggregate")
-            ? undefined
-            : (0, AggregateNetworkPropertiesDTO_1.AggregateNetworkPropertiesDTOFromJSON)(json["aggregate"]),
-        lockhash: !(0, runtime_1.exists)(json, "lockhash")
-            ? undefined
-            : (0, HashLockNetworkPropertiesDTO_1.HashLockNetworkPropertiesDTOFromJSON)(json["lockhash"]),
-        locksecret: !(0, runtime_1.exists)(json, "locksecret")
-            ? undefined
-            : (0, SecretLockNetworkPropertiesDTO_1.SecretLockNetworkPropertiesDTOFromJSON)(json["locksecret"]),
-        metadata: !(0, runtime_1.exists)(json, "metadata")
-            ? undefined
-            : (0, MetadataNetworkPropertiesDTO_1.MetadataNetworkPropertiesDTOFromJSON)(json["metadata"]),
-        mosaic: !(0, runtime_1.exists)(json, "mosaic")
-            ? undefined
-            : (0, MosaicNetworkPropertiesDTO_1.MosaicNetworkPropertiesDTOFromJSON)(json["mosaic"]),
-        multisig: !(0, runtime_1.exists)(json, "multisig")
-            ? undefined
-            : (0, MultisigNetworkPropertiesDTO_1.MultisigNetworkPropertiesDTOFromJSON)(json["multisig"]),
-        namespace: !(0, runtime_1.exists)(json, "namespace")
-            ? undefined
-            : (0, NamespaceNetworkPropertiesDTO_1.NamespaceNetworkPropertiesDTOFromJSON)(json["namespace"]),
-        restrictionaccount: !(0, runtime_1.exists)(json, "restrictionaccount")
-            ? undefined
-            : (0, AccountRestrictionNetworkPropertiesDTO_1.AccountRestrictionNetworkPropertiesDTOFromJSON)(json["restrictionaccount"]),
-        restrictionmosaic: !(0, runtime_1.exists)(json, "restrictionmosaic")
-            ? undefined
-            : (0, MosaicRestrictionNetworkPropertiesDTO_1.MosaicRestrictionNetworkPropertiesDTOFromJSON)(json["restrictionmosaic"]),
-        transfer: !(0, runtime_1.exists)(json, "transfer")
-            ? undefined
-            : (0, TransferNetworkPropertiesDTO_1.TransferNetworkPropertiesDTOFromJSON)(json["transfer"]),
+        'accountlink': !(0, runtime_1.exists)(json, 'accountlink') ? undefined : (0, AccountKeyLinkNetworkPropertiesDTO_1.AccountKeyLinkNetworkPropertiesDTOFromJSON)(json['accountlink']),
+        'aggregate': !(0, runtime_1.exists)(json, 'aggregate') ? undefined : (0, AggregateNetworkPropertiesDTO_1.AggregateNetworkPropertiesDTOFromJSON)(json['aggregate']),
+        'lockhash': !(0, runtime_1.exists)(json, 'lockhash') ? undefined : (0, HashLockNetworkPropertiesDTO_1.HashLockNetworkPropertiesDTOFromJSON)(json['lockhash']),
+        'locksecret': !(0, runtime_1.exists)(json, 'locksecret') ? undefined : (0, SecretLockNetworkPropertiesDTO_1.SecretLockNetworkPropertiesDTOFromJSON)(json['locksecret']),
+        'metadata': !(0, runtime_1.exists)(json, 'metadata') ? undefined : (0, MetadataNetworkPropertiesDTO_1.MetadataNetworkPropertiesDTOFromJSON)(json['metadata']),
+        'mosaic': !(0, runtime_1.exists)(json, 'mosaic') ? undefined : (0, MosaicNetworkPropertiesDTO_1.MosaicNetworkPropertiesDTOFromJSON)(json['mosaic']),
+        'multisig': !(0, runtime_1.exists)(json, 'multisig') ? undefined : (0, MultisigNetworkPropertiesDTO_1.MultisigNetworkPropertiesDTOFromJSON)(json['multisig']),
+        'namespace': !(0, runtime_1.exists)(json, 'namespace') ? undefined : (0, NamespaceNetworkPropertiesDTO_1.NamespaceNetworkPropertiesDTOFromJSON)(json['namespace']),
+        'restrictionaccount': !(0, runtime_1.exists)(json, 'restrictionaccount') ? undefined : (0, AccountRestrictionNetworkPropertiesDTO_1.AccountRestrictionNetworkPropertiesDTOFromJSON)(json['restrictionaccount']),
+        'restrictionmosaic': !(0, runtime_1.exists)(json, 'restrictionmosaic') ? undefined : (0, MosaicRestrictionNetworkPropertiesDTO_1.MosaicRestrictionNetworkPropertiesDTOFromJSON)(json['restrictionmosaic']),
+        'transfer': !(0, runtime_1.exists)(json, 'transfer') ? undefined : (0, TransferNetworkPropertiesDTO_1.TransferNetworkPropertiesDTOFromJSON)(json['transfer']),
     };
 }
 exports.PluginsPropertiesDTOFromJSONTyped = PluginsPropertiesDTOFromJSONTyped;
@@ -87,17 +65,17 @@ function PluginsPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        accountlink: (0, AccountKeyLinkNetworkPropertiesDTO_1.AccountKeyLinkNetworkPropertiesDTOToJSON)(value.accountlink),
-        aggregate: (0, AggregateNetworkPropertiesDTO_1.AggregateNetworkPropertiesDTOToJSON)(value.aggregate),
-        lockhash: (0, HashLockNetworkPropertiesDTO_1.HashLockNetworkPropertiesDTOToJSON)(value.lockhash),
-        locksecret: (0, SecretLockNetworkPropertiesDTO_1.SecretLockNetworkPropertiesDTOToJSON)(value.locksecret),
-        metadata: (0, MetadataNetworkPropertiesDTO_1.MetadataNetworkPropertiesDTOToJSON)(value.metadata),
-        mosaic: (0, MosaicNetworkPropertiesDTO_1.MosaicNetworkPropertiesDTOToJSON)(value.mosaic),
-        multisig: (0, MultisigNetworkPropertiesDTO_1.MultisigNetworkPropertiesDTOToJSON)(value.multisig),
-        namespace: (0, NamespaceNetworkPropertiesDTO_1.NamespaceNetworkPropertiesDTOToJSON)(value.namespace),
-        restrictionaccount: (0, AccountRestrictionNetworkPropertiesDTO_1.AccountRestrictionNetworkPropertiesDTOToJSON)(value.restrictionaccount),
-        restrictionmosaic: (0, MosaicRestrictionNetworkPropertiesDTO_1.MosaicRestrictionNetworkPropertiesDTOToJSON)(value.restrictionmosaic),
-        transfer: (0, TransferNetworkPropertiesDTO_1.TransferNetworkPropertiesDTOToJSON)(value.transfer),
+        'accountlink': (0, AccountKeyLinkNetworkPropertiesDTO_1.AccountKeyLinkNetworkPropertiesDTOToJSON)(value.accountlink),
+        'aggregate': (0, AggregateNetworkPropertiesDTO_1.AggregateNetworkPropertiesDTOToJSON)(value.aggregate),
+        'lockhash': (0, HashLockNetworkPropertiesDTO_1.HashLockNetworkPropertiesDTOToJSON)(value.lockhash),
+        'locksecret': (0, SecretLockNetworkPropertiesDTO_1.SecretLockNetworkPropertiesDTOToJSON)(value.locksecret),
+        'metadata': (0, MetadataNetworkPropertiesDTO_1.MetadataNetworkPropertiesDTOToJSON)(value.metadata),
+        'mosaic': (0, MosaicNetworkPropertiesDTO_1.MosaicNetworkPropertiesDTOToJSON)(value.mosaic),
+        'multisig': (0, MultisigNetworkPropertiesDTO_1.MultisigNetworkPropertiesDTOToJSON)(value.multisig),
+        'namespace': (0, NamespaceNetworkPropertiesDTO_1.NamespaceNetworkPropertiesDTOToJSON)(value.namespace),
+        'restrictionaccount': (0, AccountRestrictionNetworkPropertiesDTO_1.AccountRestrictionNetworkPropertiesDTOToJSON)(value.restrictionaccount),
+        'restrictionmosaic': (0, MosaicRestrictionNetworkPropertiesDTO_1.MosaicRestrictionNetworkPropertiesDTOToJSON)(value.restrictionmosaic),
+        'transfer': (0, TransferNetworkPropertiesDTO_1.TransferNetworkPropertiesDTOToJSON)(value.transfer),
     };
 }
 exports.PluginsPropertiesDTOToJSON = PluginsPropertiesDTOToJSON;

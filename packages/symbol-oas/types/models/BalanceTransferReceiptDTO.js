@@ -34,16 +34,16 @@ function BalanceTransferReceiptDTOFromJSON(json) {
 }
 exports.BalanceTransferReceiptDTOFromJSON = BalanceTransferReceiptDTOFromJSON;
 function BalanceTransferReceiptDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        senderAddress: json["senderAddress"],
-        recipientAddress: json["recipientAddress"],
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'senderAddress': json['senderAddress'],
+        'recipientAddress': json['recipientAddress'],
     };
 }
 exports.BalanceTransferReceiptDTOFromJSONTyped = BalanceTransferReceiptDTOFromJSONTyped;
@@ -55,12 +55,12 @@ function BalanceTransferReceiptDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        senderAddress: value.senderAddress,
-        recipientAddress: value.recipientAddress,
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'senderAddress': value.senderAddress,
+        'recipientAddress': value.recipientAddress,
     };
 }
 exports.BalanceTransferReceiptDTOToJSON = BalanceTransferReceiptDTOToJSON;

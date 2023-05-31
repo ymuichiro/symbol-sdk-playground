@@ -31,13 +31,13 @@ function MosaicGlobalRestrictionEntryRestrictionDTOFromJSON(json) {
 }
 exports.MosaicGlobalRestrictionEntryRestrictionDTOFromJSON = MosaicGlobalRestrictionEntryRestrictionDTOFromJSON;
 function MosaicGlobalRestrictionEntryRestrictionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        referenceMosaicId: json["referenceMosaicId"],
-        restrictionValue: json["restrictionValue"],
-        restrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json["restrictionType"]),
+        'referenceMosaicId': json['referenceMosaicId'],
+        'restrictionValue': json['restrictionValue'],
+        'restrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json['restrictionType']),
     };
 }
 exports.MosaicGlobalRestrictionEntryRestrictionDTOFromJSONTyped = MosaicGlobalRestrictionEntryRestrictionDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function MosaicGlobalRestrictionEntryRestrictionDTOToJSON(value) {
         return null;
     }
     return {
-        referenceMosaicId: value.referenceMosaicId,
-        restrictionValue: value.restrictionValue,
-        restrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.restrictionType),
+        'referenceMosaicId': value.referenceMosaicId,
+        'restrictionValue': value.restrictionValue,
+        'restrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.restrictionType),
     };
 }
 exports.MosaicGlobalRestrictionEntryRestrictionDTOToJSON = MosaicGlobalRestrictionEntryRestrictionDTOToJSON;

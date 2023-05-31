@@ -34,15 +34,15 @@ function MosaicGlobalRestrictionEntryWrapperDTOFromJSON(json) {
 }
 exports.MosaicGlobalRestrictionEntryWrapperDTOFromJSON = MosaicGlobalRestrictionEntryWrapperDTOFromJSON;
 function MosaicGlobalRestrictionEntryWrapperDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        compositeHash: json["compositeHash"],
-        entryType: (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumFromJSON)(json["entryType"]),
-        mosaicId: json["mosaicId"],
-        restrictions: json["restrictions"].map(MosaicGlobalRestrictionEntryDTO_1.MosaicGlobalRestrictionEntryDTOFromJSON),
+        'version': json['version'],
+        'compositeHash': json['compositeHash'],
+        'entryType': (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumFromJSON)(json['entryType']),
+        'mosaicId': json['mosaicId'],
+        'restrictions': (json['restrictions'].map(MosaicGlobalRestrictionEntryDTO_1.MosaicGlobalRestrictionEntryDTOFromJSON)),
     };
 }
 exports.MosaicGlobalRestrictionEntryWrapperDTOFromJSONTyped = MosaicGlobalRestrictionEntryWrapperDTOFromJSONTyped;
@@ -54,11 +54,11 @@ function MosaicGlobalRestrictionEntryWrapperDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        compositeHash: value.compositeHash,
-        entryType: (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumToJSON)(value.entryType),
-        mosaicId: value.mosaicId,
-        restrictions: value.restrictions.map(MosaicGlobalRestrictionEntryDTO_1.MosaicGlobalRestrictionEntryDTOToJSON),
+        'version': value.version,
+        'compositeHash': value.compositeHash,
+        'entryType': (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumToJSON)(value.entryType),
+        'mosaicId': value.mosaicId,
+        'restrictions': (value.restrictions.map(MosaicGlobalRestrictionEntryDTO_1.MosaicGlobalRestrictionEntryDTOToJSON)),
     };
 }
 exports.MosaicGlobalRestrictionEntryWrapperDTOToJSON = MosaicGlobalRestrictionEntryWrapperDTOToJSON;

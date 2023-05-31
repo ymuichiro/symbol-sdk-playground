@@ -21,8 +21,8 @@ exports.OrderToJSON = exports.OrderFromJSONTyped = exports.OrderFromJSON = expor
  * @export
  */
 exports.Order = {
-    Asc: "asc",
-    Desc: "desc",
+    Asc: 'asc',
+    Desc: 'desc'
 };
 function OrderFromJSON(json) {
     return OrderFromJSONTyped(json, false);

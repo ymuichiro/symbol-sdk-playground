@@ -31,12 +31,12 @@ function SecretLockPageFromJSON(json) {
 }
 exports.SecretLockPageFromJSON = SecretLockPageFromJSON;
 function SecretLockPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(SecretLockInfoDTO_1.SecretLockInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(SecretLockInfoDTO_1.SecretLockInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.SecretLockPageFromJSONTyped = SecretLockPageFromJSONTyped;
@@ -48,8 +48,8 @@ function SecretLockPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(SecretLockInfoDTO_1.SecretLockInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(SecretLockInfoDTO_1.SecretLockInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.SecretLockPageToJSON = SecretLockPageToJSON;

@@ -42,26 +42,24 @@ function NamespaceMetadataTransactionDTOFromJSON(json) {
 }
 exports.NamespaceMetadataTransactionDTOFromJSON = NamespaceMetadataTransactionDTOFromJSON;
 function NamespaceMetadataTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        targetNamespaceId: !(0, runtime_1.exists)(json, "targetNamespaceId")
-            ? undefined
-            : json["targetNamespaceId"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'targetNamespaceId': !(0, runtime_1.exists)(json, 'targetNamespaceId') ? undefined : json['targetNamespaceId'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.NamespaceMetadataTransactionDTOFromJSONTyped = NamespaceMetadataTransactionDTOFromJSONTyped;
@@ -73,20 +71,20 @@ function NamespaceMetadataTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        targetNamespaceId: value.targetNamespaceId,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'targetNamespaceId': value.targetNamespaceId,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.NamespaceMetadataTransactionDTOToJSON = NamespaceMetadataTransactionDTOToJSON;

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
-import type { UnresolvedMosaic } from "./UnresolvedMosaic";
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
+import type { UnresolvedMosaic } from './UnresolvedMosaic';
 /**
  *
  * @export

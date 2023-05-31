@@ -37,19 +37,19 @@ function EmbeddedMosaicAddressRestrictionTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedMosaicAddressRestrictionTransactionDTOFromJSON = EmbeddedMosaicAddressRestrictionTransactionDTOFromJSON;
 function EmbeddedMosaicAddressRestrictionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        mosaicId: json["mosaicId"],
-        restrictionKey: json["restrictionKey"],
-        previousRestrictionValue: json["previousRestrictionValue"],
-        newRestrictionValue: json["newRestrictionValue"],
-        targetAddress: json["targetAddress"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'mosaicId': json['mosaicId'],
+        'restrictionKey': json['restrictionKey'],
+        'previousRestrictionValue': json['previousRestrictionValue'],
+        'newRestrictionValue': json['newRestrictionValue'],
+        'targetAddress': json['targetAddress'],
     };
 }
 exports.EmbeddedMosaicAddressRestrictionTransactionDTOFromJSONTyped = EmbeddedMosaicAddressRestrictionTransactionDTOFromJSONTyped;
@@ -61,15 +61,15 @@ function EmbeddedMosaicAddressRestrictionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        mosaicId: value.mosaicId,
-        restrictionKey: value.restrictionKey,
-        previousRestrictionValue: value.previousRestrictionValue,
-        newRestrictionValue: value.newRestrictionValue,
-        targetAddress: value.targetAddress,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'mosaicId': value.mosaicId,
+        'restrictionKey': value.restrictionKey,
+        'previousRestrictionValue': value.previousRestrictionValue,
+        'newRestrictionValue': value.newRestrictionValue,
+        'targetAddress': value.targetAddress,
     };
 }
 exports.EmbeddedMosaicAddressRestrictionTransactionDTOToJSON = EmbeddedMosaicAddressRestrictionTransactionDTOToJSON;

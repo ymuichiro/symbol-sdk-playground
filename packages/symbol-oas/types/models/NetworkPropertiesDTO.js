@@ -29,23 +29,15 @@ function NetworkPropertiesDTOFromJSON(json) {
 }
 exports.NetworkPropertiesDTOFromJSON = NetworkPropertiesDTOFromJSON;
 function NetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        identifier: !(0, runtime_1.exists)(json, "identifier") ? undefined : json["identifier"],
-        nodeEqualityStrategy: !(0, runtime_1.exists)(json, "nodeEqualityStrategy")
-            ? undefined
-            : (0, NodeIdentityEqualityStrategy_1.NodeIdentityEqualityStrategyFromJSON)(json["nodeEqualityStrategy"]),
-        nemesisSignerPublicKey: !(0, runtime_1.exists)(json, "nemesisSignerPublicKey")
-            ? undefined
-            : json["nemesisSignerPublicKey"],
-        generationHashSeed: !(0, runtime_1.exists)(json, "generationHashSeed")
-            ? undefined
-            : json["generationHashSeed"],
-        epochAdjustment: !(0, runtime_1.exists)(json, "epochAdjustment")
-            ? undefined
-            : json["epochAdjustment"],
+        'identifier': !(0, runtime_1.exists)(json, 'identifier') ? undefined : json['identifier'],
+        'nodeEqualityStrategy': !(0, runtime_1.exists)(json, 'nodeEqualityStrategy') ? undefined : (0, NodeIdentityEqualityStrategy_1.NodeIdentityEqualityStrategyFromJSON)(json['nodeEqualityStrategy']),
+        'nemesisSignerPublicKey': !(0, runtime_1.exists)(json, 'nemesisSignerPublicKey') ? undefined : json['nemesisSignerPublicKey'],
+        'generationHashSeed': !(0, runtime_1.exists)(json, 'generationHashSeed') ? undefined : json['generationHashSeed'],
+        'epochAdjustment': !(0, runtime_1.exists)(json, 'epochAdjustment') ? undefined : json['epochAdjustment'],
     };
 }
 exports.NetworkPropertiesDTOFromJSONTyped = NetworkPropertiesDTOFromJSONTyped;
@@ -57,11 +49,11 @@ function NetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        identifier: value.identifier,
-        nodeEqualityStrategy: (0, NodeIdentityEqualityStrategy_1.NodeIdentityEqualityStrategyToJSON)(value.nodeEqualityStrategy),
-        nemesisSignerPublicKey: value.nemesisSignerPublicKey,
-        generationHashSeed: value.generationHashSeed,
-        epochAdjustment: value.epochAdjustment,
+        'identifier': value.identifier,
+        'nodeEqualityStrategy': (0, NodeIdentityEqualityStrategy_1.NodeIdentityEqualityStrategyToJSON)(value.nodeEqualityStrategy),
+        'nemesisSignerPublicKey': value.nemesisSignerPublicKey,
+        'generationHashSeed': value.generationHashSeed,
+        'epochAdjustment': value.epochAdjustment,
     };
 }
 exports.NetworkPropertiesDTOToJSON = NetworkPropertiesDTOToJSON;

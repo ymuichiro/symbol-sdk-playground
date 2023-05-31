@@ -31,12 +31,12 @@ function AccountPageFromJSON(json) {
 }
 exports.AccountPageFromJSON = AccountPageFromJSON;
 function AccountPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(AccountInfoDTO_1.AccountInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(AccountInfoDTO_1.AccountInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.AccountPageFromJSONTyped = AccountPageFromJSONTyped;
@@ -48,8 +48,8 @@ function AccountPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(AccountInfoDTO_1.AccountInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(AccountInfoDTO_1.AccountInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.AccountPageToJSON = AccountPageToJSON;

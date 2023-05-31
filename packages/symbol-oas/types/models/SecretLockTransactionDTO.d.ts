@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LockHashAlgorithmEnum } from "./LockHashAlgorithmEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { LockHashAlgorithmEnum } from './LockHashAlgorithmEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to sends mosaics to a recipient if the proof used is revealed. If the duration is reached, the locked funds go back to the sender of the transaction.
  * @export

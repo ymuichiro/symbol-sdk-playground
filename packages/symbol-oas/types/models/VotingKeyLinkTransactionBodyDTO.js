@@ -32,14 +32,14 @@ function VotingKeyLinkTransactionBodyDTOFromJSON(json) {
 }
 exports.VotingKeyLinkTransactionBodyDTOFromJSON = VotingKeyLinkTransactionBodyDTOFromJSON;
 function VotingKeyLinkTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        linkedPublicKey: json["linkedPublicKey"],
-        startEpoch: json["startEpoch"],
-        endEpoch: json["endEpoch"],
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json["linkAction"]),
+        'linkedPublicKey': json['linkedPublicKey'],
+        'startEpoch': json['startEpoch'],
+        'endEpoch': json['endEpoch'],
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json['linkAction']),
     };
 }
 exports.VotingKeyLinkTransactionBodyDTOFromJSONTyped = VotingKeyLinkTransactionBodyDTOFromJSONTyped;
@@ -51,10 +51,10 @@ function VotingKeyLinkTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        linkedPublicKey: value.linkedPublicKey,
-        startEpoch: value.startEpoch,
-        endEpoch: value.endEpoch,
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
+        'linkedPublicKey': value.linkedPublicKey,
+        'startEpoch': value.startEpoch,
+        'endEpoch': value.endEpoch,
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
     };
 }
 exports.VotingKeyLinkTransactionBodyDTOToJSON = VotingKeyLinkTransactionBodyDTOToJSON;

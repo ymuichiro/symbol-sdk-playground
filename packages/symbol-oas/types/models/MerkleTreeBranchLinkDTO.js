@@ -29,12 +29,12 @@ function MerkleTreeBranchLinkDTOFromJSON(json) {
 }
 exports.MerkleTreeBranchLinkDTOFromJSON = MerkleTreeBranchLinkDTOFromJSON;
 function MerkleTreeBranchLinkDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        bit: json["bit"],
-        link: json["link"],
+        'bit': json['bit'],
+        'link': json['link'],
     };
 }
 exports.MerkleTreeBranchLinkDTOFromJSONTyped = MerkleTreeBranchLinkDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function MerkleTreeBranchLinkDTOToJSON(value) {
         return null;
     }
     return {
-        bit: value.bit,
-        link: value.link,
+        'bit': value.bit,
+        'link': value.link,
     };
 }
 exports.MerkleTreeBranchLinkDTOToJSON = MerkleTreeBranchLinkDTOToJSON;

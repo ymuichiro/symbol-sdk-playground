@@ -33,13 +33,13 @@ function NetworkConfigurationDTOFromJSON(json) {
 }
 exports.NetworkConfigurationDTOFromJSON = NetworkConfigurationDTOFromJSON;
 function NetworkConfigurationDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        network: (0, NetworkPropertiesDTO_1.NetworkPropertiesDTOFromJSON)(json["network"]),
-        chain: (0, ChainPropertiesDTO_1.ChainPropertiesDTOFromJSON)(json["chain"]),
-        plugins: (0, PluginsPropertiesDTO_1.PluginsPropertiesDTOFromJSON)(json["plugins"]),
+        'network': (0, NetworkPropertiesDTO_1.NetworkPropertiesDTOFromJSON)(json['network']),
+        'chain': (0, ChainPropertiesDTO_1.ChainPropertiesDTOFromJSON)(json['chain']),
+        'plugins': (0, PluginsPropertiesDTO_1.PluginsPropertiesDTOFromJSON)(json['plugins']),
     };
 }
 exports.NetworkConfigurationDTOFromJSONTyped = NetworkConfigurationDTOFromJSONTyped;
@@ -51,9 +51,9 @@ function NetworkConfigurationDTOToJSON(value) {
         return null;
     }
     return {
-        network: (0, NetworkPropertiesDTO_1.NetworkPropertiesDTOToJSON)(value.network),
-        chain: (0, ChainPropertiesDTO_1.ChainPropertiesDTOToJSON)(value.chain),
-        plugins: (0, PluginsPropertiesDTO_1.PluginsPropertiesDTOToJSON)(value.plugins),
+        'network': (0, NetworkPropertiesDTO_1.NetworkPropertiesDTOToJSON)(value.network),
+        'chain': (0, ChainPropertiesDTO_1.ChainPropertiesDTOToJSON)(value.chain),
+        'plugins': (0, PluginsPropertiesDTO_1.PluginsPropertiesDTOToJSON)(value.plugins),
     };
 }
 exports.NetworkConfigurationDTOToJSON = NetworkConfigurationDTOToJSON;

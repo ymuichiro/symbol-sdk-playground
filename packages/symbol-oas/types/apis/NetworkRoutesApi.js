@@ -62,7 +62,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/network/properties`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,7 +89,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/network`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -116,7 +116,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/network/fees/rental`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -143,7 +143,7 @@ class NetworkRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/network/fees/transaction`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

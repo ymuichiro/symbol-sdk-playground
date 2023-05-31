@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "oas": "npm run build -w packages/symbol-oas",
-    "preview": "npm run viewer -w packages/symbol-oas"
+    "preview": "npm run viewer -w packages/symbol-oas",
+    "start": "ts-node ts-node ./packages/playground/src/index.ts"
   },
   "keywords": [],
   "author": "faunsu19000",
   "license": "MIT",
   "dependencies": {
+    "pino": "^8.14.1",
     "rxjs": "^7.8.0",
     "symbol-sdk": "^2.0.4",
     "ts-node": "^10.9.1",
@@ -21,6 +23,8 @@
     "packages/symbol-oas"
   ],
   "devDependencies": {
+    "dotenv": "^16.0.3",
+    "pino-pretty": "^10.0.0",
     "prettier": "^2.8.7"
   }
 }

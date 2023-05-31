@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to lock funds before sending an aggregate bonded transaction.
  * @export

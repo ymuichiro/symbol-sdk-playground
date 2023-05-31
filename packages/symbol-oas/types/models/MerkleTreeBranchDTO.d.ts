@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MerkleTreeBranchLinkDTO } from "./MerkleTreeBranchLinkDTO";
-import type { MerkleTreeNodeTypeEnum } from "./MerkleTreeNodeTypeEnum";
+import type { MerkleTreeBranchLinkDTO } from './MerkleTreeBranchLinkDTO';
+import type { MerkleTreeNodeTypeEnum } from './MerkleTreeNodeTypeEnum';
 /**
  * Merkle tree branch node.
  * @export

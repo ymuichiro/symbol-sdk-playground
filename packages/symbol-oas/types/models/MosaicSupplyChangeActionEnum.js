@@ -22,7 +22,7 @@ exports.MosaicSupplyChangeActionEnumToJSON = exports.MosaicSupplyChangeActionEnu
  */
 exports.MosaicSupplyChangeActionEnum = {
     NUMBER_0: 0,
-    NUMBER_1: 1,
+    NUMBER_1: 1
 };
 function MosaicSupplyChangeActionEnumFromJSON(json) {
     return MosaicSupplyChangeActionEnumFromJSONTyped(json, false);

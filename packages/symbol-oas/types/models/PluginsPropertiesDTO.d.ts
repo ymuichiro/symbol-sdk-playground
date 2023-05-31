@@ -9,17 +9,17 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountKeyLinkNetworkPropertiesDTO } from "./AccountKeyLinkNetworkPropertiesDTO";
-import type { AccountRestrictionNetworkPropertiesDTO } from "./AccountRestrictionNetworkPropertiesDTO";
-import type { AggregateNetworkPropertiesDTO } from "./AggregateNetworkPropertiesDTO";
-import type { HashLockNetworkPropertiesDTO } from "./HashLockNetworkPropertiesDTO";
-import type { MetadataNetworkPropertiesDTO } from "./MetadataNetworkPropertiesDTO";
-import type { MosaicNetworkPropertiesDTO } from "./MosaicNetworkPropertiesDTO";
-import type { MosaicRestrictionNetworkPropertiesDTO } from "./MosaicRestrictionNetworkPropertiesDTO";
-import type { MultisigNetworkPropertiesDTO } from "./MultisigNetworkPropertiesDTO";
-import type { NamespaceNetworkPropertiesDTO } from "./NamespaceNetworkPropertiesDTO";
-import type { SecretLockNetworkPropertiesDTO } from "./SecretLockNetworkPropertiesDTO";
-import type { TransferNetworkPropertiesDTO } from "./TransferNetworkPropertiesDTO";
+import type { AccountKeyLinkNetworkPropertiesDTO } from './AccountKeyLinkNetworkPropertiesDTO';
+import type { AccountRestrictionNetworkPropertiesDTO } from './AccountRestrictionNetworkPropertiesDTO';
+import type { AggregateNetworkPropertiesDTO } from './AggregateNetworkPropertiesDTO';
+import type { HashLockNetworkPropertiesDTO } from './HashLockNetworkPropertiesDTO';
+import type { MetadataNetworkPropertiesDTO } from './MetadataNetworkPropertiesDTO';
+import type { MosaicNetworkPropertiesDTO } from './MosaicNetworkPropertiesDTO';
+import type { MosaicRestrictionNetworkPropertiesDTO } from './MosaicRestrictionNetworkPropertiesDTO';
+import type { MultisigNetworkPropertiesDTO } from './MultisigNetworkPropertiesDTO';
+import type { NamespaceNetworkPropertiesDTO } from './NamespaceNetworkPropertiesDTO';
+import type { SecretLockNetworkPropertiesDTO } from './SecretLockNetworkPropertiesDTO';
+import type { TransferNetworkPropertiesDTO } from './TransferNetworkPropertiesDTO';
 /**
  * Plugin related configuration properties.
  * @export

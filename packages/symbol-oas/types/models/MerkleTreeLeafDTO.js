@@ -34,16 +34,16 @@ function MerkleTreeLeafDTOFromJSON(json) {
 }
 exports.MerkleTreeLeafDTOFromJSON = MerkleTreeLeafDTOFromJSON;
 function MerkleTreeLeafDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        type: (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumFromJSON)(json["type"]),
-        path: json["path"],
-        encodedPath: json["encodedPath"],
-        nibbleCount: json["nibbleCount"],
-        value: json["value"],
-        leafHash: json["leafHash"],
+        'type': (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumFromJSON)(json['type']),
+        'path': json['path'],
+        'encodedPath': json['encodedPath'],
+        'nibbleCount': json['nibbleCount'],
+        'value': json['value'],
+        'leafHash': json['leafHash'],
     };
 }
 exports.MerkleTreeLeafDTOFromJSONTyped = MerkleTreeLeafDTOFromJSONTyped;
@@ -55,12 +55,12 @@ function MerkleTreeLeafDTOToJSON(value) {
         return null;
     }
     return {
-        type: (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumToJSON)(value.type),
-        path: value.path,
-        encodedPath: value.encodedPath,
-        nibbleCount: value.nibbleCount,
-        value: value.value,
-        leafHash: value.leafHash,
+        'type': (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumToJSON)(value.type),
+        'path': value.path,
+        'encodedPath': value.encodedPath,
+        'nibbleCount': value.nibbleCount,
+        'value': value.value,
+        'leafHash': value.leafHash,
     };
 }
 exports.MerkleTreeLeafDTOToJSON = MerkleTreeLeafDTOToJSON;

@@ -28,11 +28,11 @@ function AccountLinkPublicKeyDTOFromJSON(json) {
 }
 exports.AccountLinkPublicKeyDTOFromJSON = AccountLinkPublicKeyDTOFromJSON;
 function AccountLinkPublicKeyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        publicKey: json["publicKey"],
+        'publicKey': json['publicKey'],
     };
 }
 exports.AccountLinkPublicKeyDTOFromJSONTyped = AccountLinkPublicKeyDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function AccountLinkPublicKeyDTOToJSON(value) {
         return null;
     }
     return {
-        publicKey: value.publicKey,
+        'publicKey': value.publicKey,
     };
 }
 exports.AccountLinkPublicKeyDTOToJSON = AccountLinkPublicKeyDTOToJSON;

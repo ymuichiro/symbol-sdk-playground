@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { NetworkConfigurationDTO, NetworkTypeDTO, RentalFeesDTO, TransactionFeesDTO } from "../models";
+import * as runtime from '../runtime';
+import type { NetworkConfigurationDTO, NetworkTypeDTO, RentalFeesDTO, TransactionFeesDTO } from '../models';
 /**
  *
  */

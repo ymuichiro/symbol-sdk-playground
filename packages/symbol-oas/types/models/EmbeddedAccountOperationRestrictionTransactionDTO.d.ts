@@ -9,9 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionFlagsEnum } from "./AccountRestrictionFlagsEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
-import type { TransactionTypeEnum } from "./TransactionTypeEnum";
+import type { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
+import type { TransactionTypeEnum } from './TransactionTypeEnum';
 /**
  *
  * @export
@@ -53,13 +53,13 @@ export interface EmbeddedAccountOperationRestrictionTransactionDTO {
      * @type {Array<TransactionTypeEnum>}
      * @memberof EmbeddedAccountOperationRestrictionTransactionDTO
      */
-    restrictionAdditions: Array<TransactionTypeEnum>;
+    restrictionAdditions?: Array<TransactionTypeEnum>;
     /**
      * Account restriction deletions.
      * @type {Array<TransactionTypeEnum>}
      * @memberof EmbeddedAccountOperationRestrictionTransactionDTO
      */
-    restrictionDeletions: Array<TransactionTypeEnum>;
+    restrictionDeletions?: Array<TransactionTypeEnum>;
 }
 /**
  * Check if a given object implements the EmbeddedAccountOperationRestrictionTransactionDTO interface.

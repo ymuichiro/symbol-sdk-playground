@@ -40,21 +40,21 @@ function AddressAliasTransactionDTOFromJSON(json) {
 }
 exports.AddressAliasTransactionDTOFromJSON = AddressAliasTransactionDTOFromJSON;
 function AddressAliasTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        namespaceId: json["namespaceId"],
-        address: json["address"],
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json["aliasAction"]),
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'namespaceId': json['namespaceId'],
+        'address': json['address'],
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json['aliasAction']),
     };
 }
 exports.AddressAliasTransactionDTOFromJSONTyped = AddressAliasTransactionDTOFromJSONTyped;
@@ -66,17 +66,17 @@ function AddressAliasTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        namespaceId: value.namespaceId,
-        address: value.address,
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'namespaceId': value.namespaceId,
+        'address': value.address,
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
     };
 }
 exports.AddressAliasTransactionDTOToJSON = AddressAliasTransactionDTOToJSON;

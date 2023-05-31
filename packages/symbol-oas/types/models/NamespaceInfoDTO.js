@@ -32,13 +32,13 @@ function NamespaceInfoDTOFromJSON(json) {
 }
 exports.NamespaceInfoDTOFromJSON = NamespaceInfoDTOFromJSON;
 function NamespaceInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        meta: (0, NamespaceMetaDTO_1.NamespaceMetaDTOFromJSON)(json["meta"]),
-        namespace: (0, NamespaceDTO_1.NamespaceDTOFromJSON)(json["namespace"]),
+        'id': json['id'],
+        'meta': (0, NamespaceMetaDTO_1.NamespaceMetaDTOFromJSON)(json['meta']),
+        'namespace': (0, NamespaceDTO_1.NamespaceDTOFromJSON)(json['namespace']),
     };
 }
 exports.NamespaceInfoDTOFromJSONTyped = NamespaceInfoDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function NamespaceInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        meta: (0, NamespaceMetaDTO_1.NamespaceMetaDTOToJSON)(value.meta),
-        namespace: (0, NamespaceDTO_1.NamespaceDTOToJSON)(value.namespace),
+        'id': value.id,
+        'meta': (0, NamespaceMetaDTO_1.NamespaceMetaDTOToJSON)(value.meta),
+        'namespace': (0, NamespaceDTO_1.NamespaceDTOToJSON)(value.namespace),
     };
 }
 exports.NamespaceInfoDTOToJSON = NamespaceInfoDTOToJSON;

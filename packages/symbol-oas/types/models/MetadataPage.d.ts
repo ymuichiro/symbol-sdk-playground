@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MetadataInfoDTO } from "./MetadataInfoDTO";
-import type { Pagination } from "./Pagination";
+import type { MetadataInfoDTO } from './MetadataInfoDTO';
+import type { Pagination } from './Pagination';
 /**
  *
  * @export

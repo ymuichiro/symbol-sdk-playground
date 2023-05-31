@@ -62,7 +62,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/health`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,7 +89,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/info`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -116,7 +116,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/peers`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -143,7 +143,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/storage`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -170,7 +170,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/time`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -197,7 +197,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/server`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -224,7 +224,7 @@ class NodeRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/node/unlockedaccount`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

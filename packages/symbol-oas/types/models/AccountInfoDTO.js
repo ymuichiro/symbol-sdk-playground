@@ -30,12 +30,12 @@ function AccountInfoDTOFromJSON(json) {
 }
 exports.AccountInfoDTOFromJSON = AccountInfoDTOFromJSON;
 function AccountInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        account: (0, AccountDTO_1.AccountDTOFromJSON)(json["account"]),
+        'id': json['id'],
+        'account': (0, AccountDTO_1.AccountDTOFromJSON)(json['account']),
     };
 }
 exports.AccountInfoDTOFromJSONTyped = AccountInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function AccountInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        account: (0, AccountDTO_1.AccountDTOToJSON)(value.account),
+        'id': value.id,
+        'account': (0, AccountDTO_1.AccountDTOToJSON)(value.account),
     };
 }
 exports.AccountInfoDTOToJSON = AccountInfoDTOToJSON;

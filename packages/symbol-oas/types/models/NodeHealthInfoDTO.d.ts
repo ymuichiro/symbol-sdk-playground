@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NodeHealthDTO } from "./NodeHealthDTO";
+import type { NodeHealthDTO } from './NodeHealthDTO';
 /**
  *
  * @export

@@ -39,21 +39,21 @@ function MosaicSupplyRevocationTransactionDTOFromJSON(json) {
 }
 exports.MosaicSupplyRevocationTransactionDTOFromJSON = MosaicSupplyRevocationTransactionDTOFromJSON;
 function MosaicSupplyRevocationTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        sourceAddress: json["sourceAddress"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'sourceAddress': json['sourceAddress'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
     };
 }
 exports.MosaicSupplyRevocationTransactionDTOFromJSONTyped = MosaicSupplyRevocationTransactionDTOFromJSONTyped;
@@ -65,17 +65,17 @@ function MosaicSupplyRevocationTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        sourceAddress: value.sourceAddress,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'sourceAddress': value.sourceAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
     };
 }
 exports.MosaicSupplyRevocationTransactionDTOToJSON = MosaicSupplyRevocationTransactionDTOToJSON;

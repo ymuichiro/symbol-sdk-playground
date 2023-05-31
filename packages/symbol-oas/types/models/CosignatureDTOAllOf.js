@@ -29,12 +29,12 @@ function CosignatureDTOAllOfFromJSON(json) {
 }
 exports.CosignatureDTOAllOfFromJSON = CosignatureDTOAllOfFromJSON;
 function CosignatureDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        signerPublicKey: json["signerPublicKey"],
+        'version': json['version'],
+        'signerPublicKey': json['signerPublicKey'],
     };
 }
 exports.CosignatureDTOAllOfFromJSONTyped = CosignatureDTOAllOfFromJSONTyped;
@@ -46,8 +46,8 @@ function CosignatureDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        signerPublicKey: value.signerPublicKey,
+        'version': value.version,
+        'signerPublicKey': value.signerPublicKey,
     };
 }
 exports.CosignatureDTOAllOfToJSON = CosignatureDTOAllOfToJSON;

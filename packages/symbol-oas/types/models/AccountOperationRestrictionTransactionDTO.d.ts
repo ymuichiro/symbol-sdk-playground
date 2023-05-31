@@ -9,9 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionFlagsEnum } from "./AccountRestrictionFlagsEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
-import type { TransactionTypeEnum } from "./TransactionTypeEnum";
+import type { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
+import type { TransactionTypeEnum } from './TransactionTypeEnum';
 /**
  * Transaction to prevent outgoing transactions by transaction type.
  * @export
@@ -77,13 +77,13 @@ export interface AccountOperationRestrictionTransactionDTO {
      * @type {Array<TransactionTypeEnum>}
      * @memberof AccountOperationRestrictionTransactionDTO
      */
-    restrictionAdditions: Array<TransactionTypeEnum>;
+    restrictionAdditions?: Array<TransactionTypeEnum>;
     /**
      * Account restriction deletions.
      * @type {Array<TransactionTypeEnum>}
      * @memberof AccountOperationRestrictionTransactionDTO
      */
-    restrictionDeletions: Array<TransactionTypeEnum>;
+    restrictionDeletions?: Array<TransactionTypeEnum>;
 }
 /**
  * Check if a given object implements the AccountOperationRestrictionTransactionDTO interface.

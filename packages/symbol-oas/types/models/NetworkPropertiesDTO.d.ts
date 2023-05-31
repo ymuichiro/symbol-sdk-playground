@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NodeIdentityEqualityStrategy } from "./NodeIdentityEqualityStrategy";
+import type { NodeIdentityEqualityStrategy } from './NodeIdentityEqualityStrategy';
 /**
  * Network related configuration properties.
  * @export

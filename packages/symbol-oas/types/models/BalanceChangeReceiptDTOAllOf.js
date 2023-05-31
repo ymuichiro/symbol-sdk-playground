@@ -30,13 +30,13 @@ function BalanceChangeReceiptDTOAllOfFromJSON(json) {
 }
 exports.BalanceChangeReceiptDTOAllOfFromJSON = BalanceChangeReceiptDTOAllOfFromJSON;
 function BalanceChangeReceiptDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        targetAddress: json["targetAddress"],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'targetAddress': json['targetAddress'],
     };
 }
 exports.BalanceChangeReceiptDTOAllOfFromJSONTyped = BalanceChangeReceiptDTOAllOfFromJSONTyped;
@@ -48,9 +48,9 @@ function BalanceChangeReceiptDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        targetAddress: value.targetAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'targetAddress': value.targetAddress,
     };
 }
 exports.BalanceChangeReceiptDTOAllOfToJSON = BalanceChangeReceiptDTOAllOfToJSON;

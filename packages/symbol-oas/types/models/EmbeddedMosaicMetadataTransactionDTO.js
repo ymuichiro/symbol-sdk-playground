@@ -38,20 +38,20 @@ function EmbeddedMosaicMetadataTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedMosaicMetadataTransactionDTOFromJSON = EmbeddedMosaicMetadataTransactionDTOFromJSON;
 function EmbeddedMosaicMetadataTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        targetMosaicId: json["targetMosaicId"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'targetMosaicId': json['targetMosaicId'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.EmbeddedMosaicMetadataTransactionDTOFromJSONTyped = EmbeddedMosaicMetadataTransactionDTOFromJSONTyped;
@@ -63,16 +63,16 @@ function EmbeddedMosaicMetadataTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        targetMosaicId: value.targetMosaicId,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'targetMosaicId': value.targetMosaicId,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.EmbeddedMosaicMetadataTransactionDTOToJSON = EmbeddedMosaicMetadataTransactionDTOToJSON;

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { BlockInfoDTO } from "./BlockInfoDTO";
-import type { Pagination } from "./Pagination";
+import type { BlockInfoDTO } from './BlockInfoDTO';
+import type { Pagination } from './Pagination';
 /**
  *
  * @export

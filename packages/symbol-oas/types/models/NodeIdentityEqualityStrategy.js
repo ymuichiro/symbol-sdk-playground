@@ -19,8 +19,8 @@ exports.NodeIdentityEqualityStrategyToJSON = exports.NodeIdentityEqualityStrateg
  * @export
  */
 exports.NodeIdentityEqualityStrategy = {
-    Host: "host",
-    PublicKey: "public-key",
+    Host: 'host',
+    PublicKey: 'public-key'
 };
 function NodeIdentityEqualityStrategyFromJSON(json) {
     return NodeIdentityEqualityStrategyFromJSONTyped(json, false);

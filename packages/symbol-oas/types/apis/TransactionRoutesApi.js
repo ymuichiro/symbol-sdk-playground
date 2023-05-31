@@ -58,16 +58,15 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     announceCosignatureTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.cosignature === null ||
-                requestParameters.cosignature === undefined) {
-                throw new runtime.RequiredError("cosignature", "Required parameter requestParameters.cosignature was null or undefined when calling announceCosignatureTransaction.");
+            if (requestParameters.cosignature === null || requestParameters.cosignature === undefined) {
+                throw new runtime.RequiredError('cosignature', 'Required parameter requestParameters.cosignature was null or undefined when calling announceCosignatureTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactions/cosignature`,
-                method: "PUT",
+                method: 'PUT',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.CosignatureToJSON)(requestParameters.cosignature),
@@ -91,16 +90,15 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     announcePartialTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionPayload === null ||
-                requestParameters.transactionPayload === undefined) {
-                throw new runtime.RequiredError("transactionPayload", "Required parameter requestParameters.transactionPayload was null or undefined when calling announcePartialTransaction.");
+            if (requestParameters.transactionPayload === null || requestParameters.transactionPayload === undefined) {
+                throw new runtime.RequiredError('transactionPayload', 'Required parameter requestParameters.transactionPayload was null or undefined when calling announcePartialTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactions/partial`,
-                method: "PUT",
+                method: 'PUT',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.TransactionPayloadToJSON)(requestParameters.transactionPayload),
@@ -124,16 +122,15 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     announceTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionPayload === null ||
-                requestParameters.transactionPayload === undefined) {
-                throw new runtime.RequiredError("transactionPayload", "Required parameter requestParameters.transactionPayload was null or undefined when calling announceTransaction.");
+            if (requestParameters.transactionPayload === null || requestParameters.transactionPayload === undefined) {
+                throw new runtime.RequiredError('transactionPayload', 'Required parameter requestParameters.transactionPayload was null or undefined when calling announceTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactions`,
-                method: "PUT",
+                method: 'PUT',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.TransactionPayloadToJSON)(requestParameters.transactionPayload),
@@ -157,15 +154,14 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     getConfirmedTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionId === null ||
-                requestParameters.transactionId === undefined) {
-                throw new runtime.RequiredError("transactionId", "Required parameter requestParameters.transactionId was null or undefined when calling getConfirmedTransaction.");
+            if (requestParameters.transactionId === null || requestParameters.transactionId === undefined) {
+                throw new runtime.RequiredError('transactionId', 'Required parameter requestParameters.transactionId was null or undefined when calling getConfirmedTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactions/confirmed/{transactionId}`.replace(`{${"transactionId"}}`, encodeURIComponent(String(requestParameters.transactionId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -188,16 +184,15 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     getConfirmedTransactionsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionIds === null ||
-                requestParameters.transactionIds === undefined) {
-                throw new runtime.RequiredError("transactionIds", "Required parameter requestParameters.transactionIds was null or undefined when calling getConfirmedTransactions.");
+            if (requestParameters.transactionIds === null || requestParameters.transactionIds === undefined) {
+                throw new runtime.RequiredError('transactionIds', 'Required parameter requestParameters.transactionIds was null or undefined when calling getConfirmedTransactions.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactions/confirmed`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.TransactionIdsToJSON)(requestParameters.transactionIds),
@@ -221,15 +216,14 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     getPartialTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionId === null ||
-                requestParameters.transactionId === undefined) {
-                throw new runtime.RequiredError("transactionId", "Required parameter requestParameters.transactionId was null or undefined when calling getPartialTransaction.");
+            if (requestParameters.transactionId === null || requestParameters.transactionId === undefined) {
+                throw new runtime.RequiredError('transactionId', 'Required parameter requestParameters.transactionId was null or undefined when calling getPartialTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactions/partial/{transactionId}`.replace(`{${"transactionId"}}`, encodeURIComponent(String(requestParameters.transactionId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -252,16 +246,15 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     getPartialTransactionsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionIds === null ||
-                requestParameters.transactionIds === undefined) {
-                throw new runtime.RequiredError("transactionIds", "Required parameter requestParameters.transactionIds was null or undefined when calling getPartialTransactions.");
+            if (requestParameters.transactionIds === null || requestParameters.transactionIds === undefined) {
+                throw new runtime.RequiredError('transactionIds', 'Required parameter requestParameters.transactionIds was null or undefined when calling getPartialTransactions.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactions/partial`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.TransactionIdsToJSON)(requestParameters.transactionIds),
@@ -285,15 +278,14 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     getUnconfirmedTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionId === null ||
-                requestParameters.transactionId === undefined) {
-                throw new runtime.RequiredError("transactionId", "Required parameter requestParameters.transactionId was null or undefined when calling getUnconfirmedTransaction.");
+            if (requestParameters.transactionId === null || requestParameters.transactionId === undefined) {
+                throw new runtime.RequiredError('transactionId', 'Required parameter requestParameters.transactionId was null or undefined when calling getUnconfirmedTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactions/unconfirmed/{transactionId}`.replace(`{${"transactionId"}}`, encodeURIComponent(String(requestParameters.transactionId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -316,16 +308,15 @@ class TransactionRoutesApi extends runtime.BaseAPI {
      */
     getUnconfirmedTransactionsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionIds === null ||
-                requestParameters.transactionIds === undefined) {
-                throw new runtime.RequiredError("transactionIds", "Required parameter requestParameters.transactionIds was null or undefined when calling getUnconfirmedTransactions.");
+            if (requestParameters.transactionIds === null || requestParameters.transactionIds === undefined) {
+                throw new runtime.RequiredError('transactionIds', 'Required parameter requestParameters.transactionIds was null or undefined when calling getUnconfirmedTransactions.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactions/unconfirmed`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.TransactionIdsToJSON)(requestParameters.transactionIds),
@@ -351,55 +342,54 @@ class TransactionRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.address !== undefined) {
-                queryParameters["address"] = requestParameters.address;
+                queryParameters['address'] = requestParameters.address;
             }
             if (requestParameters.recipientAddress !== undefined) {
-                queryParameters["recipientAddress"] = requestParameters.recipientAddress;
+                queryParameters['recipientAddress'] = requestParameters.recipientAddress;
             }
             if (requestParameters.signerPublicKey !== undefined) {
-                queryParameters["signerPublicKey"] = requestParameters.signerPublicKey;
+                queryParameters['signerPublicKey'] = requestParameters.signerPublicKey;
             }
             if (requestParameters.height !== undefined) {
-                queryParameters["height"] = requestParameters.height;
+                queryParameters['height'] = requestParameters.height;
             }
             if (requestParameters.fromHeight !== undefined) {
-                queryParameters["fromHeight"] = requestParameters.fromHeight;
+                queryParameters['fromHeight'] = requestParameters.fromHeight;
             }
             if (requestParameters.toHeight !== undefined) {
-                queryParameters["toHeight"] = requestParameters.toHeight;
+                queryParameters['toHeight'] = requestParameters.toHeight;
             }
             if (requestParameters.fromTransferAmount !== undefined) {
-                queryParameters["fromTransferAmount"] =
-                    requestParameters.fromTransferAmount;
+                queryParameters['fromTransferAmount'] = requestParameters.fromTransferAmount;
             }
             if (requestParameters.toTransferAmount !== undefined) {
-                queryParameters["toTransferAmount"] = requestParameters.toTransferAmount;
+                queryParameters['toTransferAmount'] = requestParameters.toTransferAmount;
             }
             if (requestParameters.type) {
-                queryParameters["type"] = requestParameters.type;
+                queryParameters['type'] = requestParameters.type;
             }
             if (requestParameters.embedded !== undefined) {
-                queryParameters["embedded"] = requestParameters.embedded;
+                queryParameters['embedded'] = requestParameters.embedded;
             }
             if (requestParameters.transferMosaicId !== undefined) {
-                queryParameters["transferMosaicId"] = requestParameters.transferMosaicId;
+                queryParameters['transferMosaicId'] = requestParameters.transferMosaicId;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactions/confirmed`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -424,55 +414,54 @@ class TransactionRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.address !== undefined) {
-                queryParameters["address"] = requestParameters.address;
+                queryParameters['address'] = requestParameters.address;
             }
             if (requestParameters.recipientAddress !== undefined) {
-                queryParameters["recipientAddress"] = requestParameters.recipientAddress;
+                queryParameters['recipientAddress'] = requestParameters.recipientAddress;
             }
             if (requestParameters.signerPublicKey !== undefined) {
-                queryParameters["signerPublicKey"] = requestParameters.signerPublicKey;
+                queryParameters['signerPublicKey'] = requestParameters.signerPublicKey;
             }
             if (requestParameters.height !== undefined) {
-                queryParameters["height"] = requestParameters.height;
+                queryParameters['height'] = requestParameters.height;
             }
             if (requestParameters.fromHeight !== undefined) {
-                queryParameters["fromHeight"] = requestParameters.fromHeight;
+                queryParameters['fromHeight'] = requestParameters.fromHeight;
             }
             if (requestParameters.toHeight !== undefined) {
-                queryParameters["toHeight"] = requestParameters.toHeight;
+                queryParameters['toHeight'] = requestParameters.toHeight;
             }
             if (requestParameters.fromTransferAmount !== undefined) {
-                queryParameters["fromTransferAmount"] =
-                    requestParameters.fromTransferAmount;
+                queryParameters['fromTransferAmount'] = requestParameters.fromTransferAmount;
             }
             if (requestParameters.toTransferAmount !== undefined) {
-                queryParameters["toTransferAmount"] = requestParameters.toTransferAmount;
+                queryParameters['toTransferAmount'] = requestParameters.toTransferAmount;
             }
             if (requestParameters.type) {
-                queryParameters["type"] = requestParameters.type;
+                queryParameters['type'] = requestParameters.type;
             }
             if (requestParameters.embedded !== undefined) {
-                queryParameters["embedded"] = requestParameters.embedded;
+                queryParameters['embedded'] = requestParameters.embedded;
             }
             if (requestParameters.transferMosaicId !== undefined) {
-                queryParameters["transferMosaicId"] = requestParameters.transferMosaicId;
+                queryParameters['transferMosaicId'] = requestParameters.transferMosaicId;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactions/partial`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -497,55 +486,54 @@ class TransactionRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.address !== undefined) {
-                queryParameters["address"] = requestParameters.address;
+                queryParameters['address'] = requestParameters.address;
             }
             if (requestParameters.recipientAddress !== undefined) {
-                queryParameters["recipientAddress"] = requestParameters.recipientAddress;
+                queryParameters['recipientAddress'] = requestParameters.recipientAddress;
             }
             if (requestParameters.signerPublicKey !== undefined) {
-                queryParameters["signerPublicKey"] = requestParameters.signerPublicKey;
+                queryParameters['signerPublicKey'] = requestParameters.signerPublicKey;
             }
             if (requestParameters.height !== undefined) {
-                queryParameters["height"] = requestParameters.height;
+                queryParameters['height'] = requestParameters.height;
             }
             if (requestParameters.fromHeight !== undefined) {
-                queryParameters["fromHeight"] = requestParameters.fromHeight;
+                queryParameters['fromHeight'] = requestParameters.fromHeight;
             }
             if (requestParameters.toHeight !== undefined) {
-                queryParameters["toHeight"] = requestParameters.toHeight;
+                queryParameters['toHeight'] = requestParameters.toHeight;
             }
             if (requestParameters.fromTransferAmount !== undefined) {
-                queryParameters["fromTransferAmount"] =
-                    requestParameters.fromTransferAmount;
+                queryParameters['fromTransferAmount'] = requestParameters.fromTransferAmount;
             }
             if (requestParameters.toTransferAmount !== undefined) {
-                queryParameters["toTransferAmount"] = requestParameters.toTransferAmount;
+                queryParameters['toTransferAmount'] = requestParameters.toTransferAmount;
             }
             if (requestParameters.type) {
-                queryParameters["type"] = requestParameters.type;
+                queryParameters['type'] = requestParameters.type;
             }
             if (requestParameters.embedded !== undefined) {
-                queryParameters["embedded"] = requestParameters.embedded;
+                queryParameters['embedded'] = requestParameters.embedded;
             }
             if (requestParameters.transferMosaicId !== undefined) {
-                queryParameters["transferMosaicId"] = requestParameters.transferMosaicId;
+                queryParameters['transferMosaicId'] = requestParameters.transferMosaicId;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactions/unconfirmed`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

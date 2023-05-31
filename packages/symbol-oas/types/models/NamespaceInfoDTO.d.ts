@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NamespaceDTO } from "./NamespaceDTO";
-import type { NamespaceMetaDTO } from "./NamespaceMetaDTO";
+import type { NamespaceDTO } from './NamespaceDTO';
+import type { NamespaceMetaDTO } from './NamespaceMetaDTO';
 /**
  *
  * @export

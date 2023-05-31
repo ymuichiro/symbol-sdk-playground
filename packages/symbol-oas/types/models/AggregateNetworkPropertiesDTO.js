@@ -28,25 +28,15 @@ function AggregateNetworkPropertiesDTOFromJSON(json) {
 }
 exports.AggregateNetworkPropertiesDTOFromJSON = AggregateNetworkPropertiesDTOFromJSON;
 function AggregateNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxTransactionsPerAggregate: !(0, runtime_1.exists)(json, "maxTransactionsPerAggregate")
-            ? undefined
-            : json["maxTransactionsPerAggregate"],
-        maxCosignaturesPerAggregate: !(0, runtime_1.exists)(json, "maxCosignaturesPerAggregate")
-            ? undefined
-            : json["maxCosignaturesPerAggregate"],
-        enableStrictCosignatureCheck: !(0, runtime_1.exists)(json, "enableStrictCosignatureCheck")
-            ? undefined
-            : json["enableStrictCosignatureCheck"],
-        enableBondedAggregateSupport: !(0, runtime_1.exists)(json, "enableBondedAggregateSupport")
-            ? undefined
-            : json["enableBondedAggregateSupport"],
-        maxBondedTransactionLifetime: !(0, runtime_1.exists)(json, "maxBondedTransactionLifetime")
-            ? undefined
-            : json["maxBondedTransactionLifetime"],
+        'maxTransactionsPerAggregate': !(0, runtime_1.exists)(json, 'maxTransactionsPerAggregate') ? undefined : json['maxTransactionsPerAggregate'],
+        'maxCosignaturesPerAggregate': !(0, runtime_1.exists)(json, 'maxCosignaturesPerAggregate') ? undefined : json['maxCosignaturesPerAggregate'],
+        'enableStrictCosignatureCheck': !(0, runtime_1.exists)(json, 'enableStrictCosignatureCheck') ? undefined : json['enableStrictCosignatureCheck'],
+        'enableBondedAggregateSupport': !(0, runtime_1.exists)(json, 'enableBondedAggregateSupport') ? undefined : json['enableBondedAggregateSupport'],
+        'maxBondedTransactionLifetime': !(0, runtime_1.exists)(json, 'maxBondedTransactionLifetime') ? undefined : json['maxBondedTransactionLifetime'],
     };
 }
 exports.AggregateNetworkPropertiesDTOFromJSONTyped = AggregateNetworkPropertiesDTOFromJSONTyped;
@@ -58,11 +48,11 @@ function AggregateNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxTransactionsPerAggregate: value.maxTransactionsPerAggregate,
-        maxCosignaturesPerAggregate: value.maxCosignaturesPerAggregate,
-        enableStrictCosignatureCheck: value.enableStrictCosignatureCheck,
-        enableBondedAggregateSupport: value.enableBondedAggregateSupport,
-        maxBondedTransactionLifetime: value.maxBondedTransactionLifetime,
+        'maxTransactionsPerAggregate': value.maxTransactionsPerAggregate,
+        'maxCosignaturesPerAggregate': value.maxCosignaturesPerAggregate,
+        'enableStrictCosignatureCheck': value.enableStrictCosignatureCheck,
+        'enableBondedAggregateSupport': value.enableBondedAggregateSupport,
+        'maxBondedTransactionLifetime': value.maxBondedTransactionLifetime,
     };
 }
 exports.AggregateNetworkPropertiesDTOToJSON = AggregateNetworkPropertiesDTOToJSON;

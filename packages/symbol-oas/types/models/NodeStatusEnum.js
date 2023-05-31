@@ -19,8 +19,8 @@ exports.NodeStatusEnumToJSON = exports.NodeStatusEnumFromJSONTyped = exports.Nod
  * @export
  */
 exports.NodeStatusEnum = {
-    Up: "up",
-    Down: "down",
+    Up: 'up',
+    Down: 'down'
 };
 function NodeStatusEnumFromJSON(json) {
     return NodeStatusEnumFromJSONTyped(json, false);

@@ -30,13 +30,13 @@ function AliasDTOFromJSON(json) {
 }
 exports.AliasDTOFromJSON = AliasDTOFromJSON;
 function AliasDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        type: (0, AliasTypeEnum_1.AliasTypeEnumFromJSON)(json["type"]),
-        mosaicId: !(0, runtime_1.exists)(json, "mosaicId") ? undefined : json["mosaicId"],
-        address: !(0, runtime_1.exists)(json, "address") ? undefined : json["address"],
+        'type': (0, AliasTypeEnum_1.AliasTypeEnumFromJSON)(json['type']),
+        'mosaicId': !(0, runtime_1.exists)(json, 'mosaicId') ? undefined : json['mosaicId'],
+        'address': !(0, runtime_1.exists)(json, 'address') ? undefined : json['address'],
     };
 }
 exports.AliasDTOFromJSONTyped = AliasDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function AliasDTOToJSON(value) {
         return null;
     }
     return {
-        type: (0, AliasTypeEnum_1.AliasTypeEnumToJSON)(value.type),
-        mosaicId: value.mosaicId,
-        address: value.address,
+        'type': (0, AliasTypeEnum_1.AliasTypeEnumToJSON)(value.type),
+        'mosaicId': value.mosaicId,
+        'address': value.address,
     };
 }
 exports.AliasDTOToJSON = AliasDTOToJSON;

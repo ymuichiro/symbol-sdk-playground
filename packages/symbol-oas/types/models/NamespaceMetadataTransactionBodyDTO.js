@@ -33,18 +33,16 @@ function NamespaceMetadataTransactionBodyDTOFromJSON(json) {
 }
 exports.NamespaceMetadataTransactionBodyDTOFromJSON = NamespaceMetadataTransactionBodyDTOFromJSON;
 function NamespaceMetadataTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        targetNamespaceId: !(0, runtime_1.exists)(json, "targetNamespaceId")
-            ? undefined
-            : json["targetNamespaceId"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'targetNamespaceId': !(0, runtime_1.exists)(json, 'targetNamespaceId') ? undefined : json['targetNamespaceId'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.NamespaceMetadataTransactionBodyDTOFromJSONTyped = NamespaceMetadataTransactionBodyDTOFromJSONTyped;
@@ -56,12 +54,12 @@ function NamespaceMetadataTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        targetNamespaceId: value.targetNamespaceId,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'targetNamespaceId': value.targetNamespaceId,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.NamespaceMetadataTransactionBodyDTOToJSON = NamespaceMetadataTransactionBodyDTOToJSON;

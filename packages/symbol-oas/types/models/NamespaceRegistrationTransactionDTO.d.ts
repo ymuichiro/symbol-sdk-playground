@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NamespaceRegistrationTypeEnum } from "./NamespaceRegistrationTypeEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { NamespaceRegistrationTypeEnum } from './NamespaceRegistrationTypeEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to create or renew a namespace.
  * @export

@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmbeddedAccountMosaicRestrictionTransactionDTOToJSON = exports.EmbeddedAccountMosaicRestrictionTransactionDTOFromJSONTyped = exports.EmbeddedAccountMosaicRestrictionTransactionDTOFromJSON = exports.instanceOfEmbeddedAccountMosaicRestrictionTransactionDTO = void 0;
+const runtime_1 = require("../runtime");
 const AccountRestrictionFlagsEnum_1 = require("./AccountRestrictionFlagsEnum");
 const NetworkTypeEnum_1 = require("./NetworkTypeEnum");
 /**
@@ -26,8 +27,6 @@ function instanceOfEmbeddedAccountMosaicRestrictionTransactionDTO(value) {
     isInstance = isInstance && "network" in value;
     isInstance = isInstance && "type" in value;
     isInstance = isInstance && "restrictionFlags" in value;
-    isInstance = isInstance && "restrictionAdditions" in value;
-    isInstance = isInstance && "restrictionDeletions" in value;
     return isInstance;
 }
 exports.instanceOfEmbeddedAccountMosaicRestrictionTransactionDTO = instanceOfEmbeddedAccountMosaicRestrictionTransactionDTO;
@@ -36,17 +35,17 @@ function EmbeddedAccountMosaicRestrictionTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedAccountMosaicRestrictionTransactionDTOFromJSON = EmbeddedAccountMosaicRestrictionTransactionDTOFromJSON;
 function EmbeddedAccountMosaicRestrictionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json["restrictionFlags"]),
-        restrictionAdditions: json["restrictionAdditions"],
-        restrictionDeletions: json["restrictionDeletions"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json['restrictionFlags']),
+        'restrictionAdditions': !(0, runtime_1.exists)(json, 'restrictionAdditions') ? undefined : json['restrictionAdditions'],
+        'restrictionDeletions': !(0, runtime_1.exists)(json, 'restrictionDeletions') ? undefined : json['restrictionDeletions'],
     };
 }
 exports.EmbeddedAccountMosaicRestrictionTransactionDTOFromJSONTyped = EmbeddedAccountMosaicRestrictionTransactionDTOFromJSONTyped;
@@ -58,13 +57,13 @@ function EmbeddedAccountMosaicRestrictionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
-        restrictionAdditions: value.restrictionAdditions,
-        restrictionDeletions: value.restrictionDeletions,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
+        'restrictionAdditions': value.restrictionAdditions,
+        'restrictionDeletions': value.restrictionDeletions,
     };
 }
 exports.EmbeddedAccountMosaicRestrictionTransactionDTOToJSON = EmbeddedAccountMosaicRestrictionTransactionDTOToJSON;

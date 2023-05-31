@@ -30,22 +30,14 @@ function SupplementalPublicKeysDTOFromJSON(json) {
 }
 exports.SupplementalPublicKeysDTOFromJSON = SupplementalPublicKeysDTOFromJSON;
 function SupplementalPublicKeysDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        linked: !(0, runtime_1.exists)(json, "linked")
-            ? undefined
-            : (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOFromJSON)(json["linked"]),
-        node: !(0, runtime_1.exists)(json, "node")
-            ? undefined
-            : (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOFromJSON)(json["node"]),
-        vrf: !(0, runtime_1.exists)(json, "vrf")
-            ? undefined
-            : (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOFromJSON)(json["vrf"]),
-        voting: !(0, runtime_1.exists)(json, "voting")
-            ? undefined
-            : (0, AccountLinkVotingKeysDTO_1.AccountLinkVotingKeysDTOFromJSON)(json["voting"]),
+        'linked': !(0, runtime_1.exists)(json, 'linked') ? undefined : (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOFromJSON)(json['linked']),
+        'node': !(0, runtime_1.exists)(json, 'node') ? undefined : (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOFromJSON)(json['node']),
+        'vrf': !(0, runtime_1.exists)(json, 'vrf') ? undefined : (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOFromJSON)(json['vrf']),
+        'voting': !(0, runtime_1.exists)(json, 'voting') ? undefined : (0, AccountLinkVotingKeysDTO_1.AccountLinkVotingKeysDTOFromJSON)(json['voting']),
     };
 }
 exports.SupplementalPublicKeysDTOFromJSONTyped = SupplementalPublicKeysDTOFromJSONTyped;
@@ -57,10 +49,10 @@ function SupplementalPublicKeysDTOToJSON(value) {
         return null;
     }
     return {
-        linked: (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOToJSON)(value.linked),
-        node: (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOToJSON)(value.node),
-        vrf: (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOToJSON)(value.vrf),
-        voting: (0, AccountLinkVotingKeysDTO_1.AccountLinkVotingKeysDTOToJSON)(value.voting),
+        'linked': (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOToJSON)(value.linked),
+        'node': (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOToJSON)(value.node),
+        'vrf': (0, AccountLinkPublicKeyDTO_1.AccountLinkPublicKeyDTOToJSON)(value.vrf),
+        'voting': (0, AccountLinkVotingKeysDTO_1.AccountLinkVotingKeysDTOToJSON)(value.voting),
     };
 }
 exports.SupplementalPublicKeysDTOToJSON = SupplementalPublicKeysDTOToJSON;

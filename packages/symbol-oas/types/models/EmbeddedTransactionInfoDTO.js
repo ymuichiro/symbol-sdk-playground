@@ -32,13 +32,13 @@ function EmbeddedTransactionInfoDTOFromJSON(json) {
 }
 exports.EmbeddedTransactionInfoDTOFromJSON = EmbeddedTransactionInfoDTOFromJSON;
 function EmbeddedTransactionInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        meta: (0, EmbeddedTransactionMetaDTO_1.EmbeddedTransactionMetaDTOFromJSON)(json["meta"]),
-        transaction: (0, EmbeddedTransactionInfoDTOTransaction_1.EmbeddedTransactionInfoDTOTransactionFromJSON)(json["transaction"]),
+        'id': json['id'],
+        'meta': (0, EmbeddedTransactionMetaDTO_1.EmbeddedTransactionMetaDTOFromJSON)(json['meta']),
+        'transaction': (0, EmbeddedTransactionInfoDTOTransaction_1.EmbeddedTransactionInfoDTOTransactionFromJSON)(json['transaction']),
     };
 }
 exports.EmbeddedTransactionInfoDTOFromJSONTyped = EmbeddedTransactionInfoDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function EmbeddedTransactionInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        meta: (0, EmbeddedTransactionMetaDTO_1.EmbeddedTransactionMetaDTOToJSON)(value.meta),
-        transaction: (0, EmbeddedTransactionInfoDTOTransaction_1.EmbeddedTransactionInfoDTOTransactionToJSON)(value.transaction),
+        'id': value.id,
+        'meta': (0, EmbeddedTransactionMetaDTO_1.EmbeddedTransactionMetaDTOToJSON)(value.meta),
+        'transaction': (0, EmbeddedTransactionInfoDTOTransaction_1.EmbeddedTransactionInfoDTOTransactionToJSON)(value.transaction),
     };
 }
 exports.EmbeddedTransactionInfoDTOToJSON = EmbeddedTransactionInfoDTOToJSON;

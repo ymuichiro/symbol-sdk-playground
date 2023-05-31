@@ -22,7 +22,7 @@ exports.LinkActionEnumToJSON = exports.LinkActionEnumFromJSONTyped = exports.Lin
  */
 exports.LinkActionEnum = {
     NUMBER_0: 0,
-    NUMBER_1: 1,
+    NUMBER_1: 1
 };
 function LinkActionEnumFromJSON(json) {
     return LinkActionEnumFromJSONTyped(json, false);

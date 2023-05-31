@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ReceiptTypeEnum } from "./ReceiptTypeEnum";
+import type { ReceiptTypeEnum } from './ReceiptTypeEnum';
 /**
  * Receipt stored when a namespace expires.
  * @export

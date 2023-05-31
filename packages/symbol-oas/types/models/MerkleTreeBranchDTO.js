@@ -36,17 +36,17 @@ function MerkleTreeBranchDTOFromJSON(json) {
 }
 exports.MerkleTreeBranchDTOFromJSON = MerkleTreeBranchDTOFromJSON;
 function MerkleTreeBranchDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        type: (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumFromJSON)(json["type"]),
-        path: json["path"],
-        encodedPath: json["encodedPath"],
-        nibbleCount: json["nibbleCount"],
-        linkMask: json["linkMask"],
-        links: json["links"].map(MerkleTreeBranchLinkDTO_1.MerkleTreeBranchLinkDTOFromJSON),
-        branchHash: json["branchHash"],
+        'type': (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumFromJSON)(json['type']),
+        'path': json['path'],
+        'encodedPath': json['encodedPath'],
+        'nibbleCount': json['nibbleCount'],
+        'linkMask': json['linkMask'],
+        'links': (json['links'].map(MerkleTreeBranchLinkDTO_1.MerkleTreeBranchLinkDTOFromJSON)),
+        'branchHash': json['branchHash'],
     };
 }
 exports.MerkleTreeBranchDTOFromJSONTyped = MerkleTreeBranchDTOFromJSONTyped;
@@ -58,13 +58,13 @@ function MerkleTreeBranchDTOToJSON(value) {
         return null;
     }
     return {
-        type: (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumToJSON)(value.type),
-        path: value.path,
-        encodedPath: value.encodedPath,
-        nibbleCount: value.nibbleCount,
-        linkMask: value.linkMask,
-        links: value.links.map(MerkleTreeBranchLinkDTO_1.MerkleTreeBranchLinkDTOToJSON),
-        branchHash: value.branchHash,
+        'type': (0, MerkleTreeNodeTypeEnum_1.MerkleTreeNodeTypeEnumToJSON)(value.type),
+        'path': value.path,
+        'encodedPath': value.encodedPath,
+        'nibbleCount': value.nibbleCount,
+        'linkMask': value.linkMask,
+        'links': (value.links.map(MerkleTreeBranchLinkDTO_1.MerkleTreeBranchLinkDTOToJSON)),
+        'branchHash': value.branchHash,
     };
 }
 exports.MerkleTreeBranchDTOToJSON = MerkleTreeBranchDTOToJSON;

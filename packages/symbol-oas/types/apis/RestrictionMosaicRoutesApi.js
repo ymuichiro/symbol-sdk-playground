@@ -58,15 +58,14 @@ class RestrictionMosaicRoutesApi extends runtime.BaseAPI {
      */
     getMosaicRestrictionsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.compositeHash === null ||
-                requestParameters.compositeHash === undefined) {
-                throw new runtime.RequiredError("compositeHash", "Required parameter requestParameters.compositeHash was null or undefined when calling getMosaicRestrictions.");
+            if (requestParameters.compositeHash === null || requestParameters.compositeHash === undefined) {
+                throw new runtime.RequiredError('compositeHash', 'Required parameter requestParameters.compositeHash was null or undefined when calling getMosaicRestrictions.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/restrictions/mosaic/{compositeHash}`.replace(`{${"compositeHash"}}`, encodeURIComponent(String(requestParameters.compositeHash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class RestrictionMosaicRoutesApi extends runtime.BaseAPI {
      */
     getMosaicRestrictionsMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.compositeHash === null ||
-                requestParameters.compositeHash === undefined) {
-                throw new runtime.RequiredError("compositeHash", "Required parameter requestParameters.compositeHash was null or undefined when calling getMosaicRestrictionsMerkle.");
+            if (requestParameters.compositeHash === null || requestParameters.compositeHash === undefined) {
+                throw new runtime.RequiredError('compositeHash', 'Required parameter requestParameters.compositeHash was null or undefined when calling getMosaicRestrictionsMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/restrictions/mosaic/{compositeHash}/merkle`.replace(`{${"compositeHash"}}`, encodeURIComponent(String(requestParameters.compositeHash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -122,30 +120,30 @@ class RestrictionMosaicRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.mosaicId !== undefined) {
-                queryParameters["mosaicId"] = requestParameters.mosaicId;
+                queryParameters['mosaicId'] = requestParameters.mosaicId;
             }
             if (requestParameters.entryType !== undefined) {
-                queryParameters["entryType"] = requestParameters.entryType;
+                queryParameters['entryType'] = requestParameters.entryType;
             }
             if (requestParameters.targetAddress !== undefined) {
-                queryParameters["targetAddress"] = requestParameters.targetAddress;
+                queryParameters['targetAddress'] = requestParameters.targetAddress;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/restrictions/mosaic`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

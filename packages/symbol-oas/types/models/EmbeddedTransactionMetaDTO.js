@@ -32,18 +32,16 @@ function EmbeddedTransactionMetaDTOFromJSON(json) {
 }
 exports.EmbeddedTransactionMetaDTOFromJSON = EmbeddedTransactionMetaDTOFromJSON;
 function EmbeddedTransactionMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        aggregateHash: json["aggregateHash"],
-        aggregateId: json["aggregateId"],
-        index: json["index"],
-        timestamp: !(0, runtime_1.exists)(json, "timestamp") ? undefined : json["timestamp"],
-        feeMultiplier: !(0, runtime_1.exists)(json, "feeMultiplier")
-            ? undefined
-            : json["feeMultiplier"],
+        'height': json['height'],
+        'aggregateHash': json['aggregateHash'],
+        'aggregateId': json['aggregateId'],
+        'index': json['index'],
+        'timestamp': !(0, runtime_1.exists)(json, 'timestamp') ? undefined : json['timestamp'],
+        'feeMultiplier': !(0, runtime_1.exists)(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
     };
 }
 exports.EmbeddedTransactionMetaDTOFromJSONTyped = EmbeddedTransactionMetaDTOFromJSONTyped;
@@ -55,12 +53,12 @@ function EmbeddedTransactionMetaDTOToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        aggregateHash: value.aggregateHash,
-        aggregateId: value.aggregateId,
-        index: value.index,
-        timestamp: value.timestamp,
-        feeMultiplier: value.feeMultiplier,
+        'height': value.height,
+        'aggregateHash': value.aggregateHash,
+        'aggregateId': value.aggregateId,
+        'index': value.index,
+        'timestamp': value.timestamp,
+        'feeMultiplier': value.feeMultiplier,
     };
 }
 exports.EmbeddedTransactionMetaDTOToJSON = EmbeddedTransactionMetaDTOToJSON;

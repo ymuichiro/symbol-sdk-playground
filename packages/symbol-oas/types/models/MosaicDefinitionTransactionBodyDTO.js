@@ -32,15 +32,15 @@ function MosaicDefinitionTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicDefinitionTransactionBodyDTOFromJSON = MosaicDefinitionTransactionBodyDTOFromJSON;
 function MosaicDefinitionTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        duration: json["duration"],
-        nonce: json["nonce"],
-        flags: json["flags"],
-        divisibility: json["divisibility"],
+        'id': json['id'],
+        'duration': json['duration'],
+        'nonce': json['nonce'],
+        'flags': json['flags'],
+        'divisibility': json['divisibility'],
     };
 }
 exports.MosaicDefinitionTransactionBodyDTOFromJSONTyped = MosaicDefinitionTransactionBodyDTOFromJSONTyped;
@@ -52,11 +52,11 @@ function MosaicDefinitionTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        duration: value.duration,
-        nonce: value.nonce,
-        flags: value.flags,
-        divisibility: value.divisibility,
+        'id': value.id,
+        'duration': value.duration,
+        'nonce': value.nonce,
+        'flags': value.flags,
+        'divisibility': value.divisibility,
     };
 }
 exports.MosaicDefinitionTransactionBodyDTOToJSON = MosaicDefinitionTransactionBodyDTOToJSON;

@@ -28,12 +28,12 @@ function AccountIdsFromJSON(json) {
 }
 exports.AccountIdsFromJSON = AccountIdsFromJSON;
 function AccountIdsFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        publicKeys: !(0, runtime_1.exists)(json, "publicKeys") ? undefined : json["publicKeys"],
-        addresses: !(0, runtime_1.exists)(json, "addresses") ? undefined : json["addresses"],
+        'publicKeys': !(0, runtime_1.exists)(json, 'publicKeys') ? undefined : json['publicKeys'],
+        'addresses': !(0, runtime_1.exists)(json, 'addresses') ? undefined : json['addresses'],
     };
 }
 exports.AccountIdsFromJSONTyped = AccountIdsFromJSONTyped;
@@ -45,8 +45,8 @@ function AccountIdsToJSON(value) {
         return null;
     }
     return {
-        publicKeys: value.publicKeys,
-        addresses: value.addresses,
+        'publicKeys': value.publicKeys,
+        'addresses': value.addresses,
     };
 }
 exports.AccountIdsToJSON = AccountIdsToJSON;

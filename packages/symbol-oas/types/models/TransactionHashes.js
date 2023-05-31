@@ -28,11 +28,11 @@ function TransactionHashesFromJSON(json) {
 }
 exports.TransactionHashesFromJSON = TransactionHashesFromJSON;
 function TransactionHashesFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        hashes: !(0, runtime_1.exists)(json, "hashes") ? undefined : json["hashes"],
+        'hashes': !(0, runtime_1.exists)(json, 'hashes') ? undefined : json['hashes'],
     };
 }
 exports.TransactionHashesFromJSONTyped = TransactionHashesFromJSONTyped;
@@ -44,7 +44,7 @@ function TransactionHashesToJSON(value) {
         return null;
     }
     return {
-        hashes: value.hashes,
+        'hashes': value.hashes,
     };
 }
 exports.TransactionHashesToJSON = TransactionHashesToJSON;

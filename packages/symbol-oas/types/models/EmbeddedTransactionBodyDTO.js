@@ -14,13 +14,13 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.EmbeddedTransactionBodyDTOToJSON = exports.EmbeddedTransactionBodyDTOFromJSONTyped = exports.EmbeddedTransactionBodyDTOFromJSON = exports.instanceOfEmbeddedTransactionBodyDTO = void 0;
+const runtime_1 = require("../runtime");
 const EmbeddedTransactionInfoDTO_1 = require("./EmbeddedTransactionInfoDTO");
 /**
  * Check if a given object implements the EmbeddedTransactionBodyDTO interface.
  */
 function instanceOfEmbeddedTransactionBodyDTO(value) {
     let isInstance = true;
-    isInstance = isInstance && "transactions" in value;
     return isInstance;
 }
 exports.instanceOfEmbeddedTransactionBodyDTO = instanceOfEmbeddedTransactionBodyDTO;
@@ -29,11 +29,11 @@ function EmbeddedTransactionBodyDTOFromJSON(json) {
 }
 exports.EmbeddedTransactionBodyDTOFromJSON = EmbeddedTransactionBodyDTOFromJSON;
 function EmbeddedTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        transactions: json["transactions"].map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOFromJSON),
+        'transactions': !(0, runtime_1.exists)(json, 'transactions') ? undefined : (json['transactions'].map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOFromJSON)),
     };
 }
 exports.EmbeddedTransactionBodyDTOFromJSONTyped = EmbeddedTransactionBodyDTOFromJSONTyped;
@@ -45,7 +45,7 @@ function EmbeddedTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        transactions: value.transactions.map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOToJSON),
+        'transactions': value.transactions === undefined ? undefined : (value.transactions.map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOToJSON)),
     };
 }
 exports.EmbeddedTransactionBodyDTOToJSON = EmbeddedTransactionBodyDTOToJSON;

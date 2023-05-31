@@ -30,13 +30,13 @@ function AccountLinkVotingKeyDTOFromJSON(json) {
 }
 exports.AccountLinkVotingKeyDTOFromJSON = AccountLinkVotingKeyDTOFromJSON;
 function AccountLinkVotingKeyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        publicKey: json["publicKey"],
-        startEpoch: json["startEpoch"],
-        endEpoch: json["endEpoch"],
+        'publicKey': json['publicKey'],
+        'startEpoch': json['startEpoch'],
+        'endEpoch': json['endEpoch'],
     };
 }
 exports.AccountLinkVotingKeyDTOFromJSONTyped = AccountLinkVotingKeyDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function AccountLinkVotingKeyDTOToJSON(value) {
         return null;
     }
     return {
-        publicKey: value.publicKey,
-        startEpoch: value.startEpoch,
-        endEpoch: value.endEpoch,
+        'publicKey': value.publicKey,
+        'startEpoch': value.startEpoch,
+        'endEpoch': value.endEpoch,
     };
 }
 exports.AccountLinkVotingKeyDTOToJSON = AccountLinkVotingKeyDTOToJSON;

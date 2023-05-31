@@ -32,15 +32,15 @@ function MosaicAddressRestrictionTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicAddressRestrictionTransactionBodyDTOFromJSON = MosaicAddressRestrictionTransactionBodyDTOFromJSON;
 function MosaicAddressRestrictionTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        restrictionKey: json["restrictionKey"],
-        previousRestrictionValue: json["previousRestrictionValue"],
-        newRestrictionValue: json["newRestrictionValue"],
-        targetAddress: json["targetAddress"],
+        'mosaicId': json['mosaicId'],
+        'restrictionKey': json['restrictionKey'],
+        'previousRestrictionValue': json['previousRestrictionValue'],
+        'newRestrictionValue': json['newRestrictionValue'],
+        'targetAddress': json['targetAddress'],
     };
 }
 exports.MosaicAddressRestrictionTransactionBodyDTOFromJSONTyped = MosaicAddressRestrictionTransactionBodyDTOFromJSONTyped;
@@ -52,11 +52,11 @@ function MosaicAddressRestrictionTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        restrictionKey: value.restrictionKey,
-        previousRestrictionValue: value.previousRestrictionValue,
-        newRestrictionValue: value.newRestrictionValue,
-        targetAddress: value.targetAddress,
+        'mosaicId': value.mosaicId,
+        'restrictionKey': value.restrictionKey,
+        'previousRestrictionValue': value.previousRestrictionValue,
+        'newRestrictionValue': value.newRestrictionValue,
+        'targetAddress': value.targetAddress,
     };
 }
 exports.MosaicAddressRestrictionTransactionBodyDTOToJSON = MosaicAddressRestrictionTransactionBodyDTOToJSON;

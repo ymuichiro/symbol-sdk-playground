@@ -19,8 +19,8 @@ exports.AccountOrderByEnumToJSON = exports.AccountOrderByEnumFromJSONTyped = exp
  * @export
  */
 exports.AccountOrderByEnum = {
-    Id: "id",
-    Balance: "balance",
+    Id: 'id',
+    Balance: 'balance'
 };
 function AccountOrderByEnumFromJSON(json) {
     return AccountOrderByEnumFromJSONTyped(json, false);

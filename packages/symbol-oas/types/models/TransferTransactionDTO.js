@@ -40,21 +40,21 @@ function TransferTransactionDTOFromJSON(json) {
 }
 exports.TransferTransactionDTOFromJSON = TransferTransactionDTOFromJSON;
 function TransferTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        recipientAddress: json["recipientAddress"],
-        mosaics: json["mosaics"].map(UnresolvedMosaic_1.UnresolvedMosaicFromJSON),
-        message: !(0, runtime_1.exists)(json, "message") ? undefined : json["message"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'recipientAddress': json['recipientAddress'],
+        'mosaics': (json['mosaics'].map(UnresolvedMosaic_1.UnresolvedMosaicFromJSON)),
+        'message': !(0, runtime_1.exists)(json, 'message') ? undefined : json['message'],
     };
 }
 exports.TransferTransactionDTOFromJSONTyped = TransferTransactionDTOFromJSONTyped;
@@ -66,17 +66,17 @@ function TransferTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        recipientAddress: value.recipientAddress,
-        mosaics: value.mosaics.map(UnresolvedMosaic_1.UnresolvedMosaicToJSON),
-        message: value.message,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'recipientAddress': value.recipientAddress,
+        'mosaics': (value.mosaics.map(UnresolvedMosaic_1.UnresolvedMosaicToJSON)),
+        'message': value.message,
     };
 }
 exports.TransferTransactionDTOToJSON = TransferTransactionDTOToJSON;

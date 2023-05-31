@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LinkActionEnum } from "./LinkActionEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { LinkActionEnum } from './LinkActionEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to associate a BLS public key with an account.
  * Required for node operators willing to vote finalized blocks.

@@ -31,12 +31,12 @@ function AccountRestrictionDTOFromJSON(json) {
 }
 exports.AccountRestrictionDTOFromJSON = AccountRestrictionDTOFromJSON;
 function AccountRestrictionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json["restrictionFlags"]),
-        values: json["values"].map(AccountRestrictionDTOValuesInner_1.AccountRestrictionDTOValuesInnerFromJSON),
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json['restrictionFlags']),
+        'values': (json['values'].map(AccountRestrictionDTOValuesInner_1.AccountRestrictionDTOValuesInnerFromJSON)),
     };
 }
 exports.AccountRestrictionDTOFromJSONTyped = AccountRestrictionDTOFromJSONTyped;
@@ -48,8 +48,8 @@ function AccountRestrictionDTOToJSON(value) {
         return null;
     }
     return {
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
-        values: value.values.map(AccountRestrictionDTOValuesInner_1.AccountRestrictionDTOValuesInnerToJSON),
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
+        'values': (value.values.map(AccountRestrictionDTOValuesInner_1.AccountRestrictionDTOValuesInnerToJSON)),
     };
 }
 exports.AccountRestrictionDTOToJSON = AccountRestrictionDTOToJSON;

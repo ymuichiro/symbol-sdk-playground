@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { BlockInfoDTOBlock } from "./BlockInfoDTOBlock";
-import type { BlockMetaDTO } from "./BlockMetaDTO";
+import type { BlockInfoDTOBlock } from './BlockInfoDTOBlock';
+import type { BlockMetaDTO } from './BlockMetaDTO';
 /**
  *
  * @export

@@ -23,7 +23,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TextApiResponse = exports.BlobApiResponse = exports.VoidApiResponse = exports.JSONApiResponse = exports.canConsumeForm = exports.mapValues = exports.querystring = exports.exists = exports.COLLECTION_FORMATS = exports.RequiredError = exports.FetchError = exports.ResponseError = exports.BaseAPI = exports.DefaultConfig = exports.Configuration = exports.BASE_PATH = void 0;
-exports.BASE_PATH = "http://localhost:3000".replace(/\/+$/, "");
+exports.BASE_PATH = "https://symbolnode.blockchain-authn.app:3001".replace(/\/+$/, "");
 class Configuration {
     constructor(configuration = {}) {
         this.configuration = configuration;
@@ -32,9 +32,7 @@ class Configuration {
         this.configuration = configuration;
     }
     get basePath() {
-        return this.configuration.basePath != null
-            ? this.configuration.basePath
-            : exports.BASE_PATH;
+        return this.configuration.basePath != null ? this.configuration.basePath : exports.BASE_PATH;
     }
     get fetchApi() {
         return this.configuration.fetchApi;
@@ -54,16 +52,14 @@ class Configuration {
     get apiKey() {
         const apiKey = this.configuration.apiKey;
         if (apiKey) {
-            return typeof apiKey === "function" ? apiKey : () => apiKey;
+            return typeof apiKey === 'function' ? apiKey : () => apiKey;
         }
         return undefined;
     }
     get accessToken() {
         const accessToken = this.configuration.accessToken;
         if (accessToken) {
-            return typeof accessToken === "function"
-                ? accessToken
-                : () => __awaiter(this, void 0, void 0, function* () { return accessToken; });
+            return typeof accessToken === 'function' ? accessToken : () => __awaiter(this, void 0, void 0, function* () { return accessToken; });
         }
         return undefined;
     }
@@ -86,8 +82,7 @@ class BaseAPI {
             let fetchParams = { url, init };
             for (const middleware of this.middleware) {
                 if (middleware.pre) {
-                    fetchParams =
-                        (yield middleware.pre(Object.assign({ fetch: this.fetchApi }, fetchParams))) || fetchParams;
+                    fetchParams = (yield middleware.pre(Object.assign({ fetch: this.fetchApi }, fetchParams))) || fetchParams;
                 }
             }
             let response = undefined;
@@ -97,19 +92,18 @@ class BaseAPI {
             catch (e) {
                 for (const middleware of this.middleware) {
                     if (middleware.onError) {
-                        response =
-                            (yield middleware.onError({
-                                fetch: this.fetchApi,
-                                url: fetchParams.url,
-                                init: fetchParams.init,
-                                error: e,
-                                response: response ? response.clone() : undefined,
-                            })) || response;
+                        response = (yield middleware.onError({
+                            fetch: this.fetchApi,
+                            url: fetchParams.url,
+                            init: fetchParams.init,
+                            error: e,
+                            response: response ? response.clone() : undefined,
+                        })) || response;
                     }
                 }
                 if (response === undefined) {
                     if (e instanceof Error) {
-                        throw new FetchError(e, "The request failed and the interceptors did not return an alternative response");
+                        throw new FetchError(e, 'The request failed and the interceptors did not return an alternative response');
                     }
                     else {
                         throw e;
@@ -118,13 +112,12 @@ class BaseAPI {
             }
             for (const middleware of this.middleware) {
                 if (middleware.post) {
-                    response =
-                        (yield middleware.post({
-                            fetch: this.fetchApi,
-                            url: fetchParams.url,
-                            init: fetchParams.init,
-                            response: response.clone(),
-                        })) || response;
+                    response = (yield middleware.post({
+                        fetch: this.fetchApi,
+                        url: fetchParams.url,
+                        init: fetchParams.init,
+                        response: response.clone(),
+                    })) || response;
                 }
             }
             return response;
@@ -148,24 +141,23 @@ class BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const { url, init } = yield this.createFetchParams(context, initOverrides);
             const response = yield this.fetchApi(url, init);
-            if (response && response.status >= 200 && response.status < 300) {
+            if (response && (response.status >= 200 && response.status < 300)) {
                 return response;
             }
-            throw new ResponseError(response, "Response returned an error code");
+            throw new ResponseError(response, 'Response returned an error code');
         });
     }
     createFetchParams(context, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
             let url = this.configuration.basePath + context.path;
-            if (context.query !== undefined &&
-                Object.keys(context.query).length !== 0) {
+            if (context.query !== undefined && Object.keys(context.query).length !== 0) {
                 // only add the querystring to the URL if there are query parameters.
                 // this is done to avoid urls ending with a "?" character which buggy webservers
                 // do not handle correctly sometimes.
-                url += "?" + this.configuration.queryParamsStringify(context.query);
+                url += '?' + this.configuration.queryParamsStringify(context.query);
             }
             const headers = Object.assign({}, this.configuration.headers, context.headers);
-            Object.keys(headers).forEach((key) => headers[key] === undefined ? delete headers[key] : {});
+            Object.keys(headers).forEach(key => headers[key] === undefined ? delete headers[key] : {});
             const initOverrideFn = typeof initOverrides === "function"
                 ? initOverrides
                 : () => __awaiter(this, void 0, void 0, function* () { return initOverrides; });
@@ -199,8 +191,9 @@ class BaseAPI {
     }
 }
 exports.BaseAPI = BaseAPI;
+;
 function isBlob(value) {
-    return typeof Blob !== "undefined" && value instanceof Blob;
+    return typeof Blob !== 'undefined' && value instanceof Blob;
 }
 function isFormData(value) {
     return typeof FormData !== "undefined" && value instanceof FormData;
@@ -240,18 +233,17 @@ function exists(json, key) {
     return value !== null && value !== undefined;
 }
 exports.exists = exists;
-function querystring(params, prefix = "") {
+function querystring(params, prefix = '') {
     return Object.keys(params)
-        .map((key) => querystringSingleKey(key, params[key], prefix))
-        .filter((part) => part.length > 0)
-        .join("&");
+        .map(key => querystringSingleKey(key, params[key], prefix))
+        .filter(part => part.length > 0)
+        .join('&');
 }
 exports.querystring = querystring;
-function querystringSingleKey(key, value, keyPrefix = "") {
+function querystringSingleKey(key, value, keyPrefix = '') {
     const fullKey = keyPrefix + (keyPrefix.length ? `[${key}]` : key);
     if (value instanceof Array) {
-        const multiValue = value
-            .map((singleValue) => encodeURIComponent(String(singleValue)))
+        const multiValue = value.map(singleValue => encodeURIComponent(String(singleValue)))
             .join(`&${encodeURIComponent(fullKey)}=`);
         return `${encodeURIComponent(fullKey)}=${multiValue}`;
     }
@@ -273,7 +265,7 @@ function mapValues(data, fn) {
 exports.mapValues = mapValues;
 function canConsumeForm(consumes) {
     for (const consume of consumes) {
-        if ("multipart/form-data" === consume.contentType) {
+        if ('multipart/form-data' === consume.contentType) {
             return true;
         }
     }
@@ -312,6 +304,7 @@ class BlobApiResponse {
             return yield this.raw.blob();
         });
     }
+    ;
 }
 exports.BlobApiResponse = BlobApiResponse;
 class TextApiResponse {
@@ -323,5 +316,6 @@ class TextApiResponse {
             return yield this.raw.text();
         });
     }
+    ;
 }
 exports.TextApiResponse = TextApiResponse;

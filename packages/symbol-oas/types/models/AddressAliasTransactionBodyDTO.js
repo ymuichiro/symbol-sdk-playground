@@ -31,13 +31,13 @@ function AddressAliasTransactionBodyDTOFromJSON(json) {
 }
 exports.AddressAliasTransactionBodyDTOFromJSON = AddressAliasTransactionBodyDTOFromJSON;
 function AddressAliasTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        namespaceId: json["namespaceId"],
-        address: json["address"],
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json["aliasAction"]),
+        'namespaceId': json['namespaceId'],
+        'address': json['address'],
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json['aliasAction']),
     };
 }
 exports.AddressAliasTransactionBodyDTOFromJSONTyped = AddressAliasTransactionBodyDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function AddressAliasTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        namespaceId: value.namespaceId,
-        address: value.address,
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
+        'namespaceId': value.namespaceId,
+        'address': value.address,
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
     };
 }
 exports.AddressAliasTransactionBodyDTOToJSON = AddressAliasTransactionBodyDTOToJSON;

@@ -36,18 +36,18 @@ function EmbeddedHashLockTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedHashLockTransactionDTOFromJSON = EmbeddedHashLockTransactionDTOFromJSON;
 function EmbeddedHashLockTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        duration: json["duration"],
-        hash: json["hash"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'duration': json['duration'],
+        'hash': json['hash'],
     };
 }
 exports.EmbeddedHashLockTransactionDTOFromJSONTyped = EmbeddedHashLockTransactionDTOFromJSONTyped;
@@ -59,14 +59,14 @@ function EmbeddedHashLockTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        duration: value.duration,
-        hash: value.hash,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'duration': value.duration,
+        'hash': value.hash,
     };
 }
 exports.EmbeddedHashLockTransactionDTOToJSON = EmbeddedHashLockTransactionDTOToJSON;

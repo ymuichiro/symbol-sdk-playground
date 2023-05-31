@@ -31,7 +31,7 @@ export declare const AccountRestrictionFlagsEnum: {
     readonly NUMBER_49153: 49153;
     readonly NUMBER_49156: 49156;
 };
-export type AccountRestrictionFlagsEnum = (typeof AccountRestrictionFlagsEnum)[keyof typeof AccountRestrictionFlagsEnum];
+export type AccountRestrictionFlagsEnum = typeof AccountRestrictionFlagsEnum[keyof typeof AccountRestrictionFlagsEnum];
 export declare function AccountRestrictionFlagsEnumFromJSON(json: any): AccountRestrictionFlagsEnum;
 export declare function AccountRestrictionFlagsEnumFromJSONTyped(json: any, ignoreDiscriminator: boolean): AccountRestrictionFlagsEnum;
 export declare function AccountRestrictionFlagsEnumToJSON(value?: AccountRestrictionFlagsEnum | null): any;

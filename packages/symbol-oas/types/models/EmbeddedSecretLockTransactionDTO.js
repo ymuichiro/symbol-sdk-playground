@@ -39,20 +39,20 @@ function EmbeddedSecretLockTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedSecretLockTransactionDTOFromJSON = EmbeddedSecretLockTransactionDTOFromJSON;
 function EmbeddedSecretLockTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        recipientAddress: json["recipientAddress"],
-        secret: json["secret"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        duration: json["duration"],
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json["hashAlgorithm"]),
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'recipientAddress': json['recipientAddress'],
+        'secret': json['secret'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'duration': json['duration'],
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json['hashAlgorithm']),
     };
 }
 exports.EmbeddedSecretLockTransactionDTOFromJSONTyped = EmbeddedSecretLockTransactionDTOFromJSONTyped;
@@ -64,16 +64,16 @@ function EmbeddedSecretLockTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        recipientAddress: value.recipientAddress,
-        secret: value.secret,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        duration: value.duration,
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'recipientAddress': value.recipientAddress,
+        'secret': value.secret,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'duration': value.duration,
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
     };
 }
 exports.EmbeddedSecretLockTransactionDTOToJSON = EmbeddedSecretLockTransactionDTOToJSON;

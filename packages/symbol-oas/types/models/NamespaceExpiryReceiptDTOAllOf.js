@@ -28,11 +28,11 @@ function NamespaceExpiryReceiptDTOAllOfFromJSON(json) {
 }
 exports.NamespaceExpiryReceiptDTOAllOfFromJSON = NamespaceExpiryReceiptDTOAllOfFromJSON;
 function NamespaceExpiryReceiptDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        artifactId: json["artifactId"],
+        'artifactId': json['artifactId'],
     };
 }
 exports.NamespaceExpiryReceiptDTOAllOfFromJSONTyped = NamespaceExpiryReceiptDTOAllOfFromJSONTyped;
@@ -44,7 +44,7 @@ function NamespaceExpiryReceiptDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        artifactId: value.artifactId,
+        'artifactId': value.artifactId,
     };
 }
 exports.NamespaceExpiryReceiptDTOAllOfToJSON = NamespaceExpiryReceiptDTOAllOfToJSON;

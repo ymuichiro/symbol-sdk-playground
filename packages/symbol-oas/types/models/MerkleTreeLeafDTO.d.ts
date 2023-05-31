@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MerkleTreeNodeTypeEnum } from "./MerkleTreeNodeTypeEnum";
+import type { MerkleTreeNodeTypeEnum } from './MerkleTreeNodeTypeEnum';
 /**
  * Merkle tree leaf node.
  * @export

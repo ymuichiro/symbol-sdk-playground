@@ -41,23 +41,23 @@ function MosaicAddressRestrictionTransactionDTOFromJSON(json) {
 }
 exports.MosaicAddressRestrictionTransactionDTOFromJSON = MosaicAddressRestrictionTransactionDTOFromJSON;
 function MosaicAddressRestrictionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        mosaicId: json["mosaicId"],
-        restrictionKey: json["restrictionKey"],
-        previousRestrictionValue: json["previousRestrictionValue"],
-        newRestrictionValue: json["newRestrictionValue"],
-        targetAddress: json["targetAddress"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'mosaicId': json['mosaicId'],
+        'restrictionKey': json['restrictionKey'],
+        'previousRestrictionValue': json['previousRestrictionValue'],
+        'newRestrictionValue': json['newRestrictionValue'],
+        'targetAddress': json['targetAddress'],
     };
 }
 exports.MosaicAddressRestrictionTransactionDTOFromJSONTyped = MosaicAddressRestrictionTransactionDTOFromJSONTyped;
@@ -69,19 +69,19 @@ function MosaicAddressRestrictionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        mosaicId: value.mosaicId,
-        restrictionKey: value.restrictionKey,
-        previousRestrictionValue: value.previousRestrictionValue,
-        newRestrictionValue: value.newRestrictionValue,
-        targetAddress: value.targetAddress,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'mosaicId': value.mosaicId,
+        'restrictionKey': value.restrictionKey,
+        'previousRestrictionValue': value.previousRestrictionValue,
+        'newRestrictionValue': value.newRestrictionValue,
+        'targetAddress': value.targetAddress,
     };
 }
 exports.MosaicAddressRestrictionTransactionDTOToJSON = MosaicAddressRestrictionTransactionDTOToJSON;

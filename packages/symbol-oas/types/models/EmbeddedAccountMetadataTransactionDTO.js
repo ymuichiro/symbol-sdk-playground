@@ -37,19 +37,19 @@ function EmbeddedAccountMetadataTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedAccountMetadataTransactionDTOFromJSON = EmbeddedAccountMetadataTransactionDTOFromJSON;
 function EmbeddedAccountMetadataTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.EmbeddedAccountMetadataTransactionDTOFromJSONTyped = EmbeddedAccountMetadataTransactionDTOFromJSONTyped;
@@ -61,15 +61,15 @@ function EmbeddedAccountMetadataTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.EmbeddedAccountMetadataTransactionDTOToJSON = EmbeddedAccountMetadataTransactionDTOToJSON;

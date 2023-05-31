@@ -28,11 +28,11 @@ function SizePrefixedEntityDTOFromJSON(json) {
 }
 exports.SizePrefixedEntityDTOFromJSON = SizePrefixedEntityDTOFromJSON;
 function SizePrefixedEntityDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
+        'size': json['size'],
     };
 }
 exports.SizePrefixedEntityDTOFromJSONTyped = SizePrefixedEntityDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function SizePrefixedEntityDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
+        'size': value.size,
     };
 }
 exports.SizePrefixedEntityDTOToJSON = SizePrefixedEntityDTOToJSON;

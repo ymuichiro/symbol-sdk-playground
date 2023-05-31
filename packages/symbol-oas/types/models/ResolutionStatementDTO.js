@@ -32,13 +32,13 @@ function ResolutionStatementDTOFromJSON(json) {
 }
 exports.ResolutionStatementDTOFromJSON = ResolutionStatementDTOFromJSON;
 function ResolutionStatementDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        unresolved: (0, ResolutionStatementDTOUnresolved_1.ResolutionStatementDTOUnresolvedFromJSON)(json["unresolved"]),
-        resolutionEntries: json["resolutionEntries"].map(ResolutionEntryDTO_1.ResolutionEntryDTOFromJSON),
+        'height': json['height'],
+        'unresolved': (0, ResolutionStatementDTOUnresolved_1.ResolutionStatementDTOUnresolvedFromJSON)(json['unresolved']),
+        'resolutionEntries': (json['resolutionEntries'].map(ResolutionEntryDTO_1.ResolutionEntryDTOFromJSON)),
     };
 }
 exports.ResolutionStatementDTOFromJSONTyped = ResolutionStatementDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function ResolutionStatementDTOToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        unresolved: (0, ResolutionStatementDTOUnresolved_1.ResolutionStatementDTOUnresolvedToJSON)(value.unresolved),
-        resolutionEntries: value.resolutionEntries.map(ResolutionEntryDTO_1.ResolutionEntryDTOToJSON),
+        'height': value.height,
+        'unresolved': (0, ResolutionStatementDTOUnresolved_1.ResolutionStatementDTOUnresolvedToJSON)(value.unresolved),
+        'resolutionEntries': (value.resolutionEntries.map(ResolutionEntryDTO_1.ResolutionEntryDTOToJSON)),
     };
 }
 exports.ResolutionStatementDTOToJSON = ResolutionStatementDTOToJSON;

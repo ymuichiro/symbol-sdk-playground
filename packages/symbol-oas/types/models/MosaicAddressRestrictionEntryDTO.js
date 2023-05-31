@@ -29,12 +29,12 @@ function MosaicAddressRestrictionEntryDTOFromJSON(json) {
 }
 exports.MosaicAddressRestrictionEntryDTOFromJSON = MosaicAddressRestrictionEntryDTOFromJSON;
 function MosaicAddressRestrictionEntryDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        key: json["key"],
-        value: json["value"],
+        'key': json['key'],
+        'value': json['value'],
     };
 }
 exports.MosaicAddressRestrictionEntryDTOFromJSONTyped = MosaicAddressRestrictionEntryDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function MosaicAddressRestrictionEntryDTOToJSON(value) {
         return null;
     }
     return {
-        key: value.key,
-        value: value.value,
+        'key': value.key,
+        'value': value.value,
     };
 }
 exports.MosaicAddressRestrictionEntryDTOToJSON = MosaicAddressRestrictionEntryDTOToJSON;

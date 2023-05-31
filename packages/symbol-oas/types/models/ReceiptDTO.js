@@ -30,12 +30,12 @@ function ReceiptDTOFromJSON(json) {
 }
 exports.ReceiptDTOFromJSON = ReceiptDTOFromJSON;
 function ReceiptDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
     };
 }
 exports.ReceiptDTOFromJSONTyped = ReceiptDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function ReceiptDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
     };
 }
 exports.ReceiptDTOToJSON = ReceiptDTOToJSON;

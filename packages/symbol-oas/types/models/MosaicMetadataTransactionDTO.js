@@ -42,24 +42,24 @@ function MosaicMetadataTransactionDTOFromJSON(json) {
 }
 exports.MosaicMetadataTransactionDTOFromJSON = MosaicMetadataTransactionDTOFromJSON;
 function MosaicMetadataTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        targetMosaicId: json["targetMosaicId"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'targetMosaicId': json['targetMosaicId'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.MosaicMetadataTransactionDTOFromJSONTyped = MosaicMetadataTransactionDTOFromJSONTyped;
@@ -71,20 +71,20 @@ function MosaicMetadataTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        targetMosaicId: value.targetMosaicId,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'targetMosaicId': value.targetMosaicId,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.MosaicMetadataTransactionDTOToJSON = MosaicMetadataTransactionDTOToJSON;

@@ -36,18 +36,18 @@ function TransactionStatementDTOReceiptsInnerFromJSON(json) {
 }
 exports.TransactionStatementDTOReceiptsInnerFromJSON = TransactionStatementDTOReceiptsInnerFromJSON;
 function TransactionStatementDTOReceiptsInnerFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        senderAddress: json["senderAddress"],
-        recipientAddress: json["recipientAddress"],
-        targetAddress: json["targetAddress"],
-        artifactId: json["artifactId"],
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'senderAddress': json['senderAddress'],
+        'recipientAddress': json['recipientAddress'],
+        'targetAddress': json['targetAddress'],
+        'artifactId': json['artifactId'],
     };
 }
 exports.TransactionStatementDTOReceiptsInnerFromJSONTyped = TransactionStatementDTOReceiptsInnerFromJSONTyped;
@@ -59,14 +59,14 @@ function TransactionStatementDTOReceiptsInnerToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        senderAddress: value.senderAddress,
-        recipientAddress: value.recipientAddress,
-        targetAddress: value.targetAddress,
-        artifactId: value.artifactId,
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'senderAddress': value.senderAddress,
+        'recipientAddress': value.recipientAddress,
+        'targetAddress': value.targetAddress,
+        'artifactId': value.artifactId,
     };
 }
 exports.TransactionStatementDTOReceiptsInnerToJSON = TransactionStatementDTOReceiptsInnerToJSON;

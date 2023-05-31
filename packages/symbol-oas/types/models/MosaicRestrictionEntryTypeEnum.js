@@ -21,7 +21,7 @@ exports.MosaicRestrictionEntryTypeEnumToJSON = exports.MosaicRestrictionEntryTyp
  */
 exports.MosaicRestrictionEntryTypeEnum = {
     NUMBER_0: 0,
-    NUMBER_1: 1,
+    NUMBER_1: 1
 };
 function MosaicRestrictionEntryTypeEnumFromJSON(json) {
     return MosaicRestrictionEntryTypeEnumFromJSONTyped(json, false);

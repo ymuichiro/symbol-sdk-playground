@@ -29,12 +29,12 @@ function UnresolvedMosaicFromJSON(json) {
 }
 exports.UnresolvedMosaicFromJSON = UnresolvedMosaicFromJSON;
 function UnresolvedMosaicFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        amount: json["amount"],
+        'id': json['id'],
+        'amount': json['amount'],
     };
 }
 exports.UnresolvedMosaicFromJSONTyped = UnresolvedMosaicFromJSONTyped;
@@ -46,8 +46,8 @@ function UnresolvedMosaicToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        amount: value.amount,
+        'id': value.id,
+        'amount': value.amount,
     };
 }
 exports.UnresolvedMosaicToJSON = UnresolvedMosaicToJSON;

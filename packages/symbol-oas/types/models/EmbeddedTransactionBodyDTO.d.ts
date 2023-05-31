@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { EmbeddedTransactionInfoDTO } from "./EmbeddedTransactionInfoDTO";
+import type { EmbeddedTransactionInfoDTO } from './EmbeddedTransactionInfoDTO';
 /**
  *
  * @export
@@ -21,7 +21,7 @@ export interface EmbeddedTransactionBodyDTO {
      * @type {Array<EmbeddedTransactionInfoDTO>}
      * @memberof EmbeddedTransactionBodyDTO
      */
-    transactions: Array<EmbeddedTransactionInfoDTO>;
+    transactions?: Array<EmbeddedTransactionInfoDTO>;
 }
 /**
  * Check if a given object implements the EmbeddedTransactionBodyDTO interface.

@@ -28,11 +28,11 @@ function MosaicExpiryReceiptDTOAllOfFromJSON(json) {
 }
 exports.MosaicExpiryReceiptDTOAllOfFromJSON = MosaicExpiryReceiptDTOAllOfFromJSON;
 function MosaicExpiryReceiptDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        artifactId: json["artifactId"],
+        'artifactId': json['artifactId'],
     };
 }
 exports.MosaicExpiryReceiptDTOAllOfFromJSONTyped = MosaicExpiryReceiptDTOAllOfFromJSONTyped;
@@ -44,7 +44,7 @@ function MosaicExpiryReceiptDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        artifactId: value.artifactId,
+        'artifactId': value.artifactId,
     };
 }
 exports.MosaicExpiryReceiptDTOAllOfToJSON = MosaicExpiryReceiptDTOAllOfToJSON;

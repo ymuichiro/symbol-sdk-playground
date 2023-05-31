@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MultisigAccountInfoDTO } from "./MultisigAccountInfoDTO";
+import type { MultisigAccountInfoDTO } from './MultisigAccountInfoDTO';
 /**
  *
  * @export

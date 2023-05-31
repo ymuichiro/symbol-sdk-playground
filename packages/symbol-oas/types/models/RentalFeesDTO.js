@@ -30,13 +30,13 @@ function RentalFeesDTOFromJSON(json) {
 }
 exports.RentalFeesDTOFromJSON = RentalFeesDTOFromJSON;
 function RentalFeesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        effectiveRootNamespaceRentalFeePerBlock: json["effectiveRootNamespaceRentalFeePerBlock"],
-        effectiveChildNamespaceRentalFee: json["effectiveChildNamespaceRentalFee"],
-        effectiveMosaicRentalFee: json["effectiveMosaicRentalFee"],
+        'effectiveRootNamespaceRentalFeePerBlock': json['effectiveRootNamespaceRentalFeePerBlock'],
+        'effectiveChildNamespaceRentalFee': json['effectiveChildNamespaceRentalFee'],
+        'effectiveMosaicRentalFee': json['effectiveMosaicRentalFee'],
     };
 }
 exports.RentalFeesDTOFromJSONTyped = RentalFeesDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function RentalFeesDTOToJSON(value) {
         return null;
     }
     return {
-        effectiveRootNamespaceRentalFeePerBlock: value.effectiveRootNamespaceRentalFeePerBlock,
-        effectiveChildNamespaceRentalFee: value.effectiveChildNamespaceRentalFee,
-        effectiveMosaicRentalFee: value.effectiveMosaicRentalFee,
+        'effectiveRootNamespaceRentalFeePerBlock': value.effectiveRootNamespaceRentalFeePerBlock,
+        'effectiveChildNamespaceRentalFee': value.effectiveChildNamespaceRentalFee,
+        'effectiveMosaicRentalFee': value.effectiveMosaicRentalFee,
     };
 }
 exports.RentalFeesDTOToJSON = RentalFeesDTOToJSON;

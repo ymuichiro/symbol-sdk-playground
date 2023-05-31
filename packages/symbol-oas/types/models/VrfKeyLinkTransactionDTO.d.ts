@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LinkActionEnum } from "./LinkActionEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { LinkActionEnum } from './LinkActionEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to link an account with a VRF public key.
  * The key is used to randomize block production and leader/participant selection.

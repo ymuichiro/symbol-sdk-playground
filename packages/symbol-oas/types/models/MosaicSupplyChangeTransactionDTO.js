@@ -40,21 +40,21 @@ function MosaicSupplyChangeTransactionDTOFromJSON(json) {
 }
 exports.MosaicSupplyChangeTransactionDTOFromJSON = MosaicSupplyChangeTransactionDTOFromJSON;
 function MosaicSupplyChangeTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        mosaicId: json["mosaicId"],
-        delta: json["delta"],
-        action: (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumFromJSON)(json["action"]),
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'mosaicId': json['mosaicId'],
+        'delta': json['delta'],
+        'action': (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumFromJSON)(json['action']),
     };
 }
 exports.MosaicSupplyChangeTransactionDTOFromJSONTyped = MosaicSupplyChangeTransactionDTOFromJSONTyped;
@@ -66,17 +66,17 @@ function MosaicSupplyChangeTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        mosaicId: value.mosaicId,
-        delta: value.delta,
-        action: (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumToJSON)(value.action),
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'mosaicId': value.mosaicId,
+        'delta': value.delta,
+        'action': (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumToJSON)(value.action),
     };
 }
 exports.MosaicSupplyChangeTransactionDTOToJSON = MosaicSupplyChangeTransactionDTOToJSON;

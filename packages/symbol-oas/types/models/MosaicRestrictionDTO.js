@@ -30,12 +30,12 @@ function MosaicRestrictionDTOFromJSON(json) {
 }
 exports.MosaicRestrictionDTOFromJSON = MosaicRestrictionDTOFromJSON;
 function MosaicRestrictionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        mosaicRestrictionEntry: (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOFromJSON)(json["mosaicRestrictionEntry"]),
+        'id': json['id'],
+        'mosaicRestrictionEntry': (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOFromJSON)(json['mosaicRestrictionEntry']),
     };
 }
 exports.MosaicRestrictionDTOFromJSONTyped = MosaicRestrictionDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function MosaicRestrictionDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        mosaicRestrictionEntry: (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOToJSON)(value.mosaicRestrictionEntry),
+        'id': value.id,
+        'mosaicRestrictionEntry': (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOToJSON)(value.mosaicRestrictionEntry),
     };
 }
 exports.MosaicRestrictionDTOToJSON = MosaicRestrictionDTOToJSON;

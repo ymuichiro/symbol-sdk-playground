@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { DeploymentDTO } from "./DeploymentDTO";
+import type { DeploymentDTO } from './DeploymentDTO';
 /**
  *
  * @export

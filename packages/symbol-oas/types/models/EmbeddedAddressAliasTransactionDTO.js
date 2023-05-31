@@ -36,17 +36,17 @@ function EmbeddedAddressAliasTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedAddressAliasTransactionDTOFromJSON = EmbeddedAddressAliasTransactionDTOFromJSON;
 function EmbeddedAddressAliasTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        namespaceId: json["namespaceId"],
-        address: json["address"],
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json["aliasAction"]),
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'namespaceId': json['namespaceId'],
+        'address': json['address'],
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json['aliasAction']),
     };
 }
 exports.EmbeddedAddressAliasTransactionDTOFromJSONTyped = EmbeddedAddressAliasTransactionDTOFromJSONTyped;
@@ -58,13 +58,13 @@ function EmbeddedAddressAliasTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        namespaceId: value.namespaceId,
-        address: value.address,
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'namespaceId': value.namespaceId,
+        'address': value.address,
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
     };
 }
 exports.EmbeddedAddressAliasTransactionDTOToJSON = EmbeddedAddressAliasTransactionDTOToJSON;

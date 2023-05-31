@@ -37,20 +37,18 @@ function MetadataEntryDTOFromJSON(json) {
 }
 exports.MetadataEntryDTOFromJSON = MetadataEntryDTOFromJSON;
 function MetadataEntryDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        compositeHash: json["compositeHash"],
-        sourceAddress: json["sourceAddress"],
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        targetId: !(0, runtime_1.exists)(json, "targetId")
-            ? undefined
-            : (0, MetadataEntryDTOTargetId_1.MetadataEntryDTOTargetIdFromJSON)(json["targetId"]),
-        metadataType: (0, MetadataTypeEnum_1.MetadataTypeEnumFromJSON)(json["metadataType"]),
-        value: json["value"],
+        'version': json['version'],
+        'compositeHash': json['compositeHash'],
+        'sourceAddress': json['sourceAddress'],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'targetId': !(0, runtime_1.exists)(json, 'targetId') ? undefined : (0, MetadataEntryDTOTargetId_1.MetadataEntryDTOTargetIdFromJSON)(json['targetId']),
+        'metadataType': (0, MetadataTypeEnum_1.MetadataTypeEnumFromJSON)(json['metadataType']),
+        'value': json['value'],
     };
 }
 exports.MetadataEntryDTOFromJSONTyped = MetadataEntryDTOFromJSONTyped;
@@ -62,14 +60,14 @@ function MetadataEntryDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        compositeHash: value.compositeHash,
-        sourceAddress: value.sourceAddress,
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        targetId: (0, MetadataEntryDTOTargetId_1.MetadataEntryDTOTargetIdToJSON)(value.targetId),
-        metadataType: (0, MetadataTypeEnum_1.MetadataTypeEnumToJSON)(value.metadataType),
-        value: value.value,
+        'version': value.version,
+        'compositeHash': value.compositeHash,
+        'sourceAddress': value.sourceAddress,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'targetId': (0, MetadataEntryDTOTargetId_1.MetadataEntryDTOTargetIdToJSON)(value.targetId),
+        'metadataType': (0, MetadataTypeEnum_1.MetadataTypeEnumToJSON)(value.metadataType),
+        'value': value.value,
     };
 }
 exports.MetadataEntryDTOToJSON = MetadataEntryDTOToJSON;

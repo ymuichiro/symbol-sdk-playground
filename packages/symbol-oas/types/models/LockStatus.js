@@ -22,7 +22,7 @@ exports.LockStatusToJSON = exports.LockStatusFromJSONTyped = exports.LockStatusF
  */
 exports.LockStatus = {
     NUMBER_0: 0,
-    NUMBER_1: 1,
+    NUMBER_1: 1
 };
 function LockStatusFromJSON(json) {
     return LockStatusFromJSONTyped(json, false);

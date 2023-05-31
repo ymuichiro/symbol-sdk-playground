@@ -30,12 +30,12 @@ function SecretLockInfoDTOFromJSON(json) {
 }
 exports.SecretLockInfoDTOFromJSON = SecretLockInfoDTOFromJSON;
 function SecretLockInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        lock: (0, SecretLockEntryDTO_1.SecretLockEntryDTOFromJSON)(json["lock"]),
+        'id': json['id'],
+        'lock': (0, SecretLockEntryDTO_1.SecretLockEntryDTOFromJSON)(json['lock']),
     };
 }
 exports.SecretLockInfoDTOFromJSONTyped = SecretLockInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function SecretLockInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        lock: (0, SecretLockEntryDTO_1.SecretLockEntryDTOToJSON)(value.lock),
+        'id': value.id,
+        'lock': (0, SecretLockEntryDTO_1.SecretLockEntryDTOToJSON)(value.lock),
     };
 }
 exports.SecretLockInfoDTOToJSON = SecretLockInfoDTOToJSON;

@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionFlagsEnum } from "./AccountRestrictionFlagsEnum";
+import type { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
 /**
  *
  * @export
@@ -27,13 +27,13 @@ export interface AccountAddressRestrictionTransactionBodyDTO {
      * @type {Array<string>}
      * @memberof AccountAddressRestrictionTransactionBodyDTO
      */
-    restrictionAdditions: Array<string>;
+    restrictionAdditions?: Array<string>;
     /**
      * Account restriction deletions.
      * @type {Array<string>}
      * @memberof AccountAddressRestrictionTransactionBodyDTO
      */
-    restrictionDeletions: Array<string>;
+    restrictionDeletions?: Array<string>;
 }
 /**
  * Check if a given object implements the AccountAddressRestrictionTransactionBodyDTO interface.

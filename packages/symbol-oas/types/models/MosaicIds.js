@@ -28,11 +28,11 @@ function MosaicIdsFromJSON(json) {
 }
 exports.MosaicIdsFromJSON = MosaicIdsFromJSON;
 function MosaicIdsFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicIds: !(0, runtime_1.exists)(json, "mosaicIds") ? undefined : json["mosaicIds"],
+        'mosaicIds': !(0, runtime_1.exists)(json, 'mosaicIds') ? undefined : json['mosaicIds'],
     };
 }
 exports.MosaicIdsFromJSONTyped = MosaicIdsFromJSONTyped;
@@ -44,7 +44,7 @@ function MosaicIdsToJSON(value) {
         return null;
     }
     return {
-        mosaicIds: value.mosaicIds,
+        'mosaicIds': value.mosaicIds,
     };
 }
 exports.MosaicIdsToJSON = MosaicIdsToJSON;

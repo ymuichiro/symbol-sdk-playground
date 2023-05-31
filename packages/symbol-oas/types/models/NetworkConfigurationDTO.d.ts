@@ -9,9 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ChainPropertiesDTO } from "./ChainPropertiesDTO";
-import type { NetworkPropertiesDTO } from "./NetworkPropertiesDTO";
-import type { PluginsPropertiesDTO } from "./PluginsPropertiesDTO";
+import type { ChainPropertiesDTO } from './ChainPropertiesDTO';
+import type { NetworkPropertiesDTO } from './NetworkPropertiesDTO';
+import type { PluginsPropertiesDTO } from './PluginsPropertiesDTO';
 /**
  *
  * @export

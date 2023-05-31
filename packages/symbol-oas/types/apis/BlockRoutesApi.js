@@ -58,15 +58,14 @@ class BlockRoutesApi extends runtime.BaseAPI {
      */
     getBlockByHeightRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.height === null ||
-                requestParameters.height === undefined) {
-                throw new runtime.RequiredError("height", "Required parameter requestParameters.height was null or undefined when calling getBlockByHeight.");
+            if (requestParameters.height === null || requestParameters.height === undefined) {
+                throw new runtime.RequiredError('height', 'Required parameter requestParameters.height was null or undefined when calling getBlockByHeight.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/blocks/{height}`.replace(`{${"height"}}`, encodeURIComponent(String(requestParameters.height))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,21 +88,17 @@ class BlockRoutesApi extends runtime.BaseAPI {
      */
     getMerkleReceiptsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.height === null ||
-                requestParameters.height === undefined) {
-                throw new runtime.RequiredError("height", "Required parameter requestParameters.height was null or undefined when calling getMerkleReceipts.");
+            if (requestParameters.height === null || requestParameters.height === undefined) {
+                throw new runtime.RequiredError('height', 'Required parameter requestParameters.height was null or undefined when calling getMerkleReceipts.');
             }
-            if (requestParameters.hash === null ||
-                requestParameters.hash === undefined) {
-                throw new runtime.RequiredError("hash", "Required parameter requestParameters.hash was null or undefined when calling getMerkleReceipts.");
+            if (requestParameters.hash === null || requestParameters.hash === undefined) {
+                throw new runtime.RequiredError('hash', 'Required parameter requestParameters.hash was null or undefined when calling getMerkleReceipts.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
-                path: `/blocks/{height}/statements/{hash}/merkle`
-                    .replace(`{${"height"}}`, encodeURIComponent(String(requestParameters.height)))
-                    .replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
-                method: "GET",
+                path: `/blocks/{height}/statements/{hash}/merkle`.replace(`{${"height"}}`, encodeURIComponent(String(requestParameters.height))).replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -126,21 +121,17 @@ class BlockRoutesApi extends runtime.BaseAPI {
      */
     getMerkleTransactionRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.height === null ||
-                requestParameters.height === undefined) {
-                throw new runtime.RequiredError("height", "Required parameter requestParameters.height was null or undefined when calling getMerkleTransaction.");
+            if (requestParameters.height === null || requestParameters.height === undefined) {
+                throw new runtime.RequiredError('height', 'Required parameter requestParameters.height was null or undefined when calling getMerkleTransaction.');
             }
-            if (requestParameters.hash === null ||
-                requestParameters.hash === undefined) {
-                throw new runtime.RequiredError("hash", "Required parameter requestParameters.hash was null or undefined when calling getMerkleTransaction.");
+            if (requestParameters.hash === null || requestParameters.hash === undefined) {
+                throw new runtime.RequiredError('hash', 'Required parameter requestParameters.hash was null or undefined when calling getMerkleTransaction.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
-                path: `/blocks/{height}/transactions/{hash}/merkle`
-                    .replace(`{${"height"}}`, encodeURIComponent(String(requestParameters.height)))
-                    .replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
-                method: "GET",
+                path: `/blocks/{height}/transactions/{hash}/merkle`.replace(`{${"height"}}`, encodeURIComponent(String(requestParameters.height))).replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -165,31 +156,30 @@ class BlockRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.signerPublicKey !== undefined) {
-                queryParameters["signerPublicKey"] = requestParameters.signerPublicKey;
+                queryParameters['signerPublicKey'] = requestParameters.signerPublicKey;
             }
             if (requestParameters.beneficiaryAddress !== undefined) {
-                queryParameters["beneficiaryAddress"] =
-                    requestParameters.beneficiaryAddress;
+                queryParameters['beneficiaryAddress'] = requestParameters.beneficiaryAddress;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             if (requestParameters.orderBy !== undefined) {
-                queryParameters["orderBy"] = requestParameters.orderBy;
+                queryParameters['orderBy'] = requestParameters.orderBy;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/blocks`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

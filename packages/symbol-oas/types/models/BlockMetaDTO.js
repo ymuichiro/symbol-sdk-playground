@@ -34,17 +34,17 @@ function BlockMetaDTOFromJSON(json) {
 }
 exports.BlockMetaDTOFromJSON = BlockMetaDTOFromJSON;
 function BlockMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        hash: json["hash"],
-        totalFee: json["totalFee"],
-        generationHash: json["generationHash"],
-        stateHashSubCacheMerkleRoots: json["stateHashSubCacheMerkleRoots"],
-        totalTransactionsCount: json["totalTransactionsCount"],
-        transactionsCount: json["transactionsCount"],
-        statementsCount: json["statementsCount"],
+        'hash': json['hash'],
+        'totalFee': json['totalFee'],
+        'generationHash': json['generationHash'],
+        'stateHashSubCacheMerkleRoots': json['stateHashSubCacheMerkleRoots'],
+        'totalTransactionsCount': json['totalTransactionsCount'],
+        'transactionsCount': json['transactionsCount'],
+        'statementsCount': json['statementsCount'],
     };
 }
 exports.BlockMetaDTOFromJSONTyped = BlockMetaDTOFromJSONTyped;
@@ -56,13 +56,13 @@ function BlockMetaDTOToJSON(value) {
         return null;
     }
     return {
-        hash: value.hash,
-        totalFee: value.totalFee,
-        generationHash: value.generationHash,
-        stateHashSubCacheMerkleRoots: value.stateHashSubCacheMerkleRoots,
-        totalTransactionsCount: value.totalTransactionsCount,
-        transactionsCount: value.transactionsCount,
-        statementsCount: value.statementsCount,
+        'hash': value.hash,
+        'totalFee': value.totalFee,
+        'generationHash': value.generationHash,
+        'stateHashSubCacheMerkleRoots': value.stateHashSubCacheMerkleRoots,
+        'totalTransactionsCount': value.totalTransactionsCount,
+        'transactionsCount': value.transactionsCount,
+        'statementsCount': value.statementsCount,
     };
 }
 exports.BlockMetaDTOToJSON = BlockMetaDTOToJSON;

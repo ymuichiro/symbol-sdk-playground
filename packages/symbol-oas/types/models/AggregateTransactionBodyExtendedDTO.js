@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AggregateTransactionBodyExtendedDTOToJSON = exports.AggregateTransactionBodyExtendedDTOFromJSONTyped = exports.AggregateTransactionBodyExtendedDTOFromJSON = exports.instanceOfAggregateTransactionBodyExtendedDTO = void 0;
+const runtime_1 = require("../runtime");
 const CosignatureDTO_1 = require("./CosignatureDTO");
 const EmbeddedTransactionInfoDTO_1 = require("./EmbeddedTransactionInfoDTO");
 /**
@@ -22,8 +23,6 @@ const EmbeddedTransactionInfoDTO_1 = require("./EmbeddedTransactionInfoDTO");
 function instanceOfAggregateTransactionBodyExtendedDTO(value) {
     let isInstance = true;
     isInstance = isInstance && "transactionsHash" in value;
-    isInstance = isInstance && "cosignatures" in value;
-    isInstance = isInstance && "transactions" in value;
     return isInstance;
 }
 exports.instanceOfAggregateTransactionBodyExtendedDTO = instanceOfAggregateTransactionBodyExtendedDTO;
@@ -32,13 +31,13 @@ function AggregateTransactionBodyExtendedDTOFromJSON(json) {
 }
 exports.AggregateTransactionBodyExtendedDTOFromJSON = AggregateTransactionBodyExtendedDTOFromJSON;
 function AggregateTransactionBodyExtendedDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        transactionsHash: json["transactionsHash"],
-        cosignatures: json["cosignatures"].map(CosignatureDTO_1.CosignatureDTOFromJSON),
-        transactions: json["transactions"].map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOFromJSON),
+        'transactionsHash': json['transactionsHash'],
+        'cosignatures': !(0, runtime_1.exists)(json, 'cosignatures') ? undefined : (json['cosignatures'].map(CosignatureDTO_1.CosignatureDTOFromJSON)),
+        'transactions': !(0, runtime_1.exists)(json, 'transactions') ? undefined : (json['transactions'].map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOFromJSON)),
     };
 }
 exports.AggregateTransactionBodyExtendedDTOFromJSONTyped = AggregateTransactionBodyExtendedDTOFromJSONTyped;
@@ -50,9 +49,9 @@ function AggregateTransactionBodyExtendedDTOToJSON(value) {
         return null;
     }
     return {
-        transactionsHash: value.transactionsHash,
-        cosignatures: value.cosignatures.map(CosignatureDTO_1.CosignatureDTOToJSON),
-        transactions: value.transactions.map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOToJSON),
+        'transactionsHash': value.transactionsHash,
+        'cosignatures': value.cosignatures === undefined ? undefined : (value.cosignatures.map(CosignatureDTO_1.CosignatureDTOToJSON)),
+        'transactions': value.transactions === undefined ? undefined : (value.transactions.map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOToJSON)),
     };
 }
 exports.AggregateTransactionBodyExtendedDTOToJSON = AggregateTransactionBodyExtendedDTOToJSON;

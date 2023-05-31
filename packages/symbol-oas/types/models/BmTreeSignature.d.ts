@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ParentPublicKeySignaturePair } from "./ParentPublicKeySignaturePair";
+import type { ParentPublicKeySignaturePair } from './ParentPublicKeySignaturePair';
 /**
  *
  * @export

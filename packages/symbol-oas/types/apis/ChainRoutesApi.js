@@ -62,7 +62,7 @@ class ChainRoutesApi extends runtime.BaseAPI {
             const headerParameters = {};
             const response = yield this.request({
                 path: `/chain/info`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

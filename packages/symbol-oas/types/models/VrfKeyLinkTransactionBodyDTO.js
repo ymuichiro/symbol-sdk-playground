@@ -30,12 +30,12 @@ function VrfKeyLinkTransactionBodyDTOFromJSON(json) {
 }
 exports.VrfKeyLinkTransactionBodyDTOFromJSON = VrfKeyLinkTransactionBodyDTOFromJSON;
 function VrfKeyLinkTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        linkedPublicKey: json["linkedPublicKey"],
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json["linkAction"]),
+        'linkedPublicKey': json['linkedPublicKey'],
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json['linkAction']),
     };
 }
 exports.VrfKeyLinkTransactionBodyDTOFromJSONTyped = VrfKeyLinkTransactionBodyDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function VrfKeyLinkTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        linkedPublicKey: value.linkedPublicKey,
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
+        'linkedPublicKey': value.linkedPublicKey,
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
     };
 }
 exports.VrfKeyLinkTransactionBodyDTOToJSON = VrfKeyLinkTransactionBodyDTOToJSON;

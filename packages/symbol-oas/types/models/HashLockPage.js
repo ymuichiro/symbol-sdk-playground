@@ -31,12 +31,12 @@ function HashLockPageFromJSON(json) {
 }
 exports.HashLockPageFromJSON = HashLockPageFromJSON;
 function HashLockPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(HashLockInfoDTO_1.HashLockInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(HashLockInfoDTO_1.HashLockInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.HashLockPageFromJSONTyped = HashLockPageFromJSONTyped;
@@ -48,8 +48,8 @@ function HashLockPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(HashLockInfoDTO_1.HashLockInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(HashLockInfoDTO_1.HashLockInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.HashLockPageToJSON = HashLockPageToJSON;

@@ -39,20 +39,20 @@ function SecretLockEntryDTOFromJSON(json) {
 }
 exports.SecretLockEntryDTOFromJSON = SecretLockEntryDTOFromJSON;
 function SecretLockEntryDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        ownerAddress: json["ownerAddress"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        endHeight: json["endHeight"],
-        status: (0, LockStatus_1.LockStatusFromJSON)(json["status"]),
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json["hashAlgorithm"]),
-        secret: json["secret"],
-        recipientAddress: json["recipientAddress"],
-        compositeHash: json["compositeHash"],
+        'version': json['version'],
+        'ownerAddress': json['ownerAddress'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'endHeight': json['endHeight'],
+        'status': (0, LockStatus_1.LockStatusFromJSON)(json['status']),
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json['hashAlgorithm']),
+        'secret': json['secret'],
+        'recipientAddress': json['recipientAddress'],
+        'compositeHash': json['compositeHash'],
     };
 }
 exports.SecretLockEntryDTOFromJSONTyped = SecretLockEntryDTOFromJSONTyped;
@@ -64,16 +64,16 @@ function SecretLockEntryDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        ownerAddress: value.ownerAddress,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        endHeight: value.endHeight,
-        status: (0, LockStatus_1.LockStatusToJSON)(value.status),
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
-        secret: value.secret,
-        recipientAddress: value.recipientAddress,
-        compositeHash: value.compositeHash,
+        'version': value.version,
+        'ownerAddress': value.ownerAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'endHeight': value.endHeight,
+        'status': (0, LockStatus_1.LockStatusToJSON)(value.status),
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
+        'secret': value.secret,
+        'recipientAddress': value.recipientAddress,
+        'compositeHash': value.compositeHash,
     };
 }
 exports.SecretLockEntryDTOToJSON = SecretLockEntryDTOToJSON;

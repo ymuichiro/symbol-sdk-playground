@@ -29,12 +29,12 @@ function NetworkTypeDTOFromJSON(json) {
 }
 exports.NetworkTypeDTOFromJSON = NetworkTypeDTOFromJSON;
 function NetworkTypeDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        name: json["name"],
-        description: json["description"],
+        'name': json['name'],
+        'description': json['description'],
     };
 }
 exports.NetworkTypeDTOFromJSONTyped = NetworkTypeDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function NetworkTypeDTOToJSON(value) {
         return null;
     }
     return {
-        name: value.name,
-        description: value.description,
+        'name': value.name,
+        'description': value.description,
     };
 }
 exports.NetworkTypeDTOToJSON = NetworkTypeDTOToJSON;

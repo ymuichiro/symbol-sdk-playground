@@ -31,13 +31,13 @@ function AccountRestrictionsDTOFromJSON(json) {
 }
 exports.AccountRestrictionsDTOFromJSON = AccountRestrictionsDTOFromJSON;
 function AccountRestrictionsDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        address: json["address"],
-        restrictions: json["restrictions"].map(AccountRestrictionDTO_1.AccountRestrictionDTOFromJSON),
+        'version': json['version'],
+        'address': json['address'],
+        'restrictions': (json['restrictions'].map(AccountRestrictionDTO_1.AccountRestrictionDTOFromJSON)),
     };
 }
 exports.AccountRestrictionsDTOFromJSONTyped = AccountRestrictionsDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function AccountRestrictionsDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        address: value.address,
-        restrictions: value.restrictions.map(AccountRestrictionDTO_1.AccountRestrictionDTOToJSON),
+        'version': value.version,
+        'address': value.address,
+        'restrictions': (value.restrictions.map(AccountRestrictionDTO_1.AccountRestrictionDTOToJSON)),
     };
 }
 exports.AccountRestrictionsDTOToJSON = AccountRestrictionsDTOToJSON;

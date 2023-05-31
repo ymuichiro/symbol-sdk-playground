@@ -9,16 +9,16 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionFlagsEnum } from "./AccountRestrictionFlagsEnum";
-import type { AliasActionEnum } from "./AliasActionEnum";
-import type { LinkActionEnum } from "./LinkActionEnum";
-import type { LockHashAlgorithmEnum } from "./LockHashAlgorithmEnum";
-import type { MosaicRestrictionTypeEnum } from "./MosaicRestrictionTypeEnum";
-import type { MosaicSupplyChangeActionEnum } from "./MosaicSupplyChangeActionEnum";
-import type { NamespaceRegistrationTypeEnum } from "./NamespaceRegistrationTypeEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
-import type { TransactionTypeEnum } from "./TransactionTypeEnum";
-import type { UnresolvedMosaic } from "./UnresolvedMosaic";
+import type { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
+import type { AliasActionEnum } from './AliasActionEnum';
+import type { LinkActionEnum } from './LinkActionEnum';
+import type { LockHashAlgorithmEnum } from './LockHashAlgorithmEnum';
+import type { MosaicRestrictionTypeEnum } from './MosaicRestrictionTypeEnum';
+import type { MosaicSupplyChangeActionEnum } from './MosaicSupplyChangeActionEnum';
+import type { NamespaceRegistrationTypeEnum } from './NamespaceRegistrationTypeEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
+import type { TransactionTypeEnum } from './TransactionTypeEnum';
+import type { UnresolvedMosaic } from './UnresolvedMosaic';
 /**
  *
  * @export
@@ -292,13 +292,13 @@ export interface EmbeddedTransactionInfoDTOTransaction {
      * @type {Array<TransactionTypeEnum>}
      * @memberof EmbeddedTransactionInfoDTOTransaction
      */
-    restrictionAdditions: Array<TransactionTypeEnum>;
+    restrictionAdditions?: Array<TransactionTypeEnum>;
     /**
      * Account restriction deletions.
      * @type {Array<TransactionTypeEnum>}
      * @memberof EmbeddedTransactionInfoDTOTransaction
      */
-    restrictionDeletions: Array<TransactionTypeEnum>;
+    restrictionDeletions?: Array<TransactionTypeEnum>;
     /**
      * Mosaic identifier. If the most significant bit of byte 0 is set, a namespaceId (alias)
      * is used instead of the real mosaic identifier.

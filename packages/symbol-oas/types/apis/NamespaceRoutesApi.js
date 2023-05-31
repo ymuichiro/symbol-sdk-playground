@@ -58,16 +58,15 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
      */
     getAccountsNamesRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.addresses === null ||
-                requestParameters.addresses === undefined) {
-                throw new runtime.RequiredError("addresses", "Required parameter requestParameters.addresses was null or undefined when calling getAccountsNames.");
+            if (requestParameters.addresses === null || requestParameters.addresses === undefined) {
+                throw new runtime.RequiredError('addresses', 'Required parameter requestParameters.addresses was null or undefined when calling getAccountsNames.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/namespaces/account/names`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.AddressesToJSON)(requestParameters.addresses),
@@ -91,16 +90,15 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
      */
     getMosaicsNamesRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.mosaicIds === null ||
-                requestParameters.mosaicIds === undefined) {
-                throw new runtime.RequiredError("mosaicIds", "Required parameter requestParameters.mosaicIds was null or undefined when calling getMosaicsNames.");
+            if (requestParameters.mosaicIds === null || requestParameters.mosaicIds === undefined) {
+                throw new runtime.RequiredError('mosaicIds', 'Required parameter requestParameters.mosaicIds was null or undefined when calling getMosaicsNames.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/namespaces/mosaic/names`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.MosaicIdsToJSON)(requestParameters.mosaicIds),
@@ -124,15 +122,14 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
      */
     getNamespaceRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.namespaceId === null ||
-                requestParameters.namespaceId === undefined) {
-                throw new runtime.RequiredError("namespaceId", "Required parameter requestParameters.namespaceId was null or undefined when calling getNamespace.");
+            if (requestParameters.namespaceId === null || requestParameters.namespaceId === undefined) {
+                throw new runtime.RequiredError('namespaceId', 'Required parameter requestParameters.namespaceId was null or undefined when calling getNamespace.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/namespaces/{namespaceId}`.replace(`{${"namespaceId"}}`, encodeURIComponent(String(requestParameters.namespaceId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -155,15 +152,14 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
      */
     getNamespaceMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.namespaceId === null ||
-                requestParameters.namespaceId === undefined) {
-                throw new runtime.RequiredError("namespaceId", "Required parameter requestParameters.namespaceId was null or undefined when calling getNamespaceMerkle.");
+            if (requestParameters.namespaceId === null || requestParameters.namespaceId === undefined) {
+                throw new runtime.RequiredError('namespaceId', 'Required parameter requestParameters.namespaceId was null or undefined when calling getNamespaceMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/namespaces/{namespaceId}/merkle`.replace(`{${"namespaceId"}}`, encodeURIComponent(String(requestParameters.namespaceId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -186,16 +182,15 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
      */
     getNamespacesNamesRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.namespaceIds === null ||
-                requestParameters.namespaceIds === undefined) {
-                throw new runtime.RequiredError("namespaceIds", "Required parameter requestParameters.namespaceIds was null or undefined when calling getNamespacesNames.");
+            if (requestParameters.namespaceIds === null || requestParameters.namespaceIds === undefined) {
+                throw new runtime.RequiredError('namespaceIds', 'Required parameter requestParameters.namespaceIds was null or undefined when calling getNamespacesNames.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/namespaces/names`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.NamespaceIdsToJSON)(requestParameters.namespaceIds),
@@ -221,33 +216,33 @@ class NamespaceRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.ownerAddress !== undefined) {
-                queryParameters["ownerAddress"] = requestParameters.ownerAddress;
+                queryParameters['ownerAddress'] = requestParameters.ownerAddress;
             }
             if (requestParameters.registrationType !== undefined) {
-                queryParameters["registrationType"] = requestParameters.registrationType;
+                queryParameters['registrationType'] = requestParameters.registrationType;
             }
             if (requestParameters.level0 !== undefined) {
-                queryParameters["level0"] = requestParameters.level0;
+                queryParameters['level0'] = requestParameters.level0;
             }
             if (requestParameters.aliasType !== undefined) {
-                queryParameters["aliasType"] = requestParameters.aliasType;
+                queryParameters['aliasType'] = requestParameters.aliasType;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/namespaces`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

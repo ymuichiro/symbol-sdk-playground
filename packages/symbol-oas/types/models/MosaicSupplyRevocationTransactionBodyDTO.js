@@ -30,13 +30,13 @@ function MosaicSupplyRevocationTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicSupplyRevocationTransactionBodyDTOFromJSON = MosaicSupplyRevocationTransactionBodyDTOFromJSON;
 function MosaicSupplyRevocationTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        sourceAddress: json["sourceAddress"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
+        'sourceAddress': json['sourceAddress'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
     };
 }
 exports.MosaicSupplyRevocationTransactionBodyDTOFromJSONTyped = MosaicSupplyRevocationTransactionBodyDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function MosaicSupplyRevocationTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        sourceAddress: value.sourceAddress,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
+        'sourceAddress': value.sourceAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
     };
 }
 exports.MosaicSupplyRevocationTransactionBodyDTOToJSON = MosaicSupplyRevocationTransactionBodyDTOToJSON;

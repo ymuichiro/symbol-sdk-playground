@@ -33,16 +33,16 @@ function MultisigDTOFromJSON(json) {
 }
 exports.MultisigDTOFromJSON = MultisigDTOFromJSON;
 function MultisigDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        accountAddress: json["accountAddress"],
-        minApproval: json["minApproval"],
-        minRemoval: json["minRemoval"],
-        cosignatoryAddresses: json["cosignatoryAddresses"],
-        multisigAddresses: json["multisigAddresses"],
+        'version': json['version'],
+        'accountAddress': json['accountAddress'],
+        'minApproval': json['minApproval'],
+        'minRemoval': json['minRemoval'],
+        'cosignatoryAddresses': json['cosignatoryAddresses'],
+        'multisigAddresses': json['multisigAddresses'],
     };
 }
 exports.MultisigDTOFromJSONTyped = MultisigDTOFromJSONTyped;
@@ -54,12 +54,12 @@ function MultisigDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        accountAddress: value.accountAddress,
-        minApproval: value.minApproval,
-        minRemoval: value.minRemoval,
-        cosignatoryAddresses: value.cosignatoryAddresses,
-        multisigAddresses: value.multisigAddresses,
+        'version': value.version,
+        'accountAddress': value.accountAddress,
+        'minApproval': value.minApproval,
+        'minRemoval': value.minRemoval,
+        'cosignatoryAddresses': value.cosignatoryAddresses,
+        'multisigAddresses': value.multisigAddresses,
     };
 }
 exports.MultisigDTOToJSON = MultisigDTOToJSON;

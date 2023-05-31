@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { PositionEnum } from "./PositionEnum";
+import type { PositionEnum } from './PositionEnum';
 /**
  * Each merkle path item is composed of a hash, and a position relative to the proofHash being evaluated.
  * @export

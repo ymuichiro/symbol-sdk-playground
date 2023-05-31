@@ -31,13 +31,13 @@ function MosaicAliasTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicAliasTransactionBodyDTOFromJSON = MosaicAliasTransactionBodyDTOFromJSON;
 function MosaicAliasTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        namespaceId: json["namespaceId"],
-        mosaicId: json["mosaicId"],
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json["aliasAction"]),
+        'namespaceId': json['namespaceId'],
+        'mosaicId': json['mosaicId'],
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumFromJSON)(json['aliasAction']),
     };
 }
 exports.MosaicAliasTransactionBodyDTOFromJSONTyped = MosaicAliasTransactionBodyDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function MosaicAliasTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        namespaceId: value.namespaceId,
-        mosaicId: value.mosaicId,
-        aliasAction: (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
+        'namespaceId': value.namespaceId,
+        'mosaicId': value.mosaicId,
+        'aliasAction': (0, AliasActionEnum_1.AliasActionEnumToJSON)(value.aliasAction),
     };
 }
 exports.MosaicAliasTransactionBodyDTOToJSON = MosaicAliasTransactionBodyDTOToJSON;

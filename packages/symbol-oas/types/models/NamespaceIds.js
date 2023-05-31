@@ -28,13 +28,11 @@ function NamespaceIdsFromJSON(json) {
 }
 exports.NamespaceIdsFromJSON = NamespaceIdsFromJSON;
 function NamespaceIdsFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        namespaceIds: !(0, runtime_1.exists)(json, "namespaceIds")
-            ? undefined
-            : json["namespaceIds"],
+        'namespaceIds': !(0, runtime_1.exists)(json, 'namespaceIds') ? undefined : json['namespaceIds'],
     };
 }
 exports.NamespaceIdsFromJSONTyped = NamespaceIdsFromJSONTyped;
@@ -46,7 +44,7 @@ function NamespaceIdsToJSON(value) {
         return null;
     }
     return {
-        namespaceIds: value.namespaceIds,
+        'namespaceIds': value.namespaceIds,
     };
 }
 exports.NamespaceIdsToJSON = NamespaceIdsToJSON;

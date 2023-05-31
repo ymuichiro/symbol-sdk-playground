@@ -28,11 +28,11 @@ function VotingKeyLinkNetworkPropertiesDTOFromJSON(json) {
 }
 exports.VotingKeyLinkNetworkPropertiesDTOFromJSON = VotingKeyLinkNetworkPropertiesDTOFromJSON;
 function VotingKeyLinkNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        dummy: !(0, runtime_1.exists)(json, "dummy") ? undefined : json["dummy"],
+        'dummy': !(0, runtime_1.exists)(json, 'dummy') ? undefined : json['dummy'],
     };
 }
 exports.VotingKeyLinkNetworkPropertiesDTOFromJSONTyped = VotingKeyLinkNetworkPropertiesDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function VotingKeyLinkNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        dummy: value.dummy,
+        'dummy': value.dummy,
     };
 }
 exports.VotingKeyLinkNetworkPropertiesDTOToJSON = VotingKeyLinkNetworkPropertiesDTOToJSON;

@@ -33,17 +33,15 @@ function TransactionStatusDTOFromJSON(json) {
 }
 exports.TransactionStatusDTOFromJSON = TransactionStatusDTOFromJSON;
 function TransactionStatusDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        group: (0, TransactionGroupEnum_1.TransactionGroupEnumFromJSON)(json["group"]),
-        code: !(0, runtime_1.exists)(json, "code")
-            ? undefined
-            : (0, TransactionStatusEnum_1.TransactionStatusEnumFromJSON)(json["code"]),
-        hash: json["hash"],
-        deadline: json["deadline"],
-        height: !(0, runtime_1.exists)(json, "height") ? undefined : json["height"],
+        'group': (0, TransactionGroupEnum_1.TransactionGroupEnumFromJSON)(json['group']),
+        'code': !(0, runtime_1.exists)(json, 'code') ? undefined : (0, TransactionStatusEnum_1.TransactionStatusEnumFromJSON)(json['code']),
+        'hash': json['hash'],
+        'deadline': json['deadline'],
+        'height': !(0, runtime_1.exists)(json, 'height') ? undefined : json['height'],
     };
 }
 exports.TransactionStatusDTOFromJSONTyped = TransactionStatusDTOFromJSONTyped;
@@ -55,11 +53,11 @@ function TransactionStatusDTOToJSON(value) {
         return null;
     }
     return {
-        group: (0, TransactionGroupEnum_1.TransactionGroupEnumToJSON)(value.group),
-        code: (0, TransactionStatusEnum_1.TransactionStatusEnumToJSON)(value.code),
-        hash: value.hash,
-        deadline: value.deadline,
-        height: value.height,
+        'group': (0, TransactionGroupEnum_1.TransactionGroupEnumToJSON)(value.group),
+        'code': (0, TransactionStatusEnum_1.TransactionStatusEnumToJSON)(value.code),
+        'hash': value.hash,
+        'deadline': value.deadline,
+        'height': value.height,
     };
 }
 exports.TransactionStatusDTOToJSON = TransactionStatusDTOToJSON;

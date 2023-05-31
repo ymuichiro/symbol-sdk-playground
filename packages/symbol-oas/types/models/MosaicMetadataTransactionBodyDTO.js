@@ -33,16 +33,16 @@ function MosaicMetadataTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicMetadataTransactionBodyDTOFromJSON = MosaicMetadataTransactionBodyDTOFromJSON;
 function MosaicMetadataTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        targetMosaicId: json["targetMosaicId"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'targetMosaicId': json['targetMosaicId'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.MosaicMetadataTransactionBodyDTOFromJSONTyped = MosaicMetadataTransactionBodyDTOFromJSONTyped;
@@ -54,12 +54,12 @@ function MosaicMetadataTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        targetMosaicId: value.targetMosaicId,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'targetMosaicId': value.targetMosaicId,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.MosaicMetadataTransactionBodyDTOToJSON = MosaicMetadataTransactionBodyDTOToJSON;

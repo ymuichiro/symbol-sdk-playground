@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { CommunicationTimestampsDTO } from "./CommunicationTimestampsDTO";
+import type { CommunicationTimestampsDTO } from './CommunicationTimestampsDTO';
 /**
  *
  * @export

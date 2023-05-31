@@ -29,11 +29,11 @@ function ServerInfoDTOFromJSON(json) {
 }
 exports.ServerInfoDTOFromJSON = ServerInfoDTOFromJSON;
 function ServerInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        serverInfo: (0, ServerDTO_1.ServerDTOFromJSON)(json["serverInfo"]),
+        'serverInfo': (0, ServerDTO_1.ServerDTOFromJSON)(json['serverInfo']),
     };
 }
 exports.ServerInfoDTOFromJSONTyped = ServerInfoDTOFromJSONTyped;
@@ -45,7 +45,7 @@ function ServerInfoDTOToJSON(value) {
         return null;
     }
     return {
-        serverInfo: (0, ServerDTO_1.ServerDTOToJSON)(value.serverInfo),
+        'serverInfo': (0, ServerDTO_1.ServerDTOToJSON)(value.serverInfo),
     };
 }
 exports.ServerInfoDTOToJSON = ServerInfoDTOToJSON;

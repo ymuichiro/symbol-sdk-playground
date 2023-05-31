@@ -31,12 +31,12 @@ function AccountRestrictionsPageFromJSON(json) {
 }
 exports.AccountRestrictionsPageFromJSON = AccountRestrictionsPageFromJSON;
 function AccountRestrictionsPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(AccountRestrictionsInfoDTO_1.AccountRestrictionsInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(AccountRestrictionsInfoDTO_1.AccountRestrictionsInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.AccountRestrictionsPageFromJSONTyped = AccountRestrictionsPageFromJSONTyped;
@@ -48,8 +48,8 @@ function AccountRestrictionsPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(AccountRestrictionsInfoDTO_1.AccountRestrictionsInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(AccountRestrictionsInfoDTO_1.AccountRestrictionsInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.AccountRestrictionsPageToJSON = AccountRestrictionsPageToJSON;

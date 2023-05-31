@@ -39,21 +39,21 @@ function NamespaceDTOFromJSON(json) {
 }
 exports.NamespaceDTOFromJSON = NamespaceDTOFromJSON;
 function NamespaceDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        registrationType: (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumFromJSON)(json["registrationType"]),
-        depth: json["depth"],
-        level0: json["level0"],
-        level1: !(0, runtime_1.exists)(json, "level1") ? undefined : json["level1"],
-        level2: !(0, runtime_1.exists)(json, "level2") ? undefined : json["level2"],
-        alias: (0, AliasDTO_1.AliasDTOFromJSON)(json["alias"]),
-        parentId: json["parentId"],
-        ownerAddress: json["ownerAddress"],
-        startHeight: json["startHeight"],
-        endHeight: json["endHeight"],
+        'version': json['version'],
+        'registrationType': (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumFromJSON)(json['registrationType']),
+        'depth': json['depth'],
+        'level0': json['level0'],
+        'level1': !(0, runtime_1.exists)(json, 'level1') ? undefined : json['level1'],
+        'level2': !(0, runtime_1.exists)(json, 'level2') ? undefined : json['level2'],
+        'alias': (0, AliasDTO_1.AliasDTOFromJSON)(json['alias']),
+        'parentId': json['parentId'],
+        'ownerAddress': json['ownerAddress'],
+        'startHeight': json['startHeight'],
+        'endHeight': json['endHeight'],
     };
 }
 exports.NamespaceDTOFromJSONTyped = NamespaceDTOFromJSONTyped;
@@ -65,17 +65,17 @@ function NamespaceDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        registrationType: (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumToJSON)(value.registrationType),
-        depth: value.depth,
-        level0: value.level0,
-        level1: value.level1,
-        level2: value.level2,
-        alias: (0, AliasDTO_1.AliasDTOToJSON)(value.alias),
-        parentId: value.parentId,
-        ownerAddress: value.ownerAddress,
-        startHeight: value.startHeight,
-        endHeight: value.endHeight,
+        'version': value.version,
+        'registrationType': (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumToJSON)(value.registrationType),
+        'depth': value.depth,
+        'level0': value.level0,
+        'level1': value.level1,
+        'level2': value.level2,
+        'alias': (0, AliasDTO_1.AliasDTOToJSON)(value.alias),
+        'parentId': value.parentId,
+        'ownerAddress': value.ownerAddress,
+        'startHeight': value.startHeight,
+        'endHeight': value.endHeight,
     };
 }
 exports.NamespaceDTOToJSON = NamespaceDTOToJSON;

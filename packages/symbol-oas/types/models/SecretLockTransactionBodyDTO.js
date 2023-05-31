@@ -34,16 +34,16 @@ function SecretLockTransactionBodyDTOFromJSON(json) {
 }
 exports.SecretLockTransactionBodyDTOFromJSON = SecretLockTransactionBodyDTOFromJSON;
 function SecretLockTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        recipientAddress: json["recipientAddress"],
-        secret: json["secret"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        duration: json["duration"],
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json["hashAlgorithm"]),
+        'recipientAddress': json['recipientAddress'],
+        'secret': json['secret'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'duration': json['duration'],
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json['hashAlgorithm']),
     };
 }
 exports.SecretLockTransactionBodyDTOFromJSONTyped = SecretLockTransactionBodyDTOFromJSONTyped;
@@ -55,12 +55,12 @@ function SecretLockTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        recipientAddress: value.recipientAddress,
-        secret: value.secret,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        duration: value.duration,
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
+        'recipientAddress': value.recipientAddress,
+        'secret': value.secret,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'duration': value.duration,
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
     };
 }
 exports.SecretLockTransactionBodyDTOToJSON = SecretLockTransactionBodyDTOToJSON;

@@ -339,7 +339,7 @@ export declare const TransactionStatusEnum: {
     readonly FailureExtensionPartialTransactionDependencyRemoved: "Failure_Extension_Partial_Transaction_Dependency_Removed";
     readonly FailureExtensionReadRateLimitExceeded: "Failure_Extension_Read_Rate_Limit_Exceeded";
 };
-export type TransactionStatusEnum = (typeof TransactionStatusEnum)[keyof typeof TransactionStatusEnum];
+export type TransactionStatusEnum = typeof TransactionStatusEnum[keyof typeof TransactionStatusEnum];
 export declare function TransactionStatusEnumFromJSON(json: any): TransactionStatusEnum;
 export declare function TransactionStatusEnumFromJSONTyped(json: any, ignoreDiscriminator: boolean): TransactionStatusEnum;
 export declare function TransactionStatusEnumToJSON(value?: TransactionStatusEnum | null): any;

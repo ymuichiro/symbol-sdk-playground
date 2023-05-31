@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to set a restriction rule to an address.
  * @export

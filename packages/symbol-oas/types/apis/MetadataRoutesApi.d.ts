@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { MerkleStateInfoDTO, MetadataInfoDTO, MetadataPage, MetadataTypeEnum, Order } from "../models";
+import * as runtime from '../runtime';
+import type { MerkleStateInfoDTO, MetadataInfoDTO, MetadataPage, MetadataTypeEnum, Order } from '../models';
 export interface GetMetadataRequest {
     compositeHash: string;
 }

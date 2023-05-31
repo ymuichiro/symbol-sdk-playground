@@ -29,12 +29,12 @@ function InflationReceiptDTOAllOfFromJSON(json) {
 }
 exports.InflationReceiptDTOAllOfFromJSON = InflationReceiptDTOAllOfFromJSON;
 function InflationReceiptDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
     };
 }
 exports.InflationReceiptDTOAllOfFromJSONTyped = InflationReceiptDTOAllOfFromJSONTyped;
@@ -46,8 +46,8 @@ function InflationReceiptDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        amount: value.amount,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
     };
 }
 exports.InflationReceiptDTOAllOfToJSON = InflationReceiptDTOAllOfToJSON;

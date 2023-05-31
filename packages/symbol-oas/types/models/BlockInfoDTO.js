@@ -32,13 +32,13 @@ function BlockInfoDTOFromJSON(json) {
 }
 exports.BlockInfoDTOFromJSON = BlockInfoDTOFromJSON;
 function BlockInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        meta: (0, BlockMetaDTO_1.BlockMetaDTOFromJSON)(json["meta"]),
-        block: (0, BlockInfoDTOBlock_1.BlockInfoDTOBlockFromJSON)(json["block"]),
+        'id': json['id'],
+        'meta': (0, BlockMetaDTO_1.BlockMetaDTOFromJSON)(json['meta']),
+        'block': (0, BlockInfoDTOBlock_1.BlockInfoDTOBlockFromJSON)(json['block']),
     };
 }
 exports.BlockInfoDTOFromJSONTyped = BlockInfoDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function BlockInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        meta: (0, BlockMetaDTO_1.BlockMetaDTOToJSON)(value.meta),
-        block: (0, BlockInfoDTOBlock_1.BlockInfoDTOBlockToJSON)(value.block),
+        'id': value.id,
+        'meta': (0, BlockMetaDTO_1.BlockMetaDTOToJSON)(value.meta),
+        'block': (0, BlockInfoDTOBlock_1.BlockInfoDTOBlockToJSON)(value.block),
     };
 }
 exports.BlockInfoDTOToJSON = BlockInfoDTOToJSON;

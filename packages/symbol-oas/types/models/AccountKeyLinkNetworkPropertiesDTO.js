@@ -28,11 +28,11 @@ function AccountKeyLinkNetworkPropertiesDTOFromJSON(json) {
 }
 exports.AccountKeyLinkNetworkPropertiesDTOFromJSON = AccountKeyLinkNetworkPropertiesDTOFromJSON;
 function AccountKeyLinkNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        dummy: !(0, runtime_1.exists)(json, "dummy") ? undefined : json["dummy"],
+        'dummy': !(0, runtime_1.exists)(json, 'dummy') ? undefined : json['dummy'],
     };
 }
 exports.AccountKeyLinkNetworkPropertiesDTOFromJSONTyped = AccountKeyLinkNetworkPropertiesDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function AccountKeyLinkNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        dummy: value.dummy,
+        'dummy': value.dummy,
     };
 }
 exports.AccountKeyLinkNetworkPropertiesDTOToJSON = AccountKeyLinkNetworkPropertiesDTOToJSON;

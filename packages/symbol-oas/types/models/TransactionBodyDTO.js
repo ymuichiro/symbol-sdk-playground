@@ -29,12 +29,12 @@ function TransactionBodyDTOFromJSON(json) {
 }
 exports.TransactionBodyDTOFromJSON = TransactionBodyDTOFromJSON;
 function TransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
     };
 }
 exports.TransactionBodyDTOFromJSONTyped = TransactionBodyDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function TransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        maxFee: value.maxFee,
-        deadline: value.deadline,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
     };
 }
 exports.TransactionBodyDTOToJSON = TransactionBodyDTOToJSON;

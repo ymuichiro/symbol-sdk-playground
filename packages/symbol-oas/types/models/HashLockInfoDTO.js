@@ -30,12 +30,12 @@ function HashLockInfoDTOFromJSON(json) {
 }
 exports.HashLockInfoDTOFromJSON = HashLockInfoDTOFromJSON;
 function HashLockInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        lock: (0, HashLockEntryDTO_1.HashLockEntryDTOFromJSON)(json["lock"]),
+        'id': json['id'],
+        'lock': (0, HashLockEntryDTO_1.HashLockEntryDTOFromJSON)(json['lock']),
     };
 }
 exports.HashLockInfoDTOFromJSONTyped = HashLockInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function HashLockInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        lock: (0, HashLockEntryDTO_1.HashLockEntryDTOToJSON)(value.lock),
+        'id': value.id,
+        'lock': (0, HashLockEntryDTO_1.HashLockEntryDTOToJSON)(value.lock),
     };
 }
 exports.HashLockInfoDTOToJSON = HashLockInfoDTOToJSON;

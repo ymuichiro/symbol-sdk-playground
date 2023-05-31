@@ -8,12 +8,14 @@
     "rxjs": "^7.8.0",
     "symbol-sdk": "^2.0.4",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "ws": "^8.13.0"
   },
   "scripts": {
     "start": "ts-node ./src/index.ts"
   },
   "devDependencies": {
-    "@types/node-fetch": "^2.6.3"
+    "@types/node-fetch": "^2.6.3",
+    "@types/ws": "^8.5.4"
   }
 }

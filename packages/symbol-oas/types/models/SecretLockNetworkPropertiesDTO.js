@@ -28,19 +28,13 @@ function SecretLockNetworkPropertiesDTOFromJSON(json) {
 }
 exports.SecretLockNetworkPropertiesDTOFromJSON = SecretLockNetworkPropertiesDTOFromJSON;
 function SecretLockNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxSecretLockDuration: !(0, runtime_1.exists)(json, "maxSecretLockDuration")
-            ? undefined
-            : json["maxSecretLockDuration"],
-        minProofSize: !(0, runtime_1.exists)(json, "minProofSize")
-            ? undefined
-            : json["minProofSize"],
-        maxProofSize: !(0, runtime_1.exists)(json, "maxProofSize")
-            ? undefined
-            : json["maxProofSize"],
+        'maxSecretLockDuration': !(0, runtime_1.exists)(json, 'maxSecretLockDuration') ? undefined : json['maxSecretLockDuration'],
+        'minProofSize': !(0, runtime_1.exists)(json, 'minProofSize') ? undefined : json['minProofSize'],
+        'maxProofSize': !(0, runtime_1.exists)(json, 'maxProofSize') ? undefined : json['maxProofSize'],
     };
 }
 exports.SecretLockNetworkPropertiesDTOFromJSONTyped = SecretLockNetworkPropertiesDTOFromJSONTyped;
@@ -52,9 +46,9 @@ function SecretLockNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxSecretLockDuration: value.maxSecretLockDuration,
-        minProofSize: value.minProofSize,
-        maxProofSize: value.maxProofSize,
+        'maxSecretLockDuration': value.maxSecretLockDuration,
+        'minProofSize': value.minProofSize,
+        'maxProofSize': value.maxProofSize,
     };
 }
 exports.SecretLockNetworkPropertiesDTOToJSON = SecretLockNetworkPropertiesDTOToJSON;

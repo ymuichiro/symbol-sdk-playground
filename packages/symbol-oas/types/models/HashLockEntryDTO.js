@@ -35,17 +35,17 @@ function HashLockEntryDTOFromJSON(json) {
 }
 exports.HashLockEntryDTOFromJSON = HashLockEntryDTOFromJSON;
 function HashLockEntryDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        ownerAddress: json["ownerAddress"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        endHeight: json["endHeight"],
-        status: (0, LockStatus_1.LockStatusFromJSON)(json["status"]),
-        hash: json["hash"],
+        'version': json['version'],
+        'ownerAddress': json['ownerAddress'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'endHeight': json['endHeight'],
+        'status': (0, LockStatus_1.LockStatusFromJSON)(json['status']),
+        'hash': json['hash'],
     };
 }
 exports.HashLockEntryDTOFromJSONTyped = HashLockEntryDTOFromJSONTyped;
@@ -57,13 +57,13 @@ function HashLockEntryDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        ownerAddress: value.ownerAddress,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        endHeight: value.endHeight,
-        status: (0, LockStatus_1.LockStatusToJSON)(value.status),
-        hash: value.hash,
+        'version': value.version,
+        'ownerAddress': value.ownerAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'endHeight': value.endHeight,
+        'status': (0, LockStatus_1.LockStatusToJSON)(value.status),
+        'hash': value.hash,
     };
 }
 exports.HashLockEntryDTOToJSON = HashLockEntryDTOToJSON;

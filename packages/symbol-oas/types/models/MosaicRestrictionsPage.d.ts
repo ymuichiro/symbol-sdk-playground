@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MosaicRestrictionsPageDataInner } from "./MosaicRestrictionsPageDataInner";
-import type { Pagination } from "./Pagination";
+import type { MosaicRestrictionsPageDataInner } from './MosaicRestrictionsPageDataInner';
+import type { Pagination } from './Pagination';
 /**
  *
  * @export

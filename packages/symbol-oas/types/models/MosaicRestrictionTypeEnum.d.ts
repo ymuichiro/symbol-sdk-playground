@@ -29,7 +29,7 @@ export declare const MosaicRestrictionTypeEnum: {
     readonly NUMBER_5: 5;
     readonly NUMBER_6: 6;
 };
-export type MosaicRestrictionTypeEnum = (typeof MosaicRestrictionTypeEnum)[keyof typeof MosaicRestrictionTypeEnum];
+export type MosaicRestrictionTypeEnum = typeof MosaicRestrictionTypeEnum[keyof typeof MosaicRestrictionTypeEnum];
 export declare function MosaicRestrictionTypeEnumFromJSON(json: any): MosaicRestrictionTypeEnum;
 export declare function MosaicRestrictionTypeEnumFromJSONTyped(json: any, ignoreDiscriminator: boolean): MosaicRestrictionTypeEnum;
 export declare function MosaicRestrictionTypeEnumToJSON(value?: MosaicRestrictionTypeEnum | null): any;

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionDTOValuesInner } from "./AccountRestrictionDTOValuesInner";
-import type { AccountRestrictionFlagsEnum } from "./AccountRestrictionFlagsEnum";
+import type { AccountRestrictionDTOValuesInner } from './AccountRestrictionDTOValuesInner';
+import type { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
 /**
  *
  * @export

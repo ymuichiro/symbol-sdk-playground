@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ServerDTO } from "./ServerDTO";
+import type { ServerDTO } from './ServerDTO';
 /**
  *
  * @export

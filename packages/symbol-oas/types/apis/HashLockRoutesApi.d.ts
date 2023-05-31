@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { HashLockInfoDTO, HashLockPage, MerkleStateInfoDTO, Order } from "../models";
+import * as runtime from '../runtime';
+import type { HashLockInfoDTO, HashLockPage, MerkleStateInfoDTO, Order } from '../models';
 export interface GetHashLockRequest {
     hash: string;
 }

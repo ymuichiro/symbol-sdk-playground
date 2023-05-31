@@ -19,8 +19,8 @@ exports.BlockOrderByEnumToJSON = exports.BlockOrderByEnumFromJSONTyped = exports
  * @export
  */
 exports.BlockOrderByEnum = {
-    Id: "id",
-    Height: "height",
+    Id: 'id',
+    Height: 'height'
 };
 function BlockOrderByEnumFromJSON(json) {
     return BlockOrderByEnumFromJSONTyped(json, false);

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ResolutionStatementDTO } from "./ResolutionStatementDTO";
-import type { StatementMetaDTO } from "./StatementMetaDTO";
+import type { ResolutionStatementDTO } from './ResolutionStatementDTO';
+import type { StatementMetaDTO } from './StatementMetaDTO';
 /**
  * A resolution statement keeps the relation between a namespace alias used in a transaction
  * and the real address or mosaicId.

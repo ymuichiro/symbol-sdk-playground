@@ -24,7 +24,7 @@ exports.StageEnumToJSON = exports.StageEnumFromJSONTyped = exports.StageEnumFrom
 exports.StageEnum = {
     NUMBER_0: 0,
     NUMBER_1: 1,
-    NUMBER_2: 2,
+    NUMBER_2: 2
 };
 function StageEnumFromJSON(json) {
     return StageEnumFromJSONTyped(json, false);

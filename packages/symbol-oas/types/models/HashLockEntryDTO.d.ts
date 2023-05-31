@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LockStatus } from "./LockStatus";
+import type { LockStatus } from './LockStatus';
 /**
  *
  * @export

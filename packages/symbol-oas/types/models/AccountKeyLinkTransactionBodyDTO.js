@@ -30,12 +30,12 @@ function AccountKeyLinkTransactionBodyDTOFromJSON(json) {
 }
 exports.AccountKeyLinkTransactionBodyDTOFromJSON = AccountKeyLinkTransactionBodyDTOFromJSON;
 function AccountKeyLinkTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        linkedPublicKey: json["linkedPublicKey"],
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json["linkAction"]),
+        'linkedPublicKey': json['linkedPublicKey'],
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json['linkAction']),
     };
 }
 exports.AccountKeyLinkTransactionBodyDTOFromJSONTyped = AccountKeyLinkTransactionBodyDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function AccountKeyLinkTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        linkedPublicKey: value.linkedPublicKey,
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
+        'linkedPublicKey': value.linkedPublicKey,
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
     };
 }
 exports.AccountKeyLinkTransactionBodyDTOToJSON = AccountKeyLinkTransactionBodyDTOToJSON;

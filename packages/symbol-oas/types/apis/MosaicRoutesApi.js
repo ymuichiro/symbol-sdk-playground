@@ -58,15 +58,14 @@ class MosaicRoutesApi extends runtime.BaseAPI {
      */
     getMosaicRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.mosaicId === null ||
-                requestParameters.mosaicId === undefined) {
-                throw new runtime.RequiredError("mosaicId", "Required parameter requestParameters.mosaicId was null or undefined when calling getMosaic.");
+            if (requestParameters.mosaicId === null || requestParameters.mosaicId === undefined) {
+                throw new runtime.RequiredError('mosaicId', 'Required parameter requestParameters.mosaicId was null or undefined when calling getMosaic.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/mosaics/{mosaicId}`.replace(`{${"mosaicId"}}`, encodeURIComponent(String(requestParameters.mosaicId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class MosaicRoutesApi extends runtime.BaseAPI {
      */
     getMosaicMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.mosaicId === null ||
-                requestParameters.mosaicId === undefined) {
-                throw new runtime.RequiredError("mosaicId", "Required parameter requestParameters.mosaicId was null or undefined when calling getMosaicMerkle.");
+            if (requestParameters.mosaicId === null || requestParameters.mosaicId === undefined) {
+                throw new runtime.RequiredError('mosaicId', 'Required parameter requestParameters.mosaicId was null or undefined when calling getMosaicMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/mosaics/{mosaicId}/merkle`.replace(`{${"mosaicId"}}`, encodeURIComponent(String(requestParameters.mosaicId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -120,16 +118,15 @@ class MosaicRoutesApi extends runtime.BaseAPI {
      */
     getMosaicsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.mosaicIds === null ||
-                requestParameters.mosaicIds === undefined) {
-                throw new runtime.RequiredError("mosaicIds", "Required parameter requestParameters.mosaicIds was null or undefined when calling getMosaics.");
+            if (requestParameters.mosaicIds === null || requestParameters.mosaicIds === undefined) {
+                throw new runtime.RequiredError('mosaicIds', 'Required parameter requestParameters.mosaicIds was null or undefined when calling getMosaics.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/mosaics`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.MosaicIdsToJSON)(requestParameters.mosaicIds),
@@ -155,24 +152,24 @@ class MosaicRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.ownerAddress !== undefined) {
-                queryParameters["ownerAddress"] = requestParameters.ownerAddress;
+                queryParameters['ownerAddress'] = requestParameters.ownerAddress;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/mosaics`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

@@ -32,14 +32,14 @@ function InflationReceiptDTOFromJSON(json) {
 }
 exports.InflationReceiptDTOFromJSON = InflationReceiptDTOFromJSON;
 function InflationReceiptDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
     };
 }
 exports.InflationReceiptDTOFromJSONTyped = InflationReceiptDTOFromJSONTyped;
@@ -51,10 +51,10 @@ function InflationReceiptDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
-        mosaicId: value.mosaicId,
-        amount: value.amount,
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
     };
 }
 exports.InflationReceiptDTOToJSON = InflationReceiptDTOToJSON;

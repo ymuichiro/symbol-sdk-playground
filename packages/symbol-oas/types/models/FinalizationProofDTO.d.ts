@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MessageGroup } from "./MessageGroup";
+import type { MessageGroup } from './MessageGroup';
 /**
  *
  * @export

@@ -32,15 +32,15 @@ function TransactionFeesDTOFromJSON(json) {
 }
 exports.TransactionFeesDTOFromJSON = TransactionFeesDTOFromJSON;
 function TransactionFeesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        averageFeeMultiplier: json["averageFeeMultiplier"],
-        medianFeeMultiplier: json["medianFeeMultiplier"],
-        highestFeeMultiplier: json["highestFeeMultiplier"],
-        lowestFeeMultiplier: json["lowestFeeMultiplier"],
-        minFeeMultiplier: json["minFeeMultiplier"],
+        'averageFeeMultiplier': json['averageFeeMultiplier'],
+        'medianFeeMultiplier': json['medianFeeMultiplier'],
+        'highestFeeMultiplier': json['highestFeeMultiplier'],
+        'lowestFeeMultiplier': json['lowestFeeMultiplier'],
+        'minFeeMultiplier': json['minFeeMultiplier'],
     };
 }
 exports.TransactionFeesDTOFromJSONTyped = TransactionFeesDTOFromJSONTyped;
@@ -52,11 +52,11 @@ function TransactionFeesDTOToJSON(value) {
         return null;
     }
     return {
-        averageFeeMultiplier: value.averageFeeMultiplier,
-        medianFeeMultiplier: value.medianFeeMultiplier,
-        highestFeeMultiplier: value.highestFeeMultiplier,
-        lowestFeeMultiplier: value.lowestFeeMultiplier,
-        minFeeMultiplier: value.minFeeMultiplier,
+        'averageFeeMultiplier': value.averageFeeMultiplier,
+        'medianFeeMultiplier': value.medianFeeMultiplier,
+        'highestFeeMultiplier': value.highestFeeMultiplier,
+        'lowestFeeMultiplier': value.lowestFeeMultiplier,
+        'minFeeMultiplier': value.minFeeMultiplier,
     };
 }
 exports.TransactionFeesDTOToJSON = TransactionFeesDTOToJSON;

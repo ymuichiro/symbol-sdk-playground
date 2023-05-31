@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AggregateTransactionBodyDTOToJSON = exports.AggregateTransactionBodyDTOFromJSONTyped = exports.AggregateTransactionBodyDTOFromJSON = exports.instanceOfAggregateTransactionBodyDTO = void 0;
+const runtime_1 = require("../runtime");
 const CosignatureDTO_1 = require("./CosignatureDTO");
 /**
  * Check if a given object implements the AggregateTransactionBodyDTO interface.
@@ -21,7 +22,6 @@ const CosignatureDTO_1 = require("./CosignatureDTO");
 function instanceOfAggregateTransactionBodyDTO(value) {
     let isInstance = true;
     isInstance = isInstance && "transactionsHash" in value;
-    isInstance = isInstance && "cosignatures" in value;
     return isInstance;
 }
 exports.instanceOfAggregateTransactionBodyDTO = instanceOfAggregateTransactionBodyDTO;
@@ -30,12 +30,12 @@ function AggregateTransactionBodyDTOFromJSON(json) {
 }
 exports.AggregateTransactionBodyDTOFromJSON = AggregateTransactionBodyDTOFromJSON;
 function AggregateTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        transactionsHash: json["transactionsHash"],
-        cosignatures: json["cosignatures"].map(CosignatureDTO_1.CosignatureDTOFromJSON),
+        'transactionsHash': json['transactionsHash'],
+        'cosignatures': !(0, runtime_1.exists)(json, 'cosignatures') ? undefined : (json['cosignatures'].map(CosignatureDTO_1.CosignatureDTOFromJSON)),
     };
 }
 exports.AggregateTransactionBodyDTOFromJSONTyped = AggregateTransactionBodyDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function AggregateTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        transactionsHash: value.transactionsHash,
-        cosignatures: value.cosignatures.map(CosignatureDTO_1.CosignatureDTOToJSON),
+        'transactionsHash': value.transactionsHash,
+        'cosignatures': value.cosignatures === undefined ? undefined : (value.cosignatures.map(CosignatureDTO_1.CosignatureDTOToJSON)),
     };
 }
 exports.AggregateTransactionBodyDTOToJSON = AggregateTransactionBodyDTOToJSON;

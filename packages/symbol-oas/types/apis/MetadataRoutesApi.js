@@ -58,15 +58,14 @@ class MetadataRoutesApi extends runtime.BaseAPI {
      */
     getMetadataRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.compositeHash === null ||
-                requestParameters.compositeHash === undefined) {
-                throw new runtime.RequiredError("compositeHash", "Required parameter requestParameters.compositeHash was null or undefined when calling getMetadata.");
+            if (requestParameters.compositeHash === null || requestParameters.compositeHash === undefined) {
+                throw new runtime.RequiredError('compositeHash', 'Required parameter requestParameters.compositeHash was null or undefined when calling getMetadata.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/metadata/{compositeHash}`.replace(`{${"compositeHash"}}`, encodeURIComponent(String(requestParameters.compositeHash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class MetadataRoutesApi extends runtime.BaseAPI {
      */
     getMetadataMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.compositeHash === null ||
-                requestParameters.compositeHash === undefined) {
-                throw new runtime.RequiredError("compositeHash", "Required parameter requestParameters.compositeHash was null or undefined when calling getMetadataMerkle.");
+            if (requestParameters.compositeHash === null || requestParameters.compositeHash === undefined) {
+                throw new runtime.RequiredError('compositeHash', 'Required parameter requestParameters.compositeHash was null or undefined when calling getMetadataMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/metadata/{compositeHash}/merkle`.replace(`{${"compositeHash"}}`, encodeURIComponent(String(requestParameters.compositeHash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -122,37 +120,36 @@ class MetadataRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.sourceAddress !== undefined) {
-                queryParameters["sourceAddress"] = requestParameters.sourceAddress;
+                queryParameters['sourceAddress'] = requestParameters.sourceAddress;
             }
             if (requestParameters.targetAddress !== undefined) {
-                queryParameters["targetAddress"] = requestParameters.targetAddress;
+                queryParameters['targetAddress'] = requestParameters.targetAddress;
             }
             if (requestParameters.scopedMetadataKey !== undefined) {
-                queryParameters["scopedMetadataKey"] =
-                    requestParameters.scopedMetadataKey;
+                queryParameters['scopedMetadataKey'] = requestParameters.scopedMetadataKey;
             }
             if (requestParameters.targetId !== undefined) {
-                queryParameters["targetId"] = requestParameters.targetId;
+                queryParameters['targetId'] = requestParameters.targetId;
             }
             if (requestParameters.metadataType !== undefined) {
-                queryParameters["metadataType"] = requestParameters.metadataType;
+                queryParameters['metadataType'] = requestParameters.metadataType;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/metadata`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MultisigDTO } from "./MultisigDTO";
+import type { MultisigDTO } from './MultisigDTO';
 /**
  *
  * @export

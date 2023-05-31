@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { AnnounceTransactionInfoDTO, Cosignature, Order, TransactionIds, TransactionInfoDTO, TransactionPage, TransactionPayload, TransactionTypeEnum } from "../models";
+import * as runtime from '../runtime';
+import type { AnnounceTransactionInfoDTO, Cosignature, Order, TransactionIds, TransactionInfoDTO, TransactionPage, TransactionPayload, TransactionTypeEnum } from '../models';
 export interface AnnounceCosignatureTransactionRequest {
     cosignature: Cosignature;
 }

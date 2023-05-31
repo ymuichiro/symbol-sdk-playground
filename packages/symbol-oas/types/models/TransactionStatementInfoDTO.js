@@ -32,13 +32,13 @@ function TransactionStatementInfoDTOFromJSON(json) {
 }
 exports.TransactionStatementInfoDTOFromJSON = TransactionStatementInfoDTOFromJSON;
 function TransactionStatementInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        meta: (0, StatementMetaDTO_1.StatementMetaDTOFromJSON)(json["meta"]),
-        statement: (0, TransactionStatementDTO_1.TransactionStatementDTOFromJSON)(json["statement"]),
+        'id': json['id'],
+        'meta': (0, StatementMetaDTO_1.StatementMetaDTOFromJSON)(json['meta']),
+        'statement': (0, TransactionStatementDTO_1.TransactionStatementDTOFromJSON)(json['statement']),
     };
 }
 exports.TransactionStatementInfoDTOFromJSONTyped = TransactionStatementInfoDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function TransactionStatementInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        meta: (0, StatementMetaDTO_1.StatementMetaDTOToJSON)(value.meta),
-        statement: (0, TransactionStatementDTO_1.TransactionStatementDTOToJSON)(value.statement),
+        'id': value.id,
+        'meta': (0, StatementMetaDTO_1.StatementMetaDTOToJSON)(value.meta),
+        'statement': (0, TransactionStatementDTO_1.TransactionStatementDTOToJSON)(value.statement),
     };
 }
 exports.TransactionStatementInfoDTOToJSON = TransactionStatementInfoDTOToJSON;

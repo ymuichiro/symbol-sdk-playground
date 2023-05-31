@@ -22,7 +22,7 @@ exports.NamespaceRegistrationTypeEnumToJSON = exports.NamespaceRegistrationTypeE
  */
 exports.NamespaceRegistrationTypeEnum = {
     NUMBER_0: 0,
-    NUMBER_1: 1,
+    NUMBER_1: 1
 };
 function NamespaceRegistrationTypeEnumFromJSON(json) {
     return NamespaceRegistrationTypeEnumFromJSONTyped(json, false);

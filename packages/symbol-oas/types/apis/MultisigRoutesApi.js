@@ -58,15 +58,14 @@ class MultisigRoutesApi extends runtime.BaseAPI {
      */
     getAccountMultisigRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.address === null ||
-                requestParameters.address === undefined) {
-                throw new runtime.RequiredError("address", "Required parameter requestParameters.address was null or undefined when calling getAccountMultisig.");
+            if (requestParameters.address === null || requestParameters.address === undefined) {
+                throw new runtime.RequiredError('address', 'Required parameter requestParameters.address was null or undefined when calling getAccountMultisig.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/account/{address}/multisig`.replace(`{${"address"}}`, encodeURIComponent(String(requestParameters.address))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class MultisigRoutesApi extends runtime.BaseAPI {
      */
     getAccountMultisigGraphRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.address === null ||
-                requestParameters.address === undefined) {
-                throw new runtime.RequiredError("address", "Required parameter requestParameters.address was null or undefined when calling getAccountMultisigGraph.");
+            if (requestParameters.address === null || requestParameters.address === undefined) {
+                throw new runtime.RequiredError('address', 'Required parameter requestParameters.address was null or undefined when calling getAccountMultisigGraph.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/account/{address}/multisig/graph`.replace(`{${"address"}}`, encodeURIComponent(String(requestParameters.address))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -120,15 +118,14 @@ class MultisigRoutesApi extends runtime.BaseAPI {
      */
     getAccountMultisigMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.address === null ||
-                requestParameters.address === undefined) {
-                throw new runtime.RequiredError("address", "Required parameter requestParameters.address was null or undefined when calling getAccountMultisigMerkle.");
+            if (requestParameters.address === null || requestParameters.address === undefined) {
+                throw new runtime.RequiredError('address', 'Required parameter requestParameters.address was null or undefined when calling getAccountMultisigMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/account/{address}/multisig/merkle`.replace(`{${"address"}}`, encodeURIComponent(String(requestParameters.address))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

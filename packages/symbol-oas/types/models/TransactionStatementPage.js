@@ -31,12 +31,12 @@ function TransactionStatementPageFromJSON(json) {
 }
 exports.TransactionStatementPageFromJSON = TransactionStatementPageFromJSON;
 function TransactionStatementPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(TransactionStatementInfoDTO_1.TransactionStatementInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(TransactionStatementInfoDTO_1.TransactionStatementInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.TransactionStatementPageFromJSONTyped = TransactionStatementPageFromJSONTyped;
@@ -48,8 +48,8 @@ function TransactionStatementPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(TransactionStatementInfoDTO_1.TransactionStatementInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(TransactionStatementInfoDTO_1.TransactionStatementInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.TransactionStatementPageToJSON = TransactionStatementPageToJSON;

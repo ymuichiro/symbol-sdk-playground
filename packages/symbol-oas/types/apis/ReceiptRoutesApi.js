@@ -60,24 +60,24 @@ class ReceiptRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.height !== undefined) {
-                queryParameters["height"] = requestParameters.height;
+                queryParameters['height'] = requestParameters.height;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/statements/resolutions/address`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -102,24 +102,24 @@ class ReceiptRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.height !== undefined) {
-                queryParameters["height"] = requestParameters.height;
+                queryParameters['height'] = requestParameters.height;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/statements/resolutions/mosaic`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -144,45 +144,45 @@ class ReceiptRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.height !== undefined) {
-                queryParameters["height"] = requestParameters.height;
+                queryParameters['height'] = requestParameters.height;
             }
             if (requestParameters.fromHeight !== undefined) {
-                queryParameters["fromHeight"] = requestParameters.fromHeight;
+                queryParameters['fromHeight'] = requestParameters.fromHeight;
             }
             if (requestParameters.toHeight !== undefined) {
-                queryParameters["toHeight"] = requestParameters.toHeight;
+                queryParameters['toHeight'] = requestParameters.toHeight;
             }
             if (requestParameters.receiptType) {
-                queryParameters["receiptType"] = requestParameters.receiptType;
+                queryParameters['receiptType'] = requestParameters.receiptType;
             }
             if (requestParameters.recipientAddress !== undefined) {
-                queryParameters["recipientAddress"] = requestParameters.recipientAddress;
+                queryParameters['recipientAddress'] = requestParameters.recipientAddress;
             }
             if (requestParameters.senderAddress !== undefined) {
-                queryParameters["senderAddress"] = requestParameters.senderAddress;
+                queryParameters['senderAddress'] = requestParameters.senderAddress;
             }
             if (requestParameters.targetAddress !== undefined) {
-                queryParameters["targetAddress"] = requestParameters.targetAddress;
+                queryParameters['targetAddress'] = requestParameters.targetAddress;
             }
             if (requestParameters.artifactId !== undefined) {
-                queryParameters["artifactId"] = requestParameters.artifactId;
+                queryParameters['artifactId'] = requestParameters.artifactId;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/statements/transaction`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

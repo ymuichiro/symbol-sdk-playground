@@ -31,13 +31,13 @@ function NamespaceExpiryReceiptDTOFromJSON(json) {
 }
 exports.NamespaceExpiryReceiptDTOFromJSON = NamespaceExpiryReceiptDTOFromJSON;
 function NamespaceExpiryReceiptDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
-        artifactId: json["artifactId"],
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
+        'artifactId': json['artifactId'],
     };
 }
 exports.NamespaceExpiryReceiptDTOFromJSONTyped = NamespaceExpiryReceiptDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function NamespaceExpiryReceiptDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
-        artifactId: value.artifactId,
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'artifactId': value.artifactId,
     };
 }
 exports.NamespaceExpiryReceiptDTOToJSON = NamespaceExpiryReceiptDTOToJSON;

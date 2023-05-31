@@ -30,12 +30,12 @@ function NodeHealthDTOFromJSON(json) {
 }
 exports.NodeHealthDTOFromJSON = NodeHealthDTOFromJSON;
 function NodeHealthDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        apiNode: (0, NodeStatusEnum_1.NodeStatusEnumFromJSON)(json["apiNode"]),
-        db: (0, NodeStatusEnum_1.NodeStatusEnumFromJSON)(json["db"]),
+        'apiNode': (0, NodeStatusEnum_1.NodeStatusEnumFromJSON)(json['apiNode']),
+        'db': (0, NodeStatusEnum_1.NodeStatusEnumFromJSON)(json['db']),
     };
 }
 exports.NodeHealthDTOFromJSONTyped = NodeHealthDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function NodeHealthDTOToJSON(value) {
         return null;
     }
     return {
-        apiNode: (0, NodeStatusEnum_1.NodeStatusEnumToJSON)(value.apiNode),
-        db: (0, NodeStatusEnum_1.NodeStatusEnumToJSON)(value.db),
+        'apiNode': (0, NodeStatusEnum_1.NodeStatusEnumToJSON)(value.apiNode),
+        'db': (0, NodeStatusEnum_1.NodeStatusEnumToJSON)(value.db),
     };
 }
 exports.NodeHealthDTOToJSON = NodeHealthDTOToJSON;

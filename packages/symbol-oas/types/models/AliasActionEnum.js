@@ -22,7 +22,7 @@ exports.AliasActionEnumToJSON = exports.AliasActionEnumFromJSONTyped = exports.A
  */
 exports.AliasActionEnum = {
     NUMBER_0: 0,
-    NUMBER_1: 1,
+    NUMBER_1: 1
 };
 function AliasActionEnumFromJSON(json) {
     return AliasActionEnumFromJSONTyped(json, false);

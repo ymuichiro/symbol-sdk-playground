@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { HashLockInfoDTO } from "./HashLockInfoDTO";
-import type { Pagination } from "./Pagination";
+import type { HashLockInfoDTO } from './HashLockInfoDTO';
+import type { Pagination } from './Pagination';
 /**
  *
  * @export

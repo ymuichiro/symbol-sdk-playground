@@ -9,10 +9,10 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountTypeEnum } from "./AccountTypeEnum";
-import type { ActivityBucketDTO } from "./ActivityBucketDTO";
-import type { Mosaic } from "./Mosaic";
-import type { SupplementalPublicKeysDTO } from "./SupplementalPublicKeysDTO";
+import type { AccountTypeEnum } from './AccountTypeEnum';
+import type { ActivityBucketDTO } from './ActivityBucketDTO';
+import type { Mosaic } from './Mosaic';
+import type { SupplementalPublicKeysDTO } from './SupplementalPublicKeysDTO';
 /**
  *
  * @export

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ResolutionEntryDTO } from "./ResolutionEntryDTO";
-import type { ResolutionStatementDTOUnresolved } from "./ResolutionStatementDTOUnresolved";
+import type { ResolutionEntryDTO } from './ResolutionEntryDTO';
+import type { ResolutionStatementDTOUnresolved } from './ResolutionStatementDTOUnresolved';
 /**
  *
  * @export

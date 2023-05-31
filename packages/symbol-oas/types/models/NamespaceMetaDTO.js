@@ -29,12 +29,12 @@ function NamespaceMetaDTOFromJSON(json) {
 }
 exports.NamespaceMetaDTOFromJSON = NamespaceMetaDTOFromJSON;
 function NamespaceMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        active: json["active"],
-        index: json["index"],
+        'active': json['active'],
+        'index': json['index'],
     };
 }
 exports.NamespaceMetaDTOFromJSONTyped = NamespaceMetaDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function NamespaceMetaDTOToJSON(value) {
         return null;
     }
     return {
-        active: value.active,
-        index: value.index,
+        'active': value.active,
+        'index': value.index,
     };
 }
 exports.NamespaceMetaDTOToJSON = NamespaceMetaDTOToJSON;

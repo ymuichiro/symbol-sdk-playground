@@ -40,22 +40,22 @@ function HashLockTransactionDTOFromJSON(json) {
 }
 exports.HashLockTransactionDTOFromJSON = HashLockTransactionDTOFromJSON;
 function HashLockTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        duration: json["duration"],
-        hash: json["hash"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'duration': json['duration'],
+        'hash': json['hash'],
     };
 }
 exports.HashLockTransactionDTOFromJSONTyped = HashLockTransactionDTOFromJSONTyped;
@@ -67,18 +67,18 @@ function HashLockTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        duration: value.duration,
-        hash: value.hash,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'duration': value.duration,
+        'hash': value.hash,
     };
 }
 exports.HashLockTransactionDTOToJSON = HashLockTransactionDTOToJSON;

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { Order, ReceiptTypeEnum, ResolutionStatementPage, TransactionStatementPage } from "../models";
+import * as runtime from '../runtime';
+import type { Order, ReceiptTypeEnum, ResolutionStatementPage, TransactionStatementPage } from '../models';
 export interface SearchAddressResolutionStatementsRequest {
     height?: string;
     pageSize?: number;

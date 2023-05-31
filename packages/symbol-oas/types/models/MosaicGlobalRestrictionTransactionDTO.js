@@ -44,25 +44,25 @@ function MosaicGlobalRestrictionTransactionDTOFromJSON(json) {
 }
 exports.MosaicGlobalRestrictionTransactionDTOFromJSON = MosaicGlobalRestrictionTransactionDTOFromJSON;
 function MosaicGlobalRestrictionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        mosaicId: json["mosaicId"],
-        referenceMosaicId: json["referenceMosaicId"],
-        restrictionKey: json["restrictionKey"],
-        previousRestrictionValue: json["previousRestrictionValue"],
-        newRestrictionValue: json["newRestrictionValue"],
-        previousRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json["previousRestrictionType"]),
-        newRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json["newRestrictionType"]),
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'mosaicId': json['mosaicId'],
+        'referenceMosaicId': json['referenceMosaicId'],
+        'restrictionKey': json['restrictionKey'],
+        'previousRestrictionValue': json['previousRestrictionValue'],
+        'newRestrictionValue': json['newRestrictionValue'],
+        'previousRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json['previousRestrictionType']),
+        'newRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json['newRestrictionType']),
     };
 }
 exports.MosaicGlobalRestrictionTransactionDTOFromJSONTyped = MosaicGlobalRestrictionTransactionDTOFromJSONTyped;
@@ -74,21 +74,21 @@ function MosaicGlobalRestrictionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        mosaicId: value.mosaicId,
-        referenceMosaicId: value.referenceMosaicId,
-        restrictionKey: value.restrictionKey,
-        previousRestrictionValue: value.previousRestrictionValue,
-        newRestrictionValue: value.newRestrictionValue,
-        previousRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.previousRestrictionType),
-        newRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.newRestrictionType),
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'mosaicId': value.mosaicId,
+        'referenceMosaicId': value.referenceMosaicId,
+        'restrictionKey': value.restrictionKey,
+        'previousRestrictionValue': value.previousRestrictionValue,
+        'newRestrictionValue': value.newRestrictionValue,
+        'previousRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.previousRestrictionType),
+        'newRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.newRestrictionType),
     };
 }
 exports.MosaicGlobalRestrictionTransactionDTOToJSON = MosaicGlobalRestrictionTransactionDTOToJSON;

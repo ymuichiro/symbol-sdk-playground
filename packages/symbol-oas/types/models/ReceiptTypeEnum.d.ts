@@ -47,7 +47,7 @@ export declare const ReceiptTypeEnum: {
     readonly NUMBER_61763: 61763;
     readonly NUMBER_62019: 62019;
 };
-export type ReceiptTypeEnum = (typeof ReceiptTypeEnum)[keyof typeof ReceiptTypeEnum];
+export type ReceiptTypeEnum = typeof ReceiptTypeEnum[keyof typeof ReceiptTypeEnum];
 export declare function ReceiptTypeEnumFromJSON(json: any): ReceiptTypeEnum;
 export declare function ReceiptTypeEnumFromJSONTyped(json: any, ignoreDiscriminator: boolean): ReceiptTypeEnum;
 export declare function ReceiptTypeEnumToJSON(value?: ReceiptTypeEnum | null): any;

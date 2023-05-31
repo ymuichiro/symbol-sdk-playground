@@ -28,13 +28,11 @@ function TransactionIdsFromJSON(json) {
 }
 exports.TransactionIdsFromJSON = TransactionIdsFromJSON;
 function TransactionIdsFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        transactionIds: !(0, runtime_1.exists)(json, "transactionIds")
-            ? undefined
-            : json["transactionIds"],
+        'transactionIds': !(0, runtime_1.exists)(json, 'transactionIds') ? undefined : json['transactionIds'],
     };
 }
 exports.TransactionIdsFromJSONTyped = TransactionIdsFromJSONTyped;
@@ -46,7 +44,7 @@ function TransactionIdsToJSON(value) {
         return null;
     }
     return {
-        transactionIds: value.transactionIds,
+        'transactionIds': value.transactionIds,
     };
 }
 exports.TransactionIdsToJSON = TransactionIdsToJSON;

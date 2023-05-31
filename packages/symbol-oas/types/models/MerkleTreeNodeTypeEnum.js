@@ -22,7 +22,7 @@ exports.MerkleTreeNodeTypeEnumToJSON = exports.MerkleTreeNodeTypeEnumFromJSONTyp
  */
 exports.MerkleTreeNodeTypeEnum = {
     NUMBER_0: 0,
-    NUMBER_255: 255,
+    NUMBER_255: 255
 };
 function MerkleTreeNodeTypeEnumFromJSON(json) {
     return MerkleTreeNodeTypeEnumFromJSONTyped(json, false);

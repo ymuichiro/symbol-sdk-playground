@@ -50,7 +50,7 @@ exports.ReceiptTypeEnum = {
     NUMBER_20803: 20803,
     NUMBER_57667: 57667,
     NUMBER_61763: 61763,
-    NUMBER_62019: 62019,
+    NUMBER_62019: 62019
 };
 function ReceiptTypeEnumFromJSON(json) {
     return ReceiptTypeEnumFromJSONTyped(json, false);

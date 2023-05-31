@@ -58,15 +58,14 @@ class RestrictionAccountRoutesApi extends runtime.BaseAPI {
      */
     getAccountRestrictionsRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.address === null ||
-                requestParameters.address === undefined) {
-                throw new runtime.RequiredError("address", "Required parameter requestParameters.address was null or undefined when calling getAccountRestrictions.");
+            if (requestParameters.address === null || requestParameters.address === undefined) {
+                throw new runtime.RequiredError('address', 'Required parameter requestParameters.address was null or undefined when calling getAccountRestrictions.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/restrictions/account/{address}`.replace(`{${"address"}}`, encodeURIComponent(String(requestParameters.address))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class RestrictionAccountRoutesApi extends runtime.BaseAPI {
      */
     getAccountRestrictionsMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.address === null ||
-                requestParameters.address === undefined) {
-                throw new runtime.RequiredError("address", "Required parameter requestParameters.address was null or undefined when calling getAccountRestrictionsMerkle.");
+            if (requestParameters.address === null || requestParameters.address === undefined) {
+                throw new runtime.RequiredError('address', 'Required parameter requestParameters.address was null or undefined when calling getAccountRestrictionsMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/restrictions/account/{address}/merkle`.replace(`{${"address"}}`, encodeURIComponent(String(requestParameters.address))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -122,24 +120,24 @@ class RestrictionAccountRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.address !== undefined) {
-                queryParameters["address"] = requestParameters.address;
+                queryParameters['address'] = requestParameters.address;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/restrictions/account`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

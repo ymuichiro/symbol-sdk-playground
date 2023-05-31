@@ -31,14 +31,14 @@ function ActivityBucketDTOFromJSON(json) {
 }
 exports.ActivityBucketDTOFromJSON = ActivityBucketDTOFromJSON;
 function ActivityBucketDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        startHeight: json["startHeight"],
-        totalFeesPaid: json["totalFeesPaid"],
-        beneficiaryCount: json["beneficiaryCount"],
-        rawScore: json["rawScore"],
+        'startHeight': json['startHeight'],
+        'totalFeesPaid': json['totalFeesPaid'],
+        'beneficiaryCount': json['beneficiaryCount'],
+        'rawScore': json['rawScore'],
     };
 }
 exports.ActivityBucketDTOFromJSONTyped = ActivityBucketDTOFromJSONTyped;
@@ -50,10 +50,10 @@ function ActivityBucketDTOToJSON(value) {
         return null;
     }
     return {
-        startHeight: value.startHeight,
-        totalFeesPaid: value.totalFeesPaid,
-        beneficiaryCount: value.beneficiaryCount,
-        rawScore: value.rawScore,
+        'startHeight': value.startHeight,
+        'totalFeesPaid': value.totalFeesPaid,
+        'beneficiaryCount': value.beneficiaryCount,
+        'rawScore': value.rawScore,
     };
 }
 exports.ActivityBucketDTOToJSON = ActivityBucketDTOToJSON;

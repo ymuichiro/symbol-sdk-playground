@@ -32,14 +32,14 @@ function EmbeddedTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedTransactionDTOFromJSON = EmbeddedTransactionDTOFromJSON;
 function EmbeddedTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
     };
 }
 exports.EmbeddedTransactionDTOFromJSONTyped = EmbeddedTransactionDTOFromJSONTyped;
@@ -51,10 +51,10 @@ function EmbeddedTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
     };
 }
 exports.EmbeddedTransactionDTOToJSON = EmbeddedTransactionDTOToJSON;

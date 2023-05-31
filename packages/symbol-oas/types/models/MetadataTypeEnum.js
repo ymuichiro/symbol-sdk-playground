@@ -24,7 +24,7 @@ exports.MetadataTypeEnumToJSON = exports.MetadataTypeEnumFromJSONTyped = exports
 exports.MetadataTypeEnum = {
     NUMBER_0: 0,
     NUMBER_1: 1,
-    NUMBER_2: 2,
+    NUMBER_2: 2
 };
 function MetadataTypeEnumFromJSON(json) {
     return MetadataTypeEnumFromJSONTyped(json, false);

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { SourceDTO } from "./SourceDTO";
-import type { TransactionStatementDTOReceiptsInner } from "./TransactionStatementDTOReceiptsInner";
+import type { SourceDTO } from './SourceDTO';
+import type { TransactionStatementDTOReceiptsInner } from './TransactionStatementDTOReceiptsInner';
 /**
  *
  * @export

@@ -30,12 +30,12 @@ function MosaicInfoDTOFromJSON(json) {
 }
 exports.MosaicInfoDTOFromJSON = MosaicInfoDTOFromJSON;
 function MosaicInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        mosaic: (0, MosaicDTO_1.MosaicDTOFromJSON)(json["mosaic"]),
+        'id': json['id'],
+        'mosaic': (0, MosaicDTO_1.MosaicDTOFromJSON)(json['mosaic']),
     };
 }
 exports.MosaicInfoDTOFromJSONTyped = MosaicInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function MosaicInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        mosaic: (0, MosaicDTO_1.MosaicDTOToJSON)(value.mosaic),
+        'id': value.id,
+        'mosaic': (0, MosaicDTO_1.MosaicDTOToJSON)(value.mosaic),
     };
 }
 exports.MosaicInfoDTOToJSON = MosaicInfoDTOToJSON;

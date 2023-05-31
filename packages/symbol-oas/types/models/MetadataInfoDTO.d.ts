@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MetadataEntryDTO } from "./MetadataEntryDTO";
+import type { MetadataEntryDTO } from './MetadataEntryDTO';
 /**
  *
  * @export

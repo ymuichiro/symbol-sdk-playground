@@ -31,14 +31,14 @@ function BalanceTransferReceiptDTOAllOfFromJSON(json) {
 }
 exports.BalanceTransferReceiptDTOAllOfFromJSON = BalanceTransferReceiptDTOAllOfFromJSON;
 function BalanceTransferReceiptDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        senderAddress: json["senderAddress"],
-        recipientAddress: json["recipientAddress"],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'senderAddress': json['senderAddress'],
+        'recipientAddress': json['recipientAddress'],
     };
 }
 exports.BalanceTransferReceiptDTOAllOfFromJSONTyped = BalanceTransferReceiptDTOAllOfFromJSONTyped;
@@ -50,10 +50,10 @@ function BalanceTransferReceiptDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        senderAddress: value.senderAddress,
-        recipientAddress: value.recipientAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'senderAddress': value.senderAddress,
+        'recipientAddress': value.recipientAddress,
     };
 }
 exports.BalanceTransferReceiptDTOAllOfToJSON = BalanceTransferReceiptDTOAllOfToJSON;

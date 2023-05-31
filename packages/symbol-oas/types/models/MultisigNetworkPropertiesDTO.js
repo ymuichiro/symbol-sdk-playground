@@ -28,19 +28,13 @@ function MultisigNetworkPropertiesDTOFromJSON(json) {
 }
 exports.MultisigNetworkPropertiesDTOFromJSON = MultisigNetworkPropertiesDTOFromJSON;
 function MultisigNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxMultisigDepth: !(0, runtime_1.exists)(json, "maxMultisigDepth")
-            ? undefined
-            : json["maxMultisigDepth"],
-        maxCosignatoriesPerAccount: !(0, runtime_1.exists)(json, "maxCosignatoriesPerAccount")
-            ? undefined
-            : json["maxCosignatoriesPerAccount"],
-        maxCosignedAccountsPerAccount: !(0, runtime_1.exists)(json, "maxCosignedAccountsPerAccount")
-            ? undefined
-            : json["maxCosignedAccountsPerAccount"],
+        'maxMultisigDepth': !(0, runtime_1.exists)(json, 'maxMultisigDepth') ? undefined : json['maxMultisigDepth'],
+        'maxCosignatoriesPerAccount': !(0, runtime_1.exists)(json, 'maxCosignatoriesPerAccount') ? undefined : json['maxCosignatoriesPerAccount'],
+        'maxCosignedAccountsPerAccount': !(0, runtime_1.exists)(json, 'maxCosignedAccountsPerAccount') ? undefined : json['maxCosignedAccountsPerAccount'],
     };
 }
 exports.MultisigNetworkPropertiesDTOFromJSONTyped = MultisigNetworkPropertiesDTOFromJSONTyped;
@@ -52,9 +46,9 @@ function MultisigNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxMultisigDepth: value.maxMultisigDepth,
-        maxCosignatoriesPerAccount: value.maxCosignatoriesPerAccount,
-        maxCosignedAccountsPerAccount: value.maxCosignedAccountsPerAccount,
+        'maxMultisigDepth': value.maxMultisigDepth,
+        'maxCosignatoriesPerAccount': value.maxCosignatoriesPerAccount,
+        'maxCosignedAccountsPerAccount': value.maxCosignedAccountsPerAccount,
     };
 }
 exports.MultisigNetworkPropertiesDTOToJSON = MultisigNetworkPropertiesDTOToJSON;

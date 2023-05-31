@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AliasTypeEnum } from "./AliasTypeEnum";
+import type { AliasTypeEnum } from './AliasTypeEnum';
 /**
  *
  * @export

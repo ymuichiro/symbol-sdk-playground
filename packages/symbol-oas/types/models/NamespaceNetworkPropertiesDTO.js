@@ -28,38 +28,20 @@ function NamespaceNetworkPropertiesDTOFromJSON(json) {
 }
 exports.NamespaceNetworkPropertiesDTOFromJSON = NamespaceNetworkPropertiesDTOFromJSON;
 function NamespaceNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxNameSize: !(0, runtime_1.exists)(json, "maxNameSize") ? undefined : json["maxNameSize"],
-        maxChildNamespaces: !(0, runtime_1.exists)(json, "maxChildNamespaces")
-            ? undefined
-            : json["maxChildNamespaces"],
-        maxNamespaceDepth: !(0, runtime_1.exists)(json, "maxNamespaceDepth")
-            ? undefined
-            : json["maxNamespaceDepth"],
-        minNamespaceDuration: !(0, runtime_1.exists)(json, "minNamespaceDuration")
-            ? undefined
-            : json["minNamespaceDuration"],
-        maxNamespaceDuration: !(0, runtime_1.exists)(json, "maxNamespaceDuration")
-            ? undefined
-            : json["maxNamespaceDuration"],
-        namespaceGracePeriodDuration: !(0, runtime_1.exists)(json, "namespaceGracePeriodDuration")
-            ? undefined
-            : json["namespaceGracePeriodDuration"],
-        reservedRootNamespaceNames: !(0, runtime_1.exists)(json, "reservedRootNamespaceNames")
-            ? undefined
-            : json["reservedRootNamespaceNames"],
-        namespaceRentalFeeSinkAddress: !(0, runtime_1.exists)(json, "namespaceRentalFeeSinkAddress")
-            ? undefined
-            : json["namespaceRentalFeeSinkAddress"],
-        rootNamespaceRentalFeePerBlock: !(0, runtime_1.exists)(json, "rootNamespaceRentalFeePerBlock")
-            ? undefined
-            : json["rootNamespaceRentalFeePerBlock"],
-        childNamespaceRentalFee: !(0, runtime_1.exists)(json, "childNamespaceRentalFee")
-            ? undefined
-            : json["childNamespaceRentalFee"],
+        'maxNameSize': !(0, runtime_1.exists)(json, 'maxNameSize') ? undefined : json['maxNameSize'],
+        'maxChildNamespaces': !(0, runtime_1.exists)(json, 'maxChildNamespaces') ? undefined : json['maxChildNamespaces'],
+        'maxNamespaceDepth': !(0, runtime_1.exists)(json, 'maxNamespaceDepth') ? undefined : json['maxNamespaceDepth'],
+        'minNamespaceDuration': !(0, runtime_1.exists)(json, 'minNamespaceDuration') ? undefined : json['minNamespaceDuration'],
+        'maxNamespaceDuration': !(0, runtime_1.exists)(json, 'maxNamespaceDuration') ? undefined : json['maxNamespaceDuration'],
+        'namespaceGracePeriodDuration': !(0, runtime_1.exists)(json, 'namespaceGracePeriodDuration') ? undefined : json['namespaceGracePeriodDuration'],
+        'reservedRootNamespaceNames': !(0, runtime_1.exists)(json, 'reservedRootNamespaceNames') ? undefined : json['reservedRootNamespaceNames'],
+        'namespaceRentalFeeSinkAddress': !(0, runtime_1.exists)(json, 'namespaceRentalFeeSinkAddress') ? undefined : json['namespaceRentalFeeSinkAddress'],
+        'rootNamespaceRentalFeePerBlock': !(0, runtime_1.exists)(json, 'rootNamespaceRentalFeePerBlock') ? undefined : json['rootNamespaceRentalFeePerBlock'],
+        'childNamespaceRentalFee': !(0, runtime_1.exists)(json, 'childNamespaceRentalFee') ? undefined : json['childNamespaceRentalFee'],
     };
 }
 exports.NamespaceNetworkPropertiesDTOFromJSONTyped = NamespaceNetworkPropertiesDTOFromJSONTyped;
@@ -71,16 +53,16 @@ function NamespaceNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxNameSize: value.maxNameSize,
-        maxChildNamespaces: value.maxChildNamespaces,
-        maxNamespaceDepth: value.maxNamespaceDepth,
-        minNamespaceDuration: value.minNamespaceDuration,
-        maxNamespaceDuration: value.maxNamespaceDuration,
-        namespaceGracePeriodDuration: value.namespaceGracePeriodDuration,
-        reservedRootNamespaceNames: value.reservedRootNamespaceNames,
-        namespaceRentalFeeSinkAddress: value.namespaceRentalFeeSinkAddress,
-        rootNamespaceRentalFeePerBlock: value.rootNamespaceRentalFeePerBlock,
-        childNamespaceRentalFee: value.childNamespaceRentalFee,
+        'maxNameSize': value.maxNameSize,
+        'maxChildNamespaces': value.maxChildNamespaces,
+        'maxNamespaceDepth': value.maxNamespaceDepth,
+        'minNamespaceDuration': value.minNamespaceDuration,
+        'maxNamespaceDuration': value.maxNamespaceDuration,
+        'namespaceGracePeriodDuration': value.namespaceGracePeriodDuration,
+        'reservedRootNamespaceNames': value.reservedRootNamespaceNames,
+        'namespaceRentalFeeSinkAddress': value.namespaceRentalFeeSinkAddress,
+        'rootNamespaceRentalFeePerBlock': value.rootNamespaceRentalFeePerBlock,
+        'childNamespaceRentalFee': value.childNamespaceRentalFee,
     };
 }
 exports.NamespaceNetworkPropertiesDTOToJSON = NamespaceNetworkPropertiesDTOToJSON;

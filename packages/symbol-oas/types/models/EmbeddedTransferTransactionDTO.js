@@ -36,17 +36,17 @@ function EmbeddedTransferTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedTransferTransactionDTOFromJSON = EmbeddedTransferTransactionDTOFromJSON;
 function EmbeddedTransferTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        recipientAddress: json["recipientAddress"],
-        mosaics: json["mosaics"].map(UnresolvedMosaic_1.UnresolvedMosaicFromJSON),
-        message: !(0, runtime_1.exists)(json, "message") ? undefined : json["message"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'recipientAddress': json['recipientAddress'],
+        'mosaics': (json['mosaics'].map(UnresolvedMosaic_1.UnresolvedMosaicFromJSON)),
+        'message': !(0, runtime_1.exists)(json, 'message') ? undefined : json['message'],
     };
 }
 exports.EmbeddedTransferTransactionDTOFromJSONTyped = EmbeddedTransferTransactionDTOFromJSONTyped;
@@ -58,13 +58,13 @@ function EmbeddedTransferTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        recipientAddress: value.recipientAddress,
-        mosaics: value.mosaics.map(UnresolvedMosaic_1.UnresolvedMosaicToJSON),
-        message: value.message,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'recipientAddress': value.recipientAddress,
+        'mosaics': (value.mosaics.map(UnresolvedMosaic_1.UnresolvedMosaicToJSON)),
+        'message': value.message,
     };
 }
 exports.EmbeddedTransferTransactionDTOToJSON = EmbeddedTransferTransactionDTOToJSON;

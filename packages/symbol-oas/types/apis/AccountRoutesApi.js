@@ -58,15 +58,14 @@ class AccountRoutesApi extends runtime.BaseAPI {
      */
     getAccountInfoRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.accountId === null ||
-                requestParameters.accountId === undefined) {
-                throw new runtime.RequiredError("accountId", "Required parameter requestParameters.accountId was null or undefined when calling getAccountInfo.");
+            if (requestParameters.accountId === null || requestParameters.accountId === undefined) {
+                throw new runtime.RequiredError('accountId', 'Required parameter requestParameters.accountId was null or undefined when calling getAccountInfo.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/accounts/{accountId}`.replace(`{${"accountId"}}`, encodeURIComponent(String(requestParameters.accountId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class AccountRoutesApi extends runtime.BaseAPI {
      */
     getAccountInfoMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.accountId === null ||
-                requestParameters.accountId === undefined) {
-                throw new runtime.RequiredError("accountId", "Required parameter requestParameters.accountId was null or undefined when calling getAccountInfoMerkle.");
+            if (requestParameters.accountId === null || requestParameters.accountId === undefined) {
+                throw new runtime.RequiredError('accountId', 'Required parameter requestParameters.accountId was null or undefined when calling getAccountInfoMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/accounts/{accountId}/merkle`.replace(`{${"accountId"}}`, encodeURIComponent(String(requestParameters.accountId))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -122,10 +120,10 @@ class AccountRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/accounts`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.AccountIdsToJSON)(requestParameters.accountIds),
@@ -151,27 +149,27 @@ class AccountRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             if (requestParameters.orderBy !== undefined) {
-                queryParameters["orderBy"] = requestParameters.orderBy;
+                queryParameters['orderBy'] = requestParameters.orderBy;
             }
             if (requestParameters.mosaicId !== undefined) {
-                queryParameters["mosaicId"] = requestParameters.mosaicId;
+                queryParameters['mosaicId'] = requestParameters.mosaicId;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/accounts`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

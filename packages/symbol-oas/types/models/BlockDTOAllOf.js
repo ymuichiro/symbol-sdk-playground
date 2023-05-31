@@ -39,22 +39,22 @@ function BlockDTOAllOfFromJSON(json) {
 }
 exports.BlockDTOAllOfFromJSON = BlockDTOAllOfFromJSON;
 function BlockDTOAllOfFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        timestamp: json["timestamp"],
-        difficulty: json["difficulty"],
-        proofGamma: json["proofGamma"],
-        proofVerificationHash: json["proofVerificationHash"],
-        proofScalar: json["proofScalar"],
-        previousBlockHash: json["previousBlockHash"],
-        transactionsHash: json["transactionsHash"],
-        receiptsHash: json["receiptsHash"],
-        stateHash: json["stateHash"],
-        beneficiaryAddress: json["beneficiaryAddress"],
-        feeMultiplier: json["feeMultiplier"],
+        'height': json['height'],
+        'timestamp': json['timestamp'],
+        'difficulty': json['difficulty'],
+        'proofGamma': json['proofGamma'],
+        'proofVerificationHash': json['proofVerificationHash'],
+        'proofScalar': json['proofScalar'],
+        'previousBlockHash': json['previousBlockHash'],
+        'transactionsHash': json['transactionsHash'],
+        'receiptsHash': json['receiptsHash'],
+        'stateHash': json['stateHash'],
+        'beneficiaryAddress': json['beneficiaryAddress'],
+        'feeMultiplier': json['feeMultiplier'],
     };
 }
 exports.BlockDTOAllOfFromJSONTyped = BlockDTOAllOfFromJSONTyped;
@@ -66,18 +66,18 @@ function BlockDTOAllOfToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        timestamp: value.timestamp,
-        difficulty: value.difficulty,
-        proofGamma: value.proofGamma,
-        proofVerificationHash: value.proofVerificationHash,
-        proofScalar: value.proofScalar,
-        previousBlockHash: value.previousBlockHash,
-        transactionsHash: value.transactionsHash,
-        receiptsHash: value.receiptsHash,
-        stateHash: value.stateHash,
-        beneficiaryAddress: value.beneficiaryAddress,
-        feeMultiplier: value.feeMultiplier,
+        'height': value.height,
+        'timestamp': value.timestamp,
+        'difficulty': value.difficulty,
+        'proofGamma': value.proofGamma,
+        'proofVerificationHash': value.proofVerificationHash,
+        'proofScalar': value.proofScalar,
+        'previousBlockHash': value.previousBlockHash,
+        'transactionsHash': value.transactionsHash,
+        'receiptsHash': value.receiptsHash,
+        'stateHash': value.stateHash,
+        'beneficiaryAddress': value.beneficiaryAddress,
+        'feeMultiplier': value.feeMultiplier,
     };
 }
 exports.BlockDTOAllOfToJSON = BlockDTOAllOfToJSON;

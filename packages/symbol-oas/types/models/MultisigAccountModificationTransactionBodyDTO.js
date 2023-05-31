@@ -31,14 +31,14 @@ function MultisigAccountModificationTransactionBodyDTOFromJSON(json) {
 }
 exports.MultisigAccountModificationTransactionBodyDTOFromJSON = MultisigAccountModificationTransactionBodyDTOFromJSON;
 function MultisigAccountModificationTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        minRemovalDelta: json["minRemovalDelta"],
-        minApprovalDelta: json["minApprovalDelta"],
-        addressAdditions: json["addressAdditions"],
-        addressDeletions: json["addressDeletions"],
+        'minRemovalDelta': json['minRemovalDelta'],
+        'minApprovalDelta': json['minApprovalDelta'],
+        'addressAdditions': json['addressAdditions'],
+        'addressDeletions': json['addressDeletions'],
     };
 }
 exports.MultisigAccountModificationTransactionBodyDTOFromJSONTyped = MultisigAccountModificationTransactionBodyDTOFromJSONTyped;
@@ -50,10 +50,10 @@ function MultisigAccountModificationTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        minRemovalDelta: value.minRemovalDelta,
-        minApprovalDelta: value.minApprovalDelta,
-        addressAdditions: value.addressAdditions,
-        addressDeletions: value.addressDeletions,
+        'minRemovalDelta': value.minRemovalDelta,
+        'minApprovalDelta': value.minApprovalDelta,
+        'addressAdditions': value.addressAdditions,
+        'addressDeletions': value.addressDeletions,
     };
 }
 exports.MultisigAccountModificationTransactionBodyDTOToJSON = MultisigAccountModificationTransactionBodyDTOToJSON;

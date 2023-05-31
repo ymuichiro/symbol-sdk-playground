@@ -28,11 +28,11 @@ function AddressesFromJSON(json) {
 }
 exports.AddressesFromJSON = AddressesFromJSON;
 function AddressesFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        addresses: !(0, runtime_1.exists)(json, "addresses") ? undefined : json["addresses"],
+        'addresses': !(0, runtime_1.exists)(json, 'addresses') ? undefined : json['addresses'],
     };
 }
 exports.AddressesFromJSONTyped = AddressesFromJSONTyped;
@@ -44,7 +44,7 @@ function AddressesToJSON(value) {
         return null;
     }
     return {
-        addresses: value.addresses,
+        'addresses': value.addresses,
     };
 }
 exports.AddressesToJSON = AddressesToJSON;

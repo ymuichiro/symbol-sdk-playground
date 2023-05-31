@@ -29,14 +29,12 @@ function MerklePathItemDTOFromJSON(json) {
 }
 exports.MerklePathItemDTOFromJSON = MerklePathItemDTOFromJSON;
 function MerklePathItemDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        position: !(0, runtime_1.exists)(json, "position")
-            ? undefined
-            : (0, PositionEnum_1.PositionEnumFromJSON)(json["position"]),
-        hash: !(0, runtime_1.exists)(json, "hash") ? undefined : json["hash"],
+        'position': !(0, runtime_1.exists)(json, 'position') ? undefined : (0, PositionEnum_1.PositionEnumFromJSON)(json['position']),
+        'hash': !(0, runtime_1.exists)(json, 'hash') ? undefined : json['hash'],
     };
 }
 exports.MerklePathItemDTOFromJSONTyped = MerklePathItemDTOFromJSONTyped;
@@ -48,8 +46,8 @@ function MerklePathItemDTOToJSON(value) {
         return null;
     }
     return {
-        position: (0, PositionEnum_1.PositionEnumToJSON)(value.position),
-        hash: value.hash,
+        'position': (0, PositionEnum_1.PositionEnumToJSON)(value.position),
+        'hash': value.hash,
     };
 }
 exports.MerklePathItemDTOToJSON = MerklePathItemDTOToJSON;

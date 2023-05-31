@@ -28,11 +28,11 @@ function VerifiableEntityDTOFromJSON(json) {
 }
 exports.VerifiableEntityDTOFromJSON = VerifiableEntityDTOFromJSON;
 function VerifiableEntityDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signature: json["signature"],
+        'signature': json['signature'],
     };
 }
 exports.VerifiableEntityDTOFromJSONTyped = VerifiableEntityDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function VerifiableEntityDTOToJSON(value) {
         return null;
     }
     return {
-        signature: value.signature,
+        'signature': value.signature,
     };
 }
 exports.VerifiableEntityDTOToJSON = VerifiableEntityDTOToJSON;

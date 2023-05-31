@@ -30,13 +30,13 @@ function StorageInfoDTOFromJSON(json) {
 }
 exports.StorageInfoDTOFromJSON = StorageInfoDTOFromJSON;
 function StorageInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        numBlocks: json["numBlocks"],
-        numTransactions: json["numTransactions"],
-        numAccounts: json["numAccounts"],
+        'numBlocks': json['numBlocks'],
+        'numTransactions': json['numTransactions'],
+        'numAccounts': json['numAccounts'],
     };
 }
 exports.StorageInfoDTOFromJSONTyped = StorageInfoDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function StorageInfoDTOToJSON(value) {
         return null;
     }
     return {
-        numBlocks: value.numBlocks,
-        numTransactions: value.numTransactions,
-        numAccounts: value.numAccounts,
+        'numBlocks': value.numBlocks,
+        'numTransactions': value.numTransactions,
+        'numAccounts': value.numAccounts,
     };
 }
 exports.StorageInfoDTOToJSON = StorageInfoDTOToJSON;

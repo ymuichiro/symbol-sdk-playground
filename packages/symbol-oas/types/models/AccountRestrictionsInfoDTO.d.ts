@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionsDTO } from "./AccountRestrictionsDTO";
+import type { AccountRestrictionsDTO } from './AccountRestrictionsDTO';
 /**
  *
  * @export

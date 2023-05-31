@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { EmbeddedTransactionInfoDTOTransaction } from "./EmbeddedTransactionInfoDTOTransaction";
-import type { EmbeddedTransactionMetaDTO } from "./EmbeddedTransactionMetaDTO";
+import type { EmbeddedTransactionInfoDTOTransaction } from './EmbeddedTransactionInfoDTOTransaction';
+import type { EmbeddedTransactionMetaDTO } from './EmbeddedTransactionMetaDTO';
 /**
  *
  * @export

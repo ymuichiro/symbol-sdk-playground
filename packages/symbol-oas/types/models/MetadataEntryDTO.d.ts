@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MetadataEntryDTOTargetId } from "./MetadataEntryDTOTargetId";
-import type { MetadataTypeEnum } from "./MetadataTypeEnum";
+import type { MetadataEntryDTOTargetId } from './MetadataEntryDTOTargetId';
+import type { MetadataTypeEnum } from './MetadataTypeEnum';
 /**
  *
  * @export

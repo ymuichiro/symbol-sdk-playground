@@ -33,14 +33,14 @@ function MessageGroupFromJSON(json) {
 }
 exports.MessageGroupFromJSON = MessageGroupFromJSON;
 function MessageGroupFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        stage: (0, StageEnum_1.StageEnumFromJSON)(json["stage"]),
-        height: json["height"],
-        hashes: json["hashes"],
-        signatures: json["signatures"].map(BmTreeSignature_1.BmTreeSignatureFromJSON),
+        'stage': (0, StageEnum_1.StageEnumFromJSON)(json['stage']),
+        'height': json['height'],
+        'hashes': json['hashes'],
+        'signatures': (json['signatures'].map(BmTreeSignature_1.BmTreeSignatureFromJSON)),
     };
 }
 exports.MessageGroupFromJSONTyped = MessageGroupFromJSONTyped;
@@ -52,10 +52,10 @@ function MessageGroupToJSON(value) {
         return null;
     }
     return {
-        stage: (0, StageEnum_1.StageEnumToJSON)(value.stage),
-        height: value.height,
-        hashes: value.hashes,
-        signatures: value.signatures.map(BmTreeSignature_1.BmTreeSignatureToJSON),
+        'stage': (0, StageEnum_1.StageEnumToJSON)(value.stage),
+        'height': value.height,
+        'hashes': value.hashes,
+        'signatures': (value.signatures.map(BmTreeSignature_1.BmTreeSignatureToJSON)),
     };
 }
 exports.MessageGroupToJSON = MessageGroupToJSON;

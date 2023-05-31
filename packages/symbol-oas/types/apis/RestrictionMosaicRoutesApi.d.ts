@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { MerkleStateInfoDTO, MosaicRestrictionDTO, MosaicRestrictionEntryTypeEnum, MosaicRestrictionsPage, Order } from "../models";
+import * as runtime from '../runtime';
+import type { MerkleStateInfoDTO, MosaicRestrictionDTO, MosaicRestrictionEntryTypeEnum, MosaicRestrictionsPage, Order } from '../models';
 export interface GetMosaicRestrictionsRequest {
     compositeHash: string;
 }

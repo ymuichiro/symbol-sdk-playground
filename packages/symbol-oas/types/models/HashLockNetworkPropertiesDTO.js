@@ -28,16 +28,12 @@ function HashLockNetworkPropertiesDTOFromJSON(json) {
 }
 exports.HashLockNetworkPropertiesDTOFromJSON = HashLockNetworkPropertiesDTOFromJSON;
 function HashLockNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        lockedFundsPerAggregate: !(0, runtime_1.exists)(json, "lockedFundsPerAggregate")
-            ? undefined
-            : json["lockedFundsPerAggregate"],
-        maxHashLockDuration: !(0, runtime_1.exists)(json, "maxHashLockDuration")
-            ? undefined
-            : json["maxHashLockDuration"],
+        'lockedFundsPerAggregate': !(0, runtime_1.exists)(json, 'lockedFundsPerAggregate') ? undefined : json['lockedFundsPerAggregate'],
+        'maxHashLockDuration': !(0, runtime_1.exists)(json, 'maxHashLockDuration') ? undefined : json['maxHashLockDuration'],
     };
 }
 exports.HashLockNetworkPropertiesDTOFromJSONTyped = HashLockNetworkPropertiesDTOFromJSONTyped;
@@ -49,8 +45,8 @@ function HashLockNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        lockedFundsPerAggregate: value.lockedFundsPerAggregate,
-        maxHashLockDuration: value.maxHashLockDuration,
+        'lockedFundsPerAggregate': value.lockedFundsPerAggregate,
+        'maxHashLockDuration': value.maxHashLockDuration,
     };
 }
 exports.HashLockNetworkPropertiesDTOToJSON = HashLockNetworkPropertiesDTOToJSON;

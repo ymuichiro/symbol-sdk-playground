@@ -33,15 +33,15 @@ function BalanceChangeReceiptDTOFromJSON(json) {
 }
 exports.BalanceChangeReceiptDTOFromJSON = BalanceChangeReceiptDTOFromJSON;
 function BalanceChangeReceiptDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        targetAddress: json["targetAddress"],
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'targetAddress': json['targetAddress'],
     };
 }
 exports.BalanceChangeReceiptDTOFromJSONTyped = BalanceChangeReceiptDTOFromJSONTyped;
@@ -53,11 +53,11 @@ function BalanceChangeReceiptDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        targetAddress: value.targetAddress,
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'targetAddress': value.targetAddress,
     };
 }
 exports.BalanceChangeReceiptDTOToJSON = BalanceChangeReceiptDTOToJSON;

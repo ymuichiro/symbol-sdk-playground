@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { ReceiptTypeEnum } from "./ReceiptTypeEnum";
+import type { ReceiptTypeEnum } from './ReceiptTypeEnum';
 /**
  * Receipt stored when network currency mosaics were created due to inflation.
  * @export

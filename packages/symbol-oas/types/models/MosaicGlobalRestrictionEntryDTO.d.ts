@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MosaicGlobalRestrictionEntryRestrictionDTO } from "./MosaicGlobalRestrictionEntryRestrictionDTO";
+import type { MosaicGlobalRestrictionEntryRestrictionDTO } from './MosaicGlobalRestrictionEntryRestrictionDTO';
 /**
  *
  * @export

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { FinalizationProofDTO } from "../models";
+import * as runtime from '../runtime';
+import type { FinalizationProofDTO } from '../models';
 export interface GetFinalizationProofAtEpochRequest {
     epoch: number;
 }

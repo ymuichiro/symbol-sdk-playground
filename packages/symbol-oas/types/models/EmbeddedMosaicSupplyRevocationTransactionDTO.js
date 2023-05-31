@@ -35,17 +35,17 @@ function EmbeddedMosaicSupplyRevocationTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedMosaicSupplyRevocationTransactionDTOFromJSON = EmbeddedMosaicSupplyRevocationTransactionDTOFromJSON;
 function EmbeddedMosaicSupplyRevocationTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        sourceAddress: json["sourceAddress"],
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'sourceAddress': json['sourceAddress'],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
     };
 }
 exports.EmbeddedMosaicSupplyRevocationTransactionDTOFromJSONTyped = EmbeddedMosaicSupplyRevocationTransactionDTOFromJSONTyped;
@@ -57,13 +57,13 @@ function EmbeddedMosaicSupplyRevocationTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        sourceAddress: value.sourceAddress,
-        mosaicId: value.mosaicId,
-        amount: value.amount,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'sourceAddress': value.sourceAddress,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
     };
 }
 exports.EmbeddedMosaicSupplyRevocationTransactionDTOToJSON = EmbeddedMosaicSupplyRevocationTransactionDTOToJSON;

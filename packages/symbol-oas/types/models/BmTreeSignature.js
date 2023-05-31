@@ -30,12 +30,12 @@ function BmTreeSignatureFromJSON(json) {
 }
 exports.BmTreeSignatureFromJSON = BmTreeSignatureFromJSON;
 function BmTreeSignatureFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        root: (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairFromJSON)(json["root"]),
-        bottom: (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairFromJSON)(json["bottom"]),
+        'root': (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairFromJSON)(json['root']),
+        'bottom': (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairFromJSON)(json['bottom']),
     };
 }
 exports.BmTreeSignatureFromJSONTyped = BmTreeSignatureFromJSONTyped;
@@ -47,8 +47,8 @@ function BmTreeSignatureToJSON(value) {
         return null;
     }
     return {
-        root: (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairToJSON)(value.root),
-        bottom: (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairToJSON)(value.bottom),
+        'root': (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairToJSON)(value.root),
+        'bottom': (0, ParentPublicKeySignaturePair_1.ParentPublicKeySignaturePairToJSON)(value.bottom),
     };
 }
 exports.BmTreeSignatureToJSON = BmTreeSignatureToJSON;

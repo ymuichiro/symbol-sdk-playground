@@ -22,7 +22,7 @@ exports.NetworkTypeEnumToJSON = exports.NetworkTypeEnumFromJSONTyped = exports.N
  */
 exports.NetworkTypeEnum = {
     NUMBER_104: 104,
-    NUMBER_152: 152,
+    NUMBER_152: 152
 };
 function NetworkTypeEnumFromJSON(json) {
     return NetworkTypeEnumFromJSONTyped(json, false);

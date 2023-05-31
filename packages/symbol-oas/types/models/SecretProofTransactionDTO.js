@@ -41,22 +41,22 @@ function SecretProofTransactionDTOFromJSON(json) {
 }
 exports.SecretProofTransactionDTOFromJSON = SecretProofTransactionDTOFromJSON;
 function SecretProofTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        recipientAddress: json["recipientAddress"],
-        secret: json["secret"],
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json["hashAlgorithm"]),
-        proof: json["proof"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'recipientAddress': json['recipientAddress'],
+        'secret': json['secret'],
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json['hashAlgorithm']),
+        'proof': json['proof'],
     };
 }
 exports.SecretProofTransactionDTOFromJSONTyped = SecretProofTransactionDTOFromJSONTyped;
@@ -68,18 +68,18 @@ function SecretProofTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        recipientAddress: value.recipientAddress,
-        secret: value.secret,
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
-        proof: value.proof,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'recipientAddress': value.recipientAddress,
+        'secret': value.secret,
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
+        'proof': value.proof,
     };
 }
 exports.SecretProofTransactionDTOToJSON = SecretProofTransactionDTOToJSON;

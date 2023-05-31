@@ -32,15 +32,15 @@ function NamespaceRegistrationTransactionBodyDTOFromJSON(json) {
 }
 exports.NamespaceRegistrationTransactionBodyDTOFromJSON = NamespaceRegistrationTransactionBodyDTOFromJSON;
 function NamespaceRegistrationTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        duration: !(0, runtime_1.exists)(json, "duration") ? undefined : json["duration"],
-        parentId: !(0, runtime_1.exists)(json, "parentId") ? undefined : json["parentId"],
-        id: json["id"],
-        registrationType: (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumFromJSON)(json["registrationType"]),
-        name: json["name"],
+        'duration': !(0, runtime_1.exists)(json, 'duration') ? undefined : json['duration'],
+        'parentId': !(0, runtime_1.exists)(json, 'parentId') ? undefined : json['parentId'],
+        'id': json['id'],
+        'registrationType': (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumFromJSON)(json['registrationType']),
+        'name': json['name'],
     };
 }
 exports.NamespaceRegistrationTransactionBodyDTOFromJSONTyped = NamespaceRegistrationTransactionBodyDTOFromJSONTyped;
@@ -52,11 +52,11 @@ function NamespaceRegistrationTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        duration: value.duration,
-        parentId: value.parentId,
-        id: value.id,
-        registrationType: (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumToJSON)(value.registrationType),
-        name: value.name,
+        'duration': value.duration,
+        'parentId': value.parentId,
+        'id': value.id,
+        'registrationType': (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumToJSON)(value.registrationType),
+        'name': value.name,
     };
 }
 exports.NamespaceRegistrationTransactionBodyDTOToJSON = NamespaceRegistrationTransactionBodyDTOToJSON;

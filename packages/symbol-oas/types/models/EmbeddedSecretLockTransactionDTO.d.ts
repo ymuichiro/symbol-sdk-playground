@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LockHashAlgorithmEnum } from "./LockHashAlgorithmEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { LockHashAlgorithmEnum } from './LockHashAlgorithmEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  *
  * @export

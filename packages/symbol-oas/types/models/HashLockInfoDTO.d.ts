@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { HashLockEntryDTO } from "./HashLockEntryDTO";
+import type { HashLockEntryDTO } from './HashLockEntryDTO';
 /**
  *
  * @export

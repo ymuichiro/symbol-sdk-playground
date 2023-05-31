@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LinkActionEnum } from "./LinkActionEnum";
+import type { LinkActionEnum } from './LinkActionEnum';
 /**
  *
  * @export

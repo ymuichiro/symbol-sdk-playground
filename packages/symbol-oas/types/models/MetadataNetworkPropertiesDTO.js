@@ -28,13 +28,11 @@ function MetadataNetworkPropertiesDTOFromJSON(json) {
 }
 exports.MetadataNetworkPropertiesDTOFromJSON = MetadataNetworkPropertiesDTOFromJSON;
 function MetadataNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxValueSize: !(0, runtime_1.exists)(json, "maxValueSize")
-            ? undefined
-            : json["maxValueSize"],
+        'maxValueSize': !(0, runtime_1.exists)(json, 'maxValueSize') ? undefined : json['maxValueSize'],
     };
 }
 exports.MetadataNetworkPropertiesDTOFromJSONTyped = MetadataNetworkPropertiesDTOFromJSONTyped;
@@ -46,7 +44,7 @@ function MetadataNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxValueSize: value.maxValueSize,
+        'maxValueSize': value.maxValueSize,
     };
 }
 exports.MetadataNetworkPropertiesDTOToJSON = MetadataNetworkPropertiesDTOToJSON;

@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AggregateTransactionExtendedDTOToJSON = exports.AggregateTransactionExtendedDTOFromJSONTyped = exports.AggregateTransactionExtendedDTOFromJSON = exports.instanceOfAggregateTransactionExtendedDTO = void 0;
+const runtime_1 = require("../runtime");
 const CosignatureDTO_1 = require("./CosignatureDTO");
 const EmbeddedTransactionInfoDTO_1 = require("./EmbeddedTransactionInfoDTO");
 const NetworkTypeEnum_1 = require("./NetworkTypeEnum");
@@ -31,8 +32,6 @@ function instanceOfAggregateTransactionExtendedDTO(value) {
     isInstance = isInstance && "maxFee" in value;
     isInstance = isInstance && "deadline" in value;
     isInstance = isInstance && "transactionsHash" in value;
-    isInstance = isInstance && "cosignatures" in value;
-    isInstance = isInstance && "transactions" in value;
     return isInstance;
 }
 exports.instanceOfAggregateTransactionExtendedDTO = instanceOfAggregateTransactionExtendedDTO;
@@ -41,21 +40,21 @@ function AggregateTransactionExtendedDTOFromJSON(json) {
 }
 exports.AggregateTransactionExtendedDTOFromJSON = AggregateTransactionExtendedDTOFromJSON;
 function AggregateTransactionExtendedDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        transactionsHash: json["transactionsHash"],
-        cosignatures: json["cosignatures"].map(CosignatureDTO_1.CosignatureDTOFromJSON),
-        transactions: json["transactions"].map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOFromJSON),
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'transactionsHash': json['transactionsHash'],
+        'cosignatures': !(0, runtime_1.exists)(json, 'cosignatures') ? undefined : (json['cosignatures'].map(CosignatureDTO_1.CosignatureDTOFromJSON)),
+        'transactions': !(0, runtime_1.exists)(json, 'transactions') ? undefined : (json['transactions'].map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOFromJSON)),
     };
 }
 exports.AggregateTransactionExtendedDTOFromJSONTyped = AggregateTransactionExtendedDTOFromJSONTyped;
@@ -67,17 +66,17 @@ function AggregateTransactionExtendedDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        transactionsHash: value.transactionsHash,
-        cosignatures: value.cosignatures.map(CosignatureDTO_1.CosignatureDTOToJSON),
-        transactions: value.transactions.map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOToJSON),
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'transactionsHash': value.transactionsHash,
+        'cosignatures': value.cosignatures === undefined ? undefined : (value.cosignatures.map(CosignatureDTO_1.CosignatureDTOToJSON)),
+        'transactions': value.transactions === undefined ? undefined : (value.transactions.map(EmbeddedTransactionInfoDTO_1.EmbeddedTransactionInfoDTOToJSON)),
     };
 }
 exports.AggregateTransactionExtendedDTOToJSON = AggregateTransactionExtendedDTOToJSON;

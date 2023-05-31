@@ -36,19 +36,19 @@ function MosaicDTOFromJSON(json) {
 }
 exports.MosaicDTOFromJSON = MosaicDTOFromJSON;
 function MosaicDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        id: json["id"],
-        supply: json["supply"],
-        startHeight: json["startHeight"],
-        ownerAddress: json["ownerAddress"],
-        revision: json["revision"],
-        flags: json["flags"],
-        divisibility: json["divisibility"],
-        duration: json["duration"],
+        'version': json['version'],
+        'id': json['id'],
+        'supply': json['supply'],
+        'startHeight': json['startHeight'],
+        'ownerAddress': json['ownerAddress'],
+        'revision': json['revision'],
+        'flags': json['flags'],
+        'divisibility': json['divisibility'],
+        'duration': json['duration'],
     };
 }
 exports.MosaicDTOFromJSONTyped = MosaicDTOFromJSONTyped;
@@ -60,15 +60,15 @@ function MosaicDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        id: value.id,
-        supply: value.supply,
-        startHeight: value.startHeight,
-        ownerAddress: value.ownerAddress,
-        revision: value.revision,
-        flags: value.flags,
-        divisibility: value.divisibility,
-        duration: value.duration,
+        'version': value.version,
+        'id': value.id,
+        'supply': value.supply,
+        'startHeight': value.startHeight,
+        'ownerAddress': value.ownerAddress,
+        'revision': value.revision,
+        'flags': value.flags,
+        'divisibility': value.divisibility,
+        'duration': value.duration,
     };
 }
 exports.MosaicDTOToJSON = MosaicDTOToJSON;

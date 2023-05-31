@@ -31,13 +31,13 @@ function TransferTransactionBodyDTOFromJSON(json) {
 }
 exports.TransferTransactionBodyDTOFromJSON = TransferTransactionBodyDTOFromJSON;
 function TransferTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        recipientAddress: json["recipientAddress"],
-        mosaics: json["mosaics"].map(UnresolvedMosaic_1.UnresolvedMosaicFromJSON),
-        message: !(0, runtime_1.exists)(json, "message") ? undefined : json["message"],
+        'recipientAddress': json['recipientAddress'],
+        'mosaics': (json['mosaics'].map(UnresolvedMosaic_1.UnresolvedMosaicFromJSON)),
+        'message': !(0, runtime_1.exists)(json, 'message') ? undefined : json['message'],
     };
 }
 exports.TransferTransactionBodyDTOFromJSONTyped = TransferTransactionBodyDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function TransferTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        recipientAddress: value.recipientAddress,
-        mosaics: value.mosaics.map(UnresolvedMosaic_1.UnresolvedMosaicToJSON),
-        message: value.message,
+        'recipientAddress': value.recipientAddress,
+        'mosaics': (value.mosaics.map(UnresolvedMosaic_1.UnresolvedMosaicToJSON)),
+        'message': value.message,
     };
 }
 exports.TransferTransactionBodyDTOToJSON = TransferTransactionBodyDTOToJSON;

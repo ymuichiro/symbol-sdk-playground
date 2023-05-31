@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { BmTreeSignature } from "./BmTreeSignature";
-import type { StageEnum } from "./StageEnum";
+import type { BmTreeSignature } from './BmTreeSignature';
+import type { StageEnum } from './StageEnum';
 /**
  *
  * @export

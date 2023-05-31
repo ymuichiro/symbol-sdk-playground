@@ -58,15 +58,14 @@ class FinalizationRoutesApi extends runtime.BaseAPI {
      */
     getFinalizationProofAtEpochRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.epoch === null ||
-                requestParameters.epoch === undefined) {
-                throw new runtime.RequiredError("epoch", "Required parameter requestParameters.epoch was null or undefined when calling getFinalizationProofAtEpoch.");
+            if (requestParameters.epoch === null || requestParameters.epoch === undefined) {
+                throw new runtime.RequiredError('epoch', 'Required parameter requestParameters.epoch was null or undefined when calling getFinalizationProofAtEpoch.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/finalization/proof/epoch/{epoch}`.replace(`{${"epoch"}}`, encodeURIComponent(String(requestParameters.epoch))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class FinalizationRoutesApi extends runtime.BaseAPI {
      */
     getFinalizationProofAtHeightRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.height === null ||
-                requestParameters.height === undefined) {
-                throw new runtime.RequiredError("height", "Required parameter requestParameters.height was null or undefined when calling getFinalizationProofAtHeight.");
+            if (requestParameters.height === null || requestParameters.height === undefined) {
+                throw new runtime.RequiredError('height', 'Required parameter requestParameters.height was null or undefined when calling getFinalizationProofAtHeight.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/finalization/proof/height/{height}`.replace(`{${"height"}}`, encodeURIComponent(String(requestParameters.height))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

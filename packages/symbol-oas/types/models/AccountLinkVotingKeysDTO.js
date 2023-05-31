@@ -29,11 +29,11 @@ function AccountLinkVotingKeysDTOFromJSON(json) {
 }
 exports.AccountLinkVotingKeysDTOFromJSON = AccountLinkVotingKeysDTOFromJSON;
 function AccountLinkVotingKeysDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        publicKeys: json["publicKeys"].map(AccountLinkVotingKeyDTO_1.AccountLinkVotingKeyDTOFromJSON),
+        'publicKeys': (json['publicKeys'].map(AccountLinkVotingKeyDTO_1.AccountLinkVotingKeyDTOFromJSON)),
     };
 }
 exports.AccountLinkVotingKeysDTOFromJSONTyped = AccountLinkVotingKeysDTOFromJSONTyped;
@@ -45,7 +45,7 @@ function AccountLinkVotingKeysDTOToJSON(value) {
         return null;
     }
     return {
-        publicKeys: value.publicKeys.map(AccountLinkVotingKeyDTO_1.AccountLinkVotingKeyDTOToJSON),
+        'publicKeys': (value.publicKeys.map(AccountLinkVotingKeyDTO_1.AccountLinkVotingKeyDTOToJSON)),
     };
 }
 exports.AccountLinkVotingKeysDTOToJSON = AccountLinkVotingKeysDTOToJSON;

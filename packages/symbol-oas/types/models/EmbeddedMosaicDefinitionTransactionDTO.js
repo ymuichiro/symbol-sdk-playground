@@ -37,19 +37,19 @@ function EmbeddedMosaicDefinitionTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedMosaicDefinitionTransactionDTOFromJSON = EmbeddedMosaicDefinitionTransactionDTOFromJSON;
 function EmbeddedMosaicDefinitionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        id: json["id"],
-        duration: json["duration"],
-        nonce: json["nonce"],
-        flags: json["flags"],
-        divisibility: json["divisibility"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'id': json['id'],
+        'duration': json['duration'],
+        'nonce': json['nonce'],
+        'flags': json['flags'],
+        'divisibility': json['divisibility'],
     };
 }
 exports.EmbeddedMosaicDefinitionTransactionDTOFromJSONTyped = EmbeddedMosaicDefinitionTransactionDTOFromJSONTyped;
@@ -61,15 +61,15 @@ function EmbeddedMosaicDefinitionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        id: value.id,
-        duration: value.duration,
-        nonce: value.nonce,
-        flags: value.flags,
-        divisibility: value.divisibility,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'id': value.id,
+        'duration': value.duration,
+        'nonce': value.nonce,
+        'flags': value.flags,
+        'divisibility': value.divisibility,
     };
 }
 exports.EmbeddedMosaicDefinitionTransactionDTOToJSON = EmbeddedMosaicDefinitionTransactionDTOToJSON;

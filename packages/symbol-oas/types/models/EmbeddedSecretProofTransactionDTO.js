@@ -37,18 +37,18 @@ function EmbeddedSecretProofTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedSecretProofTransactionDTOFromJSON = EmbeddedSecretProofTransactionDTOFromJSON;
 function EmbeddedSecretProofTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        recipientAddress: json["recipientAddress"],
-        secret: json["secret"],
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json["hashAlgorithm"]),
-        proof: json["proof"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'recipientAddress': json['recipientAddress'],
+        'secret': json['secret'],
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json['hashAlgorithm']),
+        'proof': json['proof'],
     };
 }
 exports.EmbeddedSecretProofTransactionDTOFromJSONTyped = EmbeddedSecretProofTransactionDTOFromJSONTyped;
@@ -60,14 +60,14 @@ function EmbeddedSecretProofTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        recipientAddress: value.recipientAddress,
-        secret: value.secret,
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
-        proof: value.proof,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'recipientAddress': value.recipientAddress,
+        'secret': value.secret,
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
+        'proof': value.proof,
     };
 }
 exports.EmbeddedSecretProofTransactionDTOToJSON = EmbeddedSecretProofTransactionDTOToJSON;

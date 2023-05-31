@@ -31,12 +31,12 @@ function MosaicPageFromJSON(json) {
 }
 exports.MosaicPageFromJSON = MosaicPageFromJSON;
 function MosaicPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(MosaicInfoDTO_1.MosaicInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(MosaicInfoDTO_1.MosaicInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.MosaicPageFromJSONTyped = MosaicPageFromJSONTyped;
@@ -48,8 +48,8 @@ function MosaicPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(MosaicInfoDTO_1.MosaicInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(MosaicInfoDTO_1.MosaicInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.MosaicPageToJSON = MosaicPageToJSON;

@@ -32,14 +32,14 @@ function ChainInfoDTOFromJSON(json) {
 }
 exports.ChainInfoDTOFromJSON = ChainInfoDTOFromJSON;
 function ChainInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        scoreHigh: json["scoreHigh"],
-        scoreLow: json["scoreLow"],
-        latestFinalizedBlock: (0, FinalizedBlockDTO_1.FinalizedBlockDTOFromJSON)(json["latestFinalizedBlock"]),
+        'height': json['height'],
+        'scoreHigh': json['scoreHigh'],
+        'scoreLow': json['scoreLow'],
+        'latestFinalizedBlock': (0, FinalizedBlockDTO_1.FinalizedBlockDTOFromJSON)(json['latestFinalizedBlock']),
     };
 }
 exports.ChainInfoDTOFromJSONTyped = ChainInfoDTOFromJSONTyped;
@@ -51,10 +51,10 @@ function ChainInfoDTOToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        scoreHigh: value.scoreHigh,
-        scoreLow: value.scoreLow,
-        latestFinalizedBlock: (0, FinalizedBlockDTO_1.FinalizedBlockDTOToJSON)(value.latestFinalizedBlock),
+        'height': value.height,
+        'scoreHigh': value.scoreHigh,
+        'scoreLow': value.scoreLow,
+        'latestFinalizedBlock': (0, FinalizedBlockDTO_1.FinalizedBlockDTOToJSON)(value.latestFinalizedBlock),
     };
 }
 exports.ChainInfoDTOToJSON = ChainInfoDTOToJSON;

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { TransactionGroupEnum } from "./TransactionGroupEnum";
-import type { TransactionStatusEnum } from "./TransactionStatusEnum";
+import type { TransactionGroupEnum } from './TransactionGroupEnum';
+import type { TransactionStatusEnum } from './TransactionStatusEnum';
 /**
  *
  * @export

@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { MerkleStateInfoDTO, MultisigAccountGraphInfoDTO, MultisigAccountInfoDTO } from "../models";
+import * as runtime from '../runtime';
+import type { MerkleStateInfoDTO, MultisigAccountGraphInfoDTO, MultisigAccountInfoDTO } from '../models';
 export interface GetAccountMultisigRequest {
     address: string;
 }

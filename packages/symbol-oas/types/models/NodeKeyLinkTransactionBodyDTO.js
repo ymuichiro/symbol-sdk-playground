@@ -30,12 +30,12 @@ function NodeKeyLinkTransactionBodyDTOFromJSON(json) {
 }
 exports.NodeKeyLinkTransactionBodyDTOFromJSON = NodeKeyLinkTransactionBodyDTOFromJSON;
 function NodeKeyLinkTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        linkedPublicKey: json["linkedPublicKey"],
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json["linkAction"]),
+        'linkedPublicKey': json['linkedPublicKey'],
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json['linkAction']),
     };
 }
 exports.NodeKeyLinkTransactionBodyDTOFromJSONTyped = NodeKeyLinkTransactionBodyDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function NodeKeyLinkTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        linkedPublicKey: value.linkedPublicKey,
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
+        'linkedPublicKey': value.linkedPublicKey,
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
     };
 }
 exports.NodeKeyLinkTransactionBodyDTOToJSON = NodeKeyLinkTransactionBodyDTOToJSON;

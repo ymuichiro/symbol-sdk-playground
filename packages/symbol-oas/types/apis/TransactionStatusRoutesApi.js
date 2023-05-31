@@ -58,15 +58,14 @@ class TransactionStatusRoutesApi extends runtime.BaseAPI {
      */
     getTransactionStatusRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.hash === null ||
-                requestParameters.hash === undefined) {
-                throw new runtime.RequiredError("hash", "Required parameter requestParameters.hash was null or undefined when calling getTransactionStatus.");
+            if (requestParameters.hash === null || requestParameters.hash === undefined) {
+                throw new runtime.RequiredError('hash', 'Required parameter requestParameters.hash was null or undefined when calling getTransactionStatus.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/transactionStatus/{hash}`.replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,16 +88,15 @@ class TransactionStatusRoutesApi extends runtime.BaseAPI {
      */
     getTransactionStatusesRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.transactionHashes === null ||
-                requestParameters.transactionHashes === undefined) {
-                throw new runtime.RequiredError("transactionHashes", "Required parameter requestParameters.transactionHashes was null or undefined when calling getTransactionStatuses.");
+            if (requestParameters.transactionHashes === null || requestParameters.transactionHashes === undefined) {
+                throw new runtime.RequiredError('transactionHashes', 'Required parameter requestParameters.transactionHashes was null or undefined when calling getTransactionStatuses.');
             }
             const queryParameters = {};
             const headerParameters = {};
-            headerParameters["Content-Type"] = "application/json";
+            headerParameters['Content-Type'] = 'application/json';
             const response = yield this.request({
                 path: `/transactionStatus`,
-                method: "POST",
+                method: 'POST',
                 headers: headerParameters,
                 query: queryParameters,
                 body: (0, models_1.TransactionHashesToJSON)(requestParameters.transactionHashes),

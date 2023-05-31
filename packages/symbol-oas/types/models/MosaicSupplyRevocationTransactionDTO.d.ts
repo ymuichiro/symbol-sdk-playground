@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction that allows the mosaic creator to revoke some balance from a user.
  * @export

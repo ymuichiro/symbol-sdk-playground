@@ -31,13 +31,13 @@ function MosaicSupplyChangeTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicSupplyChangeTransactionBodyDTOFromJSON = MosaicSupplyChangeTransactionBodyDTOFromJSON;
 function MosaicSupplyChangeTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        delta: json["delta"],
-        action: (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumFromJSON)(json["action"]),
+        'mosaicId': json['mosaicId'],
+        'delta': json['delta'],
+        'action': (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumFromJSON)(json['action']),
     };
 }
 exports.MosaicSupplyChangeTransactionBodyDTOFromJSONTyped = MosaicSupplyChangeTransactionBodyDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function MosaicSupplyChangeTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        delta: value.delta,
-        action: (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumToJSON)(value.action),
+        'mosaicId': value.mosaicId,
+        'delta': value.delta,
+        'action': (0, MosaicSupplyChangeActionEnum_1.MosaicSupplyChangeActionEnumToJSON)(value.action),
     };
 }
 exports.MosaicSupplyChangeTransactionBodyDTOToJSON = MosaicSupplyChangeTransactionBodyDTOToJSON;

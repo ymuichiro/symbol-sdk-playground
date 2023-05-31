@@ -31,14 +31,14 @@ function HashLockTransactionBodyDTOFromJSON(json) {
 }
 exports.HashLockTransactionBodyDTOFromJSON = HashLockTransactionBodyDTOFromJSON;
 function HashLockTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        amount: json["amount"],
-        duration: json["duration"],
-        hash: json["hash"],
+        'mosaicId': json['mosaicId'],
+        'amount': json['amount'],
+        'duration': json['duration'],
+        'hash': json['hash'],
     };
 }
 exports.HashLockTransactionBodyDTOFromJSONTyped = HashLockTransactionBodyDTOFromJSONTyped;
@@ -50,10 +50,10 @@ function HashLockTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        amount: value.amount,
-        duration: value.duration,
-        hash: value.hash,
+        'mosaicId': value.mosaicId,
+        'amount': value.amount,
+        'duration': value.duration,
+        'hash': value.hash,
     };
 }
 exports.HashLockTransactionBodyDTOToJSON = HashLockTransactionBodyDTOToJSON;

@@ -31,13 +31,13 @@ function MosaicExpiryReceiptDTOFromJSON(json) {
 }
 exports.MosaicExpiryReceiptDTOFromJSON = MosaicExpiryReceiptDTOFromJSON;
 function MosaicExpiryReceiptDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json["type"]),
-        artifactId: json["artifactId"],
+        'version': json['version'],
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumFromJSON)(json['type']),
+        'artifactId': json['artifactId'],
     };
 }
 exports.MosaicExpiryReceiptDTOFromJSONTyped = MosaicExpiryReceiptDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function MosaicExpiryReceiptDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        type: (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
-        artifactId: value.artifactId,
+        'version': value.version,
+        'type': (0, ReceiptTypeEnum_1.ReceiptTypeEnumToJSON)(value.type),
+        'artifactId': value.artifactId,
     };
 }
 exports.MosaicExpiryReceiptDTOToJSON = MosaicExpiryReceiptDTOToJSON;

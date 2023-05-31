@@ -28,25 +28,15 @@ function MosaicNetworkPropertiesDTOFromJSON(json) {
 }
 exports.MosaicNetworkPropertiesDTOFromJSON = MosaicNetworkPropertiesDTOFromJSON;
 function MosaicNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxMosaicsPerAccount: !(0, runtime_1.exists)(json, "maxMosaicsPerAccount")
-            ? undefined
-            : json["maxMosaicsPerAccount"],
-        maxMosaicDuration: !(0, runtime_1.exists)(json, "maxMosaicDuration")
-            ? undefined
-            : json["maxMosaicDuration"],
-        maxMosaicDivisibility: !(0, runtime_1.exists)(json, "maxMosaicDivisibility")
-            ? undefined
-            : json["maxMosaicDivisibility"],
-        mosaicRentalFeeSinkAddress: !(0, runtime_1.exists)(json, "mosaicRentalFeeSinkAddress")
-            ? undefined
-            : json["mosaicRentalFeeSinkAddress"],
-        mosaicRentalFee: !(0, runtime_1.exists)(json, "mosaicRentalFee")
-            ? undefined
-            : json["mosaicRentalFee"],
+        'maxMosaicsPerAccount': !(0, runtime_1.exists)(json, 'maxMosaicsPerAccount') ? undefined : json['maxMosaicsPerAccount'],
+        'maxMosaicDuration': !(0, runtime_1.exists)(json, 'maxMosaicDuration') ? undefined : json['maxMosaicDuration'],
+        'maxMosaicDivisibility': !(0, runtime_1.exists)(json, 'maxMosaicDivisibility') ? undefined : json['maxMosaicDivisibility'],
+        'mosaicRentalFeeSinkAddress': !(0, runtime_1.exists)(json, 'mosaicRentalFeeSinkAddress') ? undefined : json['mosaicRentalFeeSinkAddress'],
+        'mosaicRentalFee': !(0, runtime_1.exists)(json, 'mosaicRentalFee') ? undefined : json['mosaicRentalFee'],
     };
 }
 exports.MosaicNetworkPropertiesDTOFromJSONTyped = MosaicNetworkPropertiesDTOFromJSONTyped;
@@ -58,11 +48,11 @@ function MosaicNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxMosaicsPerAccount: value.maxMosaicsPerAccount,
-        maxMosaicDuration: value.maxMosaicDuration,
-        maxMosaicDivisibility: value.maxMosaicDivisibility,
-        mosaicRentalFeeSinkAddress: value.mosaicRentalFeeSinkAddress,
-        mosaicRentalFee: value.mosaicRentalFee,
+        'maxMosaicsPerAccount': value.maxMosaicsPerAccount,
+        'maxMosaicDuration': value.maxMosaicDuration,
+        'maxMosaicDivisibility': value.maxMosaicDivisibility,
+        'mosaicRentalFeeSinkAddress': value.mosaicRentalFeeSinkAddress,
+        'mosaicRentalFee': value.mosaicRentalFee,
     };
 }
 exports.MosaicNetworkPropertiesDTOToJSON = MosaicNetworkPropertiesDTOToJSON;

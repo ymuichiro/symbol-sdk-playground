@@ -37,18 +37,18 @@ function EmbeddedVotingKeyLinkTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedVotingKeyLinkTransactionDTOFromJSON = EmbeddedVotingKeyLinkTransactionDTOFromJSON;
 function EmbeddedVotingKeyLinkTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        linkedPublicKey: json["linkedPublicKey"],
-        startEpoch: json["startEpoch"],
-        endEpoch: json["endEpoch"],
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json["linkAction"]),
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'linkedPublicKey': json['linkedPublicKey'],
+        'startEpoch': json['startEpoch'],
+        'endEpoch': json['endEpoch'],
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json['linkAction']),
     };
 }
 exports.EmbeddedVotingKeyLinkTransactionDTOFromJSONTyped = EmbeddedVotingKeyLinkTransactionDTOFromJSONTyped;
@@ -60,14 +60,14 @@ function EmbeddedVotingKeyLinkTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        linkedPublicKey: value.linkedPublicKey,
-        startEpoch: value.startEpoch,
-        endEpoch: value.endEpoch,
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'linkedPublicKey': value.linkedPublicKey,
+        'startEpoch': value.startEpoch,
+        'endEpoch': value.endEpoch,
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
     };
 }
 exports.EmbeddedVotingKeyLinkTransactionDTOToJSON = EmbeddedVotingKeyLinkTransactionDTOToJSON;

@@ -29,12 +29,12 @@ function AccountNamesDTOFromJSON(json) {
 }
 exports.AccountNamesDTOFromJSON = AccountNamesDTOFromJSON;
 function AccountNamesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        address: json["address"],
-        names: json["names"],
+        'address': json['address'],
+        'names': json['names'],
     };
 }
 exports.AccountNamesDTOFromJSONTyped = AccountNamesDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function AccountNamesDTOToJSON(value) {
         return null;
     }
     return {
-        address: value.address,
-        names: value.names,
+        'address': value.address,
+        'names': value.names,
     };
 }
 exports.AccountNamesDTOToJSON = AccountNamesDTOToJSON;

@@ -32,18 +32,16 @@ function TransactionMetaDTOFromJSON(json) {
 }
 exports.TransactionMetaDTOFromJSON = TransactionMetaDTOFromJSON;
 function TransactionMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        hash: json["hash"],
-        merkleComponentHash: json["merkleComponentHash"],
-        index: json["index"],
-        timestamp: !(0, runtime_1.exists)(json, "timestamp") ? undefined : json["timestamp"],
-        feeMultiplier: !(0, runtime_1.exists)(json, "feeMultiplier")
-            ? undefined
-            : json["feeMultiplier"],
+        'height': json['height'],
+        'hash': json['hash'],
+        'merkleComponentHash': json['merkleComponentHash'],
+        'index': json['index'],
+        'timestamp': !(0, runtime_1.exists)(json, 'timestamp') ? undefined : json['timestamp'],
+        'feeMultiplier': !(0, runtime_1.exists)(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
     };
 }
 exports.TransactionMetaDTOFromJSONTyped = TransactionMetaDTOFromJSONTyped;
@@ -55,12 +53,12 @@ function TransactionMetaDTOToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        hash: value.hash,
-        merkleComponentHash: value.merkleComponentHash,
-        index: value.index,
-        timestamp: value.timestamp,
-        feeMultiplier: value.feeMultiplier,
+        'height': value.height,
+        'hash': value.hash,
+        'merkleComponentHash': value.merkleComponentHash,
+        'index': value.index,
+        'timestamp': value.timestamp,
+        'feeMultiplier': value.feeMultiplier,
     };
 }
 exports.TransactionMetaDTOToJSON = TransactionMetaDTOToJSON;

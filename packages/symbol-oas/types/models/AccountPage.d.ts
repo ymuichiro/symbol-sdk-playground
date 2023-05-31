@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountInfoDTO } from "./AccountInfoDTO";
-import type { Pagination } from "./Pagination";
+import type { AccountInfoDTO } from './AccountInfoDTO';
+import type { Pagination } from './Pagination';
 /**
  *
  * @export

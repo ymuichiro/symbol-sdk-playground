@@ -28,13 +28,11 @@ function MosaicRestrictionNetworkPropertiesDTOFromJSON(json) {
 }
 exports.MosaicRestrictionNetworkPropertiesDTOFromJSON = MosaicRestrictionNetworkPropertiesDTOFromJSON;
 function MosaicRestrictionNetworkPropertiesDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        maxMosaicRestrictionValues: !(0, runtime_1.exists)(json, "maxMosaicRestrictionValues")
-            ? undefined
-            : json["maxMosaicRestrictionValues"],
+        'maxMosaicRestrictionValues': !(0, runtime_1.exists)(json, 'maxMosaicRestrictionValues') ? undefined : json['maxMosaicRestrictionValues'],
     };
 }
 exports.MosaicRestrictionNetworkPropertiesDTOFromJSONTyped = MosaicRestrictionNetworkPropertiesDTOFromJSONTyped;
@@ -46,7 +44,7 @@ function MosaicRestrictionNetworkPropertiesDTOToJSON(value) {
         return null;
     }
     return {
-        maxMosaicRestrictionValues: value.maxMosaicRestrictionValues,
+        'maxMosaicRestrictionValues': value.maxMosaicRestrictionValues,
     };
 }
 exports.MosaicRestrictionNetworkPropertiesDTOToJSON = MosaicRestrictionNetworkPropertiesDTOToJSON;

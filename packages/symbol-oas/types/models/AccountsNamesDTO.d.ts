@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountNamesDTO } from "./AccountNamesDTO";
+import type { AccountNamesDTO } from './AccountNamesDTO';
 /**
  *
  * @export

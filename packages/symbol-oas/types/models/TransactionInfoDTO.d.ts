@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { TransactionInfoDTOMeta } from "./TransactionInfoDTOMeta";
-import type { TransactionInfoDTOTransaction } from "./TransactionInfoDTOTransaction";
+import type { TransactionInfoDTOMeta } from './TransactionInfoDTOMeta';
+import type { TransactionInfoDTOTransaction } from './TransactionInfoDTOTransaction';
 /**
  *
  * @export

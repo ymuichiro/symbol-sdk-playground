@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AliasDTO } from "./AliasDTO";
-import type { NamespaceRegistrationTypeEnum } from "./NamespaceRegistrationTypeEnum";
+import type { AliasDTO } from './AliasDTO';
+import type { NamespaceRegistrationTypeEnum } from './NamespaceRegistrationTypeEnum';
 /**
  *
  * @export

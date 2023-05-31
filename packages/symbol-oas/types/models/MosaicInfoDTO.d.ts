@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MosaicDTO } from "./MosaicDTO";
+import type { MosaicDTO } from './MosaicDTO';
 /**
  *
  * @export

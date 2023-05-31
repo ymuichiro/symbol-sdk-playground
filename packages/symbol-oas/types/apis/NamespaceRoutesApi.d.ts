@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { AccountsNamesDTO, Addresses, AliasTypeEnum, MerkleStateInfoDTO, MosaicIds, MosaicsNamesDTO, NamespaceIds, NamespaceInfoDTO, NamespaceNameDTO, NamespacePage, NamespaceRegistrationTypeEnum, Order } from "../models";
+import * as runtime from '../runtime';
+import type { AccountsNamesDTO, Addresses, AliasTypeEnum, MerkleStateInfoDTO, MosaicIds, MosaicsNamesDTO, NamespaceIds, NamespaceInfoDTO, NamespaceNameDTO, NamespacePage, NamespaceRegistrationTypeEnum, Order } from '../models';
 export interface GetAccountsNamesRequest {
     addresses: Addresses;
 }

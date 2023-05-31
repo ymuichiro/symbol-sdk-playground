@@ -9,18 +9,18 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { AccountRestrictionFlagsEnum } from "./AccountRestrictionFlagsEnum";
-import type { AliasActionEnum } from "./AliasActionEnum";
-import type { CosignatureDTO } from "./CosignatureDTO";
-import type { EmbeddedTransactionInfoDTO } from "./EmbeddedTransactionInfoDTO";
-import type { LinkActionEnum } from "./LinkActionEnum";
-import type { LockHashAlgorithmEnum } from "./LockHashAlgorithmEnum";
-import type { MosaicRestrictionTypeEnum } from "./MosaicRestrictionTypeEnum";
-import type { MosaicSupplyChangeActionEnum } from "./MosaicSupplyChangeActionEnum";
-import type { NamespaceRegistrationTypeEnum } from "./NamespaceRegistrationTypeEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
-import type { TransactionTypeEnum } from "./TransactionTypeEnum";
-import type { UnresolvedMosaic } from "./UnresolvedMosaic";
+import type { AccountRestrictionFlagsEnum } from './AccountRestrictionFlagsEnum';
+import type { AliasActionEnum } from './AliasActionEnum';
+import type { CosignatureDTO } from './CosignatureDTO';
+import type { EmbeddedTransactionInfoDTO } from './EmbeddedTransactionInfoDTO';
+import type { LinkActionEnum } from './LinkActionEnum';
+import type { LockHashAlgorithmEnum } from './LockHashAlgorithmEnum';
+import type { MosaicRestrictionTypeEnum } from './MosaicRestrictionTypeEnum';
+import type { MosaicSupplyChangeActionEnum } from './MosaicSupplyChangeActionEnum';
+import type { NamespaceRegistrationTypeEnum } from './NamespaceRegistrationTypeEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
+import type { TransactionTypeEnum } from './TransactionTypeEnum';
+import type { UnresolvedMosaic } from './UnresolvedMosaic';
 /**
  *
  * @export
@@ -110,13 +110,13 @@ export interface TransactionInfoDTOTransaction {
      * @type {Array<CosignatureDTO>}
      * @memberof TransactionInfoDTOTransaction
      */
-    cosignatures: Array<CosignatureDTO>;
+    cosignatures?: Array<CosignatureDTO>;
     /**
      * Array of transactions initiated by different accounts.
      * @type {Array<EmbeddedTransactionInfoDTO>}
      * @memberof TransactionInfoDTOTransaction
      */
-    transactions: Array<EmbeddedTransactionInfoDTO>;
+    transactions?: Array<EmbeddedTransactionInfoDTO>;
     /**
      * Mosaic identifier. If the most significant bit of byte 0 is set, a namespaceId (alias)
      * is used instead of the real mosaic identifier.
@@ -336,13 +336,13 @@ export interface TransactionInfoDTOTransaction {
      * @type {Array<TransactionTypeEnum>}
      * @memberof TransactionInfoDTOTransaction
      */
-    restrictionAdditions: Array<TransactionTypeEnum>;
+    restrictionAdditions?: Array<TransactionTypeEnum>;
     /**
      * Account restriction deletions.
      * @type {Array<TransactionTypeEnum>}
      * @memberof TransactionInfoDTOTransaction
      */
-    restrictionDeletions: Array<TransactionTypeEnum>;
+    restrictionDeletions?: Array<TransactionTypeEnum>;
     /**
      * Mosaic identifier. If the most significant bit of byte 0 is set, a namespaceId (alias)
      * is used instead of the real mosaic identifier.

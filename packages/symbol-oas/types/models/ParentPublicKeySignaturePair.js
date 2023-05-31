@@ -29,12 +29,12 @@ function ParentPublicKeySignaturePairFromJSON(json) {
 }
 exports.ParentPublicKeySignaturePairFromJSON = ParentPublicKeySignaturePairFromJSON;
 function ParentPublicKeySignaturePairFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        parentPublicKey: json["parentPublicKey"],
-        signature: json["signature"],
+        'parentPublicKey': json['parentPublicKey'],
+        'signature': json['signature'],
     };
 }
 exports.ParentPublicKeySignaturePairFromJSONTyped = ParentPublicKeySignaturePairFromJSONTyped;
@@ -46,8 +46,8 @@ function ParentPublicKeySignaturePairToJSON(value) {
         return null;
     }
     return {
-        parentPublicKey: value.parentPublicKey,
-        signature: value.signature,
+        'parentPublicKey': value.parentPublicKey,
+        'signature': value.signature,
     };
 }
 exports.ParentPublicKeySignaturePairToJSON = ParentPublicKeySignaturePairToJSON;

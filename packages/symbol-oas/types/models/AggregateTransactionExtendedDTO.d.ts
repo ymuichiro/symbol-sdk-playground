@@ -9,9 +9,9 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { CosignatureDTO } from "./CosignatureDTO";
-import type { EmbeddedTransactionInfoDTO } from "./EmbeddedTransactionInfoDTO";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { CosignatureDTO } from './CosignatureDTO';
+import type { EmbeddedTransactionInfoDTO } from './EmbeddedTransactionInfoDTO';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to combine multiple transactions together.
  * @export
@@ -77,13 +77,13 @@ export interface AggregateTransactionExtendedDTO {
      * @type {Array<CosignatureDTO>}
      * @memberof AggregateTransactionExtendedDTO
      */
-    cosignatures: Array<CosignatureDTO>;
+    cosignatures?: Array<CosignatureDTO>;
     /**
      * Array of transactions initiated by different accounts.
      * @type {Array<EmbeddedTransactionInfoDTO>}
      * @memberof AggregateTransactionExtendedDTO
      */
-    transactions: Array<EmbeddedTransactionInfoDTO>;
+    transactions?: Array<EmbeddedTransactionInfoDTO>;
 }
 /**
  * Check if a given object implements the AggregateTransactionExtendedDTO interface.

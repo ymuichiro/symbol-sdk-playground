@@ -32,13 +32,13 @@ function ResolutionStatementInfoDTOFromJSON(json) {
 }
 exports.ResolutionStatementInfoDTOFromJSON = ResolutionStatementInfoDTOFromJSON;
 function ResolutionStatementInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        meta: (0, StatementMetaDTO_1.StatementMetaDTOFromJSON)(json["meta"]),
-        statement: (0, ResolutionStatementDTO_1.ResolutionStatementDTOFromJSON)(json["statement"]),
+        'id': json['id'],
+        'meta': (0, StatementMetaDTO_1.StatementMetaDTOFromJSON)(json['meta']),
+        'statement': (0, ResolutionStatementDTO_1.ResolutionStatementDTOFromJSON)(json['statement']),
     };
 }
 exports.ResolutionStatementInfoDTOFromJSONTyped = ResolutionStatementInfoDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function ResolutionStatementInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        meta: (0, StatementMetaDTO_1.StatementMetaDTOToJSON)(value.meta),
-        statement: (0, ResolutionStatementDTO_1.ResolutionStatementDTOToJSON)(value.statement),
+        'id': value.id,
+        'meta': (0, StatementMetaDTO_1.StatementMetaDTOToJSON)(value.meta),
+        'statement': (0, ResolutionStatementDTO_1.ResolutionStatementDTOToJSON)(value.statement),
     };
 }
 exports.ResolutionStatementInfoDTOToJSON = ResolutionStatementInfoDTOToJSON;

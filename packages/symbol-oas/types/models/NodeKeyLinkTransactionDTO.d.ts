@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LinkActionEnum } from "./LinkActionEnum";
-import type { NetworkTypeEnum } from "./NetworkTypeEnum";
+import type { LinkActionEnum } from './LinkActionEnum';
+import type { NetworkTypeEnum } from './NetworkTypeEnum';
 /**
  * Transaction to link a public key to an account.
  * TLS uses the linked public key to create sessions.

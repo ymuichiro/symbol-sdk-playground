@@ -31,12 +31,12 @@ function ResolutionEntryDTOFromJSON(json) {
 }
 exports.ResolutionEntryDTOFromJSON = ResolutionEntryDTOFromJSON;
 function ResolutionEntryDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        source: (0, SourceDTO_1.SourceDTOFromJSON)(json["source"]),
-        resolved: (0, ResolutionEntryDTOResolved_1.ResolutionEntryDTOResolvedFromJSON)(json["resolved"]),
+        'source': (0, SourceDTO_1.SourceDTOFromJSON)(json['source']),
+        'resolved': (0, ResolutionEntryDTOResolved_1.ResolutionEntryDTOResolvedFromJSON)(json['resolved']),
     };
 }
 exports.ResolutionEntryDTOFromJSONTyped = ResolutionEntryDTOFromJSONTyped;
@@ -48,8 +48,8 @@ function ResolutionEntryDTOToJSON(value) {
         return null;
     }
     return {
-        source: (0, SourceDTO_1.SourceDTOToJSON)(value.source),
-        resolved: (0, ResolutionEntryDTOResolved_1.ResolutionEntryDTOResolvedToJSON)(value.resolved),
+        'source': (0, SourceDTO_1.SourceDTOToJSON)(value.source),
+        'resolved': (0, ResolutionEntryDTOResolved_1.ResolutionEntryDTOResolvedToJSON)(value.resolved),
     };
 }
 exports.ResolutionEntryDTOToJSON = ResolutionEntryDTOToJSON;

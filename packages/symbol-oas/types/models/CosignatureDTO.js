@@ -30,13 +30,13 @@ function CosignatureDTOFromJSON(json) {
 }
 exports.CosignatureDTOFromJSON = CosignatureDTOFromJSON;
 function CosignatureDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signature: json["signature"],
-        version: json["version"],
-        signerPublicKey: json["signerPublicKey"],
+        'signature': json['signature'],
+        'version': json['version'],
+        'signerPublicKey': json['signerPublicKey'],
     };
 }
 exports.CosignatureDTOFromJSONTyped = CosignatureDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function CosignatureDTOToJSON(value) {
         return null;
     }
     return {
-        signature: value.signature,
-        version: value.version,
-        signerPublicKey: value.signerPublicKey,
+        'signature': value.signature,
+        'version': value.version,
+        'signerPublicKey': value.signerPublicKey,
     };
 }
 exports.CosignatureDTOToJSON = CosignatureDTOToJSON;

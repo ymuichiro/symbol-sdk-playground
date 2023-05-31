@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { SecretLockEntryDTO } from "./SecretLockEntryDTO";
+import type { SecretLockEntryDTO } from './SecretLockEntryDTO';
 /**
  *
  * @export

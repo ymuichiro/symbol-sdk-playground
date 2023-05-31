@@ -34,20 +34,18 @@ function TransactionInfoDTOMetaFromJSON(json) {
 }
 exports.TransactionInfoDTOMetaFromJSON = TransactionInfoDTOMetaFromJSON;
 function TransactionInfoDTOMetaFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        hash: json["hash"],
-        merkleComponentHash: json["merkleComponentHash"],
-        index: json["index"],
-        timestamp: !(0, runtime_1.exists)(json, "timestamp") ? undefined : json["timestamp"],
-        feeMultiplier: !(0, runtime_1.exists)(json, "feeMultiplier")
-            ? undefined
-            : json["feeMultiplier"],
-        aggregateHash: json["aggregateHash"],
-        aggregateId: json["aggregateId"],
+        'height': json['height'],
+        'hash': json['hash'],
+        'merkleComponentHash': json['merkleComponentHash'],
+        'index': json['index'],
+        'timestamp': !(0, runtime_1.exists)(json, 'timestamp') ? undefined : json['timestamp'],
+        'feeMultiplier': !(0, runtime_1.exists)(json, 'feeMultiplier') ? undefined : json['feeMultiplier'],
+        'aggregateHash': json['aggregateHash'],
+        'aggregateId': json['aggregateId'],
     };
 }
 exports.TransactionInfoDTOMetaFromJSONTyped = TransactionInfoDTOMetaFromJSONTyped;
@@ -59,14 +57,14 @@ function TransactionInfoDTOMetaToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        hash: value.hash,
-        merkleComponentHash: value.merkleComponentHash,
-        index: value.index,
-        timestamp: value.timestamp,
-        feeMultiplier: value.feeMultiplier,
-        aggregateHash: value.aggregateHash,
-        aggregateId: value.aggregateId,
+        'height': value.height,
+        'hash': value.hash,
+        'merkleComponentHash': value.merkleComponentHash,
+        'index': value.index,
+        'timestamp': value.timestamp,
+        'feeMultiplier': value.feeMultiplier,
+        'aggregateHash': value.aggregateHash,
+        'aggregateId': value.aggregateId,
     };
 }
 exports.TransactionInfoDTOMetaToJSON = TransactionInfoDTOMetaToJSON;

@@ -28,16 +28,12 @@ function CommunicationTimestampsDTOFromJSON(json) {
 }
 exports.CommunicationTimestampsDTOFromJSON = CommunicationTimestampsDTOFromJSON;
 function CommunicationTimestampsDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        sendTimestamp: !(0, runtime_1.exists)(json, "sendTimestamp")
-            ? undefined
-            : json["sendTimestamp"],
-        receiveTimestamp: !(0, runtime_1.exists)(json, "receiveTimestamp")
-            ? undefined
-            : json["receiveTimestamp"],
+        'sendTimestamp': !(0, runtime_1.exists)(json, 'sendTimestamp') ? undefined : json['sendTimestamp'],
+        'receiveTimestamp': !(0, runtime_1.exists)(json, 'receiveTimestamp') ? undefined : json['receiveTimestamp'],
     };
 }
 exports.CommunicationTimestampsDTOFromJSONTyped = CommunicationTimestampsDTOFromJSONTyped;
@@ -49,8 +45,8 @@ function CommunicationTimestampsDTOToJSON(value) {
         return null;
     }
     return {
-        sendTimestamp: value.sendTimestamp,
-        receiveTimestamp: value.receiveTimestamp,
+        'sendTimestamp': value.sendTimestamp,
+        'receiveTimestamp': value.receiveTimestamp,
     };
 }
 exports.CommunicationTimestampsDTOToJSON = CommunicationTimestampsDTOToJSON;

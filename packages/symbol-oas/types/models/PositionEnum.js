@@ -19,8 +19,8 @@ exports.PositionEnumToJSON = exports.PositionEnumFromJSONTyped = exports.Positio
  * @export
  */
 exports.PositionEnum = {
-    Left: "left",
-    Right: "right",
+    Left: 'left',
+    Right: 'right'
 };
 function PositionEnumFromJSON(json) {
     return PositionEnumFromJSONTyped(json, false);

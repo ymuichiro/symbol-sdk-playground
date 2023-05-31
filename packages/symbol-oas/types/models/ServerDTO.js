@@ -31,13 +31,13 @@ function ServerDTOFromJSON(json) {
 }
 exports.ServerDTOFromJSON = ServerDTOFromJSON;
 function ServerDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        restVersion: json["restVersion"],
-        sdkVersion: json["sdkVersion"],
-        deployment: (0, DeploymentDTO_1.DeploymentDTOFromJSON)(json["deployment"]),
+        'restVersion': json['restVersion'],
+        'sdkVersion': json['sdkVersion'],
+        'deployment': (0, DeploymentDTO_1.DeploymentDTOFromJSON)(json['deployment']),
     };
 }
 exports.ServerDTOFromJSONTyped = ServerDTOFromJSONTyped;
@@ -49,9 +49,9 @@ function ServerDTOToJSON(value) {
         return null;
     }
     return {
-        restVersion: value.restVersion,
-        sdkVersion: value.sdkVersion,
-        deployment: (0, DeploymentDTO_1.DeploymentDTOToJSON)(value.deployment),
+        'restVersion': value.restVersion,
+        'sdkVersion': value.sdkVersion,
+        'deployment': (0, DeploymentDTO_1.DeploymentDTOToJSON)(value.deployment),
     };
 }
 exports.ServerDTOToJSON = ServerDTOToJSON;

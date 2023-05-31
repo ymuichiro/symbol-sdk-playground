@@ -29,12 +29,12 @@ function ModelErrorFromJSON(json) {
 }
 exports.ModelErrorFromJSON = ModelErrorFromJSON;
 function ModelErrorFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        code: json["code"],
-        message: json["message"],
+        'code': json['code'],
+        'message': json['message'],
     };
 }
 exports.ModelErrorFromJSONTyped = ModelErrorFromJSONTyped;
@@ -46,8 +46,8 @@ function ModelErrorToJSON(value) {
         return null;
     }
     return {
-        code: value.code,
-        message: value.message,
+        'code': value.code,
+        'message': value.message,
     };
 }
 exports.ModelErrorToJSON = ModelErrorToJSON;

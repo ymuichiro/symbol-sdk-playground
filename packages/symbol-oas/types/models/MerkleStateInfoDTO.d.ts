@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { MerkleStateInfoDTOTreeInner } from "./MerkleStateInfoDTOTreeInner";
+import type { MerkleStateInfoDTOTreeInner } from './MerkleStateInfoDTOTreeInner';
 /**
  * The merkle path information clients can use to proof the state of the given entity.
  * @export

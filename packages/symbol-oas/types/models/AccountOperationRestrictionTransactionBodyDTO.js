@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountOperationRestrictionTransactionBodyDTOToJSON = exports.AccountOperationRestrictionTransactionBodyDTOFromJSONTyped = exports.AccountOperationRestrictionTransactionBodyDTOFromJSON = exports.instanceOfAccountOperationRestrictionTransactionBodyDTO = void 0;
+const runtime_1 = require("../runtime");
 const AccountRestrictionFlagsEnum_1 = require("./AccountRestrictionFlagsEnum");
 const TransactionTypeEnum_1 = require("./TransactionTypeEnum");
 /**
@@ -22,8 +23,6 @@ const TransactionTypeEnum_1 = require("./TransactionTypeEnum");
 function instanceOfAccountOperationRestrictionTransactionBodyDTO(value) {
     let isInstance = true;
     isInstance = isInstance && "restrictionFlags" in value;
-    isInstance = isInstance && "restrictionAdditions" in value;
-    isInstance = isInstance && "restrictionDeletions" in value;
     return isInstance;
 }
 exports.instanceOfAccountOperationRestrictionTransactionBodyDTO = instanceOfAccountOperationRestrictionTransactionBodyDTO;
@@ -32,13 +31,13 @@ function AccountOperationRestrictionTransactionBodyDTOFromJSON(json) {
 }
 exports.AccountOperationRestrictionTransactionBodyDTOFromJSON = AccountOperationRestrictionTransactionBodyDTOFromJSON;
 function AccountOperationRestrictionTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json["restrictionFlags"]),
-        restrictionAdditions: json["restrictionAdditions"].map(TransactionTypeEnum_1.TransactionTypeEnumFromJSON),
-        restrictionDeletions: json["restrictionDeletions"].map(TransactionTypeEnum_1.TransactionTypeEnumFromJSON),
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json['restrictionFlags']),
+        'restrictionAdditions': !(0, runtime_1.exists)(json, 'restrictionAdditions') ? undefined : (json['restrictionAdditions'].map(TransactionTypeEnum_1.TransactionTypeEnumFromJSON)),
+        'restrictionDeletions': !(0, runtime_1.exists)(json, 'restrictionDeletions') ? undefined : (json['restrictionDeletions'].map(TransactionTypeEnum_1.TransactionTypeEnumFromJSON)),
     };
 }
 exports.AccountOperationRestrictionTransactionBodyDTOFromJSONTyped = AccountOperationRestrictionTransactionBodyDTOFromJSONTyped;
@@ -50,9 +49,9 @@ function AccountOperationRestrictionTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
-        restrictionAdditions: value.restrictionAdditions.map(TransactionTypeEnum_1.TransactionTypeEnumToJSON),
-        restrictionDeletions: value.restrictionDeletions.map(TransactionTypeEnum_1.TransactionTypeEnumToJSON),
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
+        'restrictionAdditions': value.restrictionAdditions === undefined ? undefined : (value.restrictionAdditions.map(TransactionTypeEnum_1.TransactionTypeEnumToJSON)),
+        'restrictionDeletions': value.restrictionDeletions === undefined ? undefined : (value.restrictionDeletions.map(TransactionTypeEnum_1.TransactionTypeEnumToJSON)),
     };
 }
 exports.AccountOperationRestrictionTransactionBodyDTOToJSON = AccountOperationRestrictionTransactionBodyDTOToJSON;

@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { CosignatureDTO } from "./CosignatureDTO";
+import type { CosignatureDTO } from './CosignatureDTO';
 /**
  *
  * @export
@@ -27,7 +27,7 @@ export interface AggregateTransactionBodyDTO {
      * @type {Array<CosignatureDTO>}
      * @memberof AggregateTransactionBodyDTO
      */
-    cosignatures: Array<CosignatureDTO>;
+    cosignatures?: Array<CosignatureDTO>;
 }
 /**
  * Check if a given object implements the AggregateTransactionBodyDTO interface.

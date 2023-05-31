@@ -24,7 +24,7 @@ exports.AliasTypeEnumToJSON = exports.AliasTypeEnumFromJSONTyped = exports.Alias
 exports.AliasTypeEnum = {
     NUMBER_0: 0,
     NUMBER_1: 1,
-    NUMBER_2: 2,
+    NUMBER_2: 2
 };
 function AliasTypeEnumFromJSON(json) {
     return AliasTypeEnumFromJSONTyped(json, false);

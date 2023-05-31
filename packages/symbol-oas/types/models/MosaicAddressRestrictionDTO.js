@@ -30,12 +30,12 @@ function MosaicAddressRestrictionDTOFromJSON(json) {
 }
 exports.MosaicAddressRestrictionDTOFromJSON = MosaicAddressRestrictionDTOFromJSON;
 function MosaicAddressRestrictionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        mosaicRestrictionEntry: (0, MosaicAddressRestrictionEntryWrapperDTO_1.MosaicAddressRestrictionEntryWrapperDTOFromJSON)(json["mosaicRestrictionEntry"]),
+        'id': json['id'],
+        'mosaicRestrictionEntry': (0, MosaicAddressRestrictionEntryWrapperDTO_1.MosaicAddressRestrictionEntryWrapperDTOFromJSON)(json['mosaicRestrictionEntry']),
     };
 }
 exports.MosaicAddressRestrictionDTOFromJSONTyped = MosaicAddressRestrictionDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function MosaicAddressRestrictionDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        mosaicRestrictionEntry: (0, MosaicAddressRestrictionEntryWrapperDTO_1.MosaicAddressRestrictionEntryWrapperDTOToJSON)(value.mosaicRestrictionEntry),
+        'id': value.id,
+        'mosaicRestrictionEntry': (0, MosaicAddressRestrictionEntryWrapperDTO_1.MosaicAddressRestrictionEntryWrapperDTOToJSON)(value.mosaicRestrictionEntry),
     };
 }
 exports.MosaicAddressRestrictionDTOToJSON = MosaicAddressRestrictionDTOToJSON;

@@ -28,11 +28,11 @@ function TransactionPayloadFromJSON(json) {
 }
 exports.TransactionPayloadFromJSON = TransactionPayloadFromJSON;
 function TransactionPayloadFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        payload: !(0, runtime_1.exists)(json, "payload") ? undefined : json["payload"],
+        'payload': !(0, runtime_1.exists)(json, 'payload') ? undefined : json['payload'],
     };
 }
 exports.TransactionPayloadFromJSONTyped = TransactionPayloadFromJSONTyped;
@@ -44,7 +44,7 @@ function TransactionPayloadToJSON(value) {
         return null;
     }
     return {
-        payload: value.payload,
+        'payload': value.payload,
     };
 }
 exports.TransactionPayloadToJSON = TransactionPayloadToJSON;

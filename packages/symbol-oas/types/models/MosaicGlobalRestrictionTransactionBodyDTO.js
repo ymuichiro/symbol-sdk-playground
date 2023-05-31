@@ -35,17 +35,17 @@ function MosaicGlobalRestrictionTransactionBodyDTOFromJSON(json) {
 }
 exports.MosaicGlobalRestrictionTransactionBodyDTOFromJSON = MosaicGlobalRestrictionTransactionBodyDTOFromJSON;
 function MosaicGlobalRestrictionTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        mosaicId: json["mosaicId"],
-        referenceMosaicId: json["referenceMosaicId"],
-        restrictionKey: json["restrictionKey"],
-        previousRestrictionValue: json["previousRestrictionValue"],
-        newRestrictionValue: json["newRestrictionValue"],
-        previousRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json["previousRestrictionType"]),
-        newRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json["newRestrictionType"]),
+        'mosaicId': json['mosaicId'],
+        'referenceMosaicId': json['referenceMosaicId'],
+        'restrictionKey': json['restrictionKey'],
+        'previousRestrictionValue': json['previousRestrictionValue'],
+        'newRestrictionValue': json['newRestrictionValue'],
+        'previousRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json['previousRestrictionType']),
+        'newRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumFromJSON)(json['newRestrictionType']),
     };
 }
 exports.MosaicGlobalRestrictionTransactionBodyDTOFromJSONTyped = MosaicGlobalRestrictionTransactionBodyDTOFromJSONTyped;
@@ -57,13 +57,13 @@ function MosaicGlobalRestrictionTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        mosaicId: value.mosaicId,
-        referenceMosaicId: value.referenceMosaicId,
-        restrictionKey: value.restrictionKey,
-        previousRestrictionValue: value.previousRestrictionValue,
-        newRestrictionValue: value.newRestrictionValue,
-        previousRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.previousRestrictionType),
-        newRestrictionType: (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.newRestrictionType),
+        'mosaicId': value.mosaicId,
+        'referenceMosaicId': value.referenceMosaicId,
+        'restrictionKey': value.restrictionKey,
+        'previousRestrictionValue': value.previousRestrictionValue,
+        'newRestrictionValue': value.newRestrictionValue,
+        'previousRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.previousRestrictionType),
+        'newRestrictionType': (0, MosaicRestrictionTypeEnum_1.MosaicRestrictionTypeEnumToJSON)(value.newRestrictionType),
     };
 }
 exports.MosaicGlobalRestrictionTransactionBodyDTOToJSON = MosaicGlobalRestrictionTransactionBodyDTOToJSON;

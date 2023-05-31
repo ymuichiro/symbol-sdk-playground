@@ -31,12 +31,12 @@ function ResolutionStatementPageFromJSON(json) {
 }
 exports.ResolutionStatementPageFromJSON = ResolutionStatementPageFromJSON;
 function ResolutionStatementPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(ResolutionStatementInfoDTO_1.ResolutionStatementInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(ResolutionStatementInfoDTO_1.ResolutionStatementInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.ResolutionStatementPageFromJSONTyped = ResolutionStatementPageFromJSONTyped;
@@ -48,8 +48,8 @@ function ResolutionStatementPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(ResolutionStatementInfoDTO_1.ResolutionStatementInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(ResolutionStatementInfoDTO_1.ResolutionStatementInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.ResolutionStatementPageToJSON = ResolutionStatementPageToJSON;

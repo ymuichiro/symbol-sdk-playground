@@ -41,23 +41,23 @@ function MosaicDefinitionTransactionDTOFromJSON(json) {
 }
 exports.MosaicDefinitionTransactionDTOFromJSON = MosaicDefinitionTransactionDTOFromJSON;
 function MosaicDefinitionTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        maxFee: json["maxFee"],
-        deadline: json["deadline"],
-        id: json["id"],
-        duration: json["duration"],
-        nonce: json["nonce"],
-        flags: json["flags"],
-        divisibility: json["divisibility"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'maxFee': json['maxFee'],
+        'deadline': json['deadline'],
+        'id': json['id'],
+        'duration': json['duration'],
+        'nonce': json['nonce'],
+        'flags': json['flags'],
+        'divisibility': json['divisibility'],
     };
 }
 exports.MosaicDefinitionTransactionDTOFromJSONTyped = MosaicDefinitionTransactionDTOFromJSONTyped;
@@ -69,19 +69,19 @@ function MosaicDefinitionTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        maxFee: value.maxFee,
-        deadline: value.deadline,
-        id: value.id,
-        duration: value.duration,
-        nonce: value.nonce,
-        flags: value.flags,
-        divisibility: value.divisibility,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'maxFee': value.maxFee,
+        'deadline': value.deadline,
+        'id': value.id,
+        'duration': value.duration,
+        'nonce': value.nonce,
+        'flags': value.flags,
+        'divisibility': value.divisibility,
     };
 }
 exports.MosaicDefinitionTransactionDTOToJSON = MosaicDefinitionTransactionDTOToJSON;

@@ -36,18 +36,18 @@ function EmbeddedMultisigAccountModificationTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedMultisigAccountModificationTransactionDTOFromJSON = EmbeddedMultisigAccountModificationTransactionDTOFromJSON;
 function EmbeddedMultisigAccountModificationTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        minRemovalDelta: json["minRemovalDelta"],
-        minApprovalDelta: json["minApprovalDelta"],
-        addressAdditions: json["addressAdditions"],
-        addressDeletions: json["addressDeletions"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'minRemovalDelta': json['minRemovalDelta'],
+        'minApprovalDelta': json['minApprovalDelta'],
+        'addressAdditions': json['addressAdditions'],
+        'addressDeletions': json['addressDeletions'],
     };
 }
 exports.EmbeddedMultisigAccountModificationTransactionDTOFromJSONTyped = EmbeddedMultisigAccountModificationTransactionDTOFromJSONTyped;
@@ -59,14 +59,14 @@ function EmbeddedMultisigAccountModificationTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        minRemovalDelta: value.minRemovalDelta,
-        minApprovalDelta: value.minApprovalDelta,
-        addressAdditions: value.addressAdditions,
-        addressDeletions: value.addressDeletions,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'minRemovalDelta': value.minRemovalDelta,
+        'minApprovalDelta': value.minApprovalDelta,
+        'addressAdditions': value.addressAdditions,
+        'addressDeletions': value.addressDeletions,
     };
 }
 exports.EmbeddedMultisigAccountModificationTransactionDTOToJSON = EmbeddedMultisigAccountModificationTransactionDTOToJSON;

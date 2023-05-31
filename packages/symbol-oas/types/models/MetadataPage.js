@@ -31,12 +31,12 @@ function MetadataPageFromJSON(json) {
 }
 exports.MetadataPageFromJSON = MetadataPageFromJSON;
 function MetadataPageFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        data: json["data"].map(MetadataInfoDTO_1.MetadataInfoDTOFromJSON),
-        pagination: (0, Pagination_1.PaginationFromJSON)(json["pagination"]),
+        'data': (json['data'].map(MetadataInfoDTO_1.MetadataInfoDTOFromJSON)),
+        'pagination': (0, Pagination_1.PaginationFromJSON)(json['pagination']),
     };
 }
 exports.MetadataPageFromJSONTyped = MetadataPageFromJSONTyped;
@@ -48,8 +48,8 @@ function MetadataPageToJSON(value) {
         return null;
     }
     return {
-        data: value.data.map(MetadataInfoDTO_1.MetadataInfoDTOToJSON),
-        pagination: (0, Pagination_1.PaginationToJSON)(value.pagination),
+        'data': (value.data.map(MetadataInfoDTO_1.MetadataInfoDTOToJSON)),
+        'pagination': (0, Pagination_1.PaginationToJSON)(value.pagination),
     };
 }
 exports.MetadataPageToJSON = MetadataPageToJSON;

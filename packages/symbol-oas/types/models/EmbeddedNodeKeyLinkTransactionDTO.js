@@ -35,16 +35,16 @@ function EmbeddedNodeKeyLinkTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedNodeKeyLinkTransactionDTOFromJSON = EmbeddedNodeKeyLinkTransactionDTOFromJSON;
 function EmbeddedNodeKeyLinkTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        linkedPublicKey: json["linkedPublicKey"],
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json["linkAction"]),
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'linkedPublicKey': json['linkedPublicKey'],
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumFromJSON)(json['linkAction']),
     };
 }
 exports.EmbeddedNodeKeyLinkTransactionDTOFromJSONTyped = EmbeddedNodeKeyLinkTransactionDTOFromJSONTyped;
@@ -56,12 +56,12 @@ function EmbeddedNodeKeyLinkTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        linkedPublicKey: value.linkedPublicKey,
-        linkAction: (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'linkedPublicKey': value.linkedPublicKey,
+        'linkAction': (0, LinkActionEnum_1.LinkActionEnumToJSON)(value.linkAction),
     };
 }
 exports.EmbeddedNodeKeyLinkTransactionDTOToJSON = EmbeddedNodeKeyLinkTransactionDTOToJSON;

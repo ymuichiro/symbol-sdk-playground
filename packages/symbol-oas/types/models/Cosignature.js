@@ -28,16 +28,14 @@ function CosignatureFromJSON(json) {
 }
 exports.CosignatureFromJSON = CosignatureFromJSON;
 function CosignatureFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        parentHash: !(0, runtime_1.exists)(json, "parentHash") ? undefined : json["parentHash"],
-        signature: !(0, runtime_1.exists)(json, "signature") ? undefined : json["signature"],
-        signerPublicKey: !(0, runtime_1.exists)(json, "signerPublicKey")
-            ? undefined
-            : json["signerPublicKey"],
-        version: !(0, runtime_1.exists)(json, "version") ? undefined : json["version"],
+        'parentHash': !(0, runtime_1.exists)(json, 'parentHash') ? undefined : json['parentHash'],
+        'signature': !(0, runtime_1.exists)(json, 'signature') ? undefined : json['signature'],
+        'signerPublicKey': !(0, runtime_1.exists)(json, 'signerPublicKey') ? undefined : json['signerPublicKey'],
+        'version': !(0, runtime_1.exists)(json, 'version') ? undefined : json['version'],
     };
 }
 exports.CosignatureFromJSONTyped = CosignatureFromJSONTyped;
@@ -49,10 +47,10 @@ function CosignatureToJSON(value) {
         return null;
     }
     return {
-        parentHash: value.parentHash,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
+        'parentHash': value.parentHash,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
     };
 }
 exports.CosignatureToJSON = CosignatureToJSON;

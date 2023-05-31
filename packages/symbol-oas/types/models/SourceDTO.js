@@ -29,12 +29,12 @@ function SourceDTOFromJSON(json) {
 }
 exports.SourceDTOFromJSON = SourceDTOFromJSON;
 function SourceDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        primaryId: json["primaryId"],
-        secondaryId: json["secondaryId"],
+        'primaryId': json['primaryId'],
+        'secondaryId': json['secondaryId'],
     };
 }
 exports.SourceDTOFromJSONTyped = SourceDTOFromJSONTyped;
@@ -46,8 +46,8 @@ function SourceDTOToJSON(value) {
         return null;
     }
     return {
-        primaryId: value.primaryId,
-        secondaryId: value.secondaryId,
+        'primaryId': value.primaryId,
+        'secondaryId': value.secondaryId,
     };
 }
 exports.SourceDTOToJSON = SourceDTOToJSON;

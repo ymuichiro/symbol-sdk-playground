@@ -46,28 +46,28 @@ function BlockDTOFromJSON(json) {
 }
 exports.BlockDTOFromJSON = BlockDTOFromJSON;
 function BlockDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        size: json["size"],
-        signature: json["signature"],
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        height: json["height"],
-        timestamp: json["timestamp"],
-        difficulty: json["difficulty"],
-        proofGamma: json["proofGamma"],
-        proofVerificationHash: json["proofVerificationHash"],
-        proofScalar: json["proofScalar"],
-        previousBlockHash: json["previousBlockHash"],
-        transactionsHash: json["transactionsHash"],
-        receiptsHash: json["receiptsHash"],
-        stateHash: json["stateHash"],
-        beneficiaryAddress: json["beneficiaryAddress"],
-        feeMultiplier: json["feeMultiplier"],
+        'size': json['size'],
+        'signature': json['signature'],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'height': json['height'],
+        'timestamp': json['timestamp'],
+        'difficulty': json['difficulty'],
+        'proofGamma': json['proofGamma'],
+        'proofVerificationHash': json['proofVerificationHash'],
+        'proofScalar': json['proofScalar'],
+        'previousBlockHash': json['previousBlockHash'],
+        'transactionsHash': json['transactionsHash'],
+        'receiptsHash': json['receiptsHash'],
+        'stateHash': json['stateHash'],
+        'beneficiaryAddress': json['beneficiaryAddress'],
+        'feeMultiplier': json['feeMultiplier'],
     };
 }
 exports.BlockDTOFromJSONTyped = BlockDTOFromJSONTyped;
@@ -79,24 +79,24 @@ function BlockDTOToJSON(value) {
         return null;
     }
     return {
-        size: value.size,
-        signature: value.signature,
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        height: value.height,
-        timestamp: value.timestamp,
-        difficulty: value.difficulty,
-        proofGamma: value.proofGamma,
-        proofVerificationHash: value.proofVerificationHash,
-        proofScalar: value.proofScalar,
-        previousBlockHash: value.previousBlockHash,
-        transactionsHash: value.transactionsHash,
-        receiptsHash: value.receiptsHash,
-        stateHash: value.stateHash,
-        beneficiaryAddress: value.beneficiaryAddress,
-        feeMultiplier: value.feeMultiplier,
+        'size': value.size,
+        'signature': value.signature,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'height': value.height,
+        'timestamp': value.timestamp,
+        'difficulty': value.difficulty,
+        'proofGamma': value.proofGamma,
+        'proofVerificationHash': value.proofVerificationHash,
+        'proofScalar': value.proofScalar,
+        'previousBlockHash': value.previousBlockHash,
+        'transactionsHash': value.transactionsHash,
+        'receiptsHash': value.receiptsHash,
+        'stateHash': value.stateHash,
+        'beneficiaryAddress': value.beneficiaryAddress,
+        'feeMultiplier': value.feeMultiplier,
     };
 }
 exports.BlockDTOToJSON = BlockDTOToJSON;

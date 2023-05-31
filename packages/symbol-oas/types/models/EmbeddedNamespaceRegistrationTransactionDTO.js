@@ -37,19 +37,19 @@ function EmbeddedNamespaceRegistrationTransactionDTOFromJSON(json) {
 }
 exports.EmbeddedNamespaceRegistrationTransactionDTOFromJSON = EmbeddedNamespaceRegistrationTransactionDTOFromJSON;
 function EmbeddedNamespaceRegistrationTransactionDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        signerPublicKey: json["signerPublicKey"],
-        version: json["version"],
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json["network"]),
-        type: json["type"],
-        duration: !(0, runtime_1.exists)(json, "duration") ? undefined : json["duration"],
-        parentId: !(0, runtime_1.exists)(json, "parentId") ? undefined : json["parentId"],
-        id: json["id"],
-        registrationType: (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumFromJSON)(json["registrationType"]),
-        name: json["name"],
+        'signerPublicKey': json['signerPublicKey'],
+        'version': json['version'],
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumFromJSON)(json['network']),
+        'type': json['type'],
+        'duration': !(0, runtime_1.exists)(json, 'duration') ? undefined : json['duration'],
+        'parentId': !(0, runtime_1.exists)(json, 'parentId') ? undefined : json['parentId'],
+        'id': json['id'],
+        'registrationType': (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumFromJSON)(json['registrationType']),
+        'name': json['name'],
     };
 }
 exports.EmbeddedNamespaceRegistrationTransactionDTOFromJSONTyped = EmbeddedNamespaceRegistrationTransactionDTOFromJSONTyped;
@@ -61,15 +61,15 @@ function EmbeddedNamespaceRegistrationTransactionDTOToJSON(value) {
         return null;
     }
     return {
-        signerPublicKey: value.signerPublicKey,
-        version: value.version,
-        network: (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
-        type: value.type,
-        duration: value.duration,
-        parentId: value.parentId,
-        id: value.id,
-        registrationType: (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumToJSON)(value.registrationType),
-        name: value.name,
+        'signerPublicKey': value.signerPublicKey,
+        'version': value.version,
+        'network': (0, NetworkTypeEnum_1.NetworkTypeEnumToJSON)(value.network),
+        'type': value.type,
+        'duration': value.duration,
+        'parentId': value.parentId,
+        'id': value.id,
+        'registrationType': (0, NamespaceRegistrationTypeEnum_1.NamespaceRegistrationTypeEnumToJSON)(value.registrationType),
+        'name': value.name,
     };
 }
 exports.EmbeddedNamespaceRegistrationTransactionDTOToJSON = EmbeddedNamespaceRegistrationTransactionDTOToJSON;

@@ -30,12 +30,12 @@ function MosaicRestrictionsPageDataInnerFromJSON(json) {
 }
 exports.MosaicRestrictionsPageDataInnerFromJSON = MosaicRestrictionsPageDataInnerFromJSON;
 function MosaicRestrictionsPageDataInnerFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        mosaicRestrictionEntry: (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOFromJSON)(json["mosaicRestrictionEntry"]),
+        'id': json['id'],
+        'mosaicRestrictionEntry': (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOFromJSON)(json['mosaicRestrictionEntry']),
     };
 }
 exports.MosaicRestrictionsPageDataInnerFromJSONTyped = MosaicRestrictionsPageDataInnerFromJSONTyped;
@@ -47,8 +47,8 @@ function MosaicRestrictionsPageDataInnerToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        mosaicRestrictionEntry: (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOToJSON)(value.mosaicRestrictionEntry),
+        'id': value.id,
+        'mosaicRestrictionEntry': (0, MosaicGlobalRestrictionEntryWrapperDTO_1.MosaicGlobalRestrictionEntryWrapperDTOToJSON)(value.mosaicRestrictionEntry),
     };
 }
 exports.MosaicRestrictionsPageDataInnerToJSON = MosaicRestrictionsPageDataInnerToJSON;

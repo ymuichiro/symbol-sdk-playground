@@ -30,12 +30,12 @@ function MultisigAccountGraphInfoDTOFromJSON(json) {
 }
 exports.MultisigAccountGraphInfoDTOFromJSON = MultisigAccountGraphInfoDTOFromJSON;
 function MultisigAccountGraphInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        level: json["level"],
-        multisigEntries: json["multisigEntries"].map(MultisigAccountInfoDTO_1.MultisigAccountInfoDTOFromJSON),
+        'level': json['level'],
+        'multisigEntries': (json['multisigEntries'].map(MultisigAccountInfoDTO_1.MultisigAccountInfoDTOFromJSON)),
     };
 }
 exports.MultisigAccountGraphInfoDTOFromJSONTyped = MultisigAccountGraphInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function MultisigAccountGraphInfoDTOToJSON(value) {
         return null;
     }
     return {
-        level: value.level,
-        multisigEntries: value.multisigEntries.map(MultisigAccountInfoDTO_1.MultisigAccountInfoDTOToJSON),
+        'level': value.level,
+        'multisigEntries': (value.multisigEntries.map(MultisigAccountInfoDTO_1.MultisigAccountInfoDTOToJSON)),
     };
 }
 exports.MultisigAccountGraphInfoDTOToJSON = MultisigAccountGraphInfoDTOToJSON;

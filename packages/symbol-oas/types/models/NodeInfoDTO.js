@@ -36,21 +36,19 @@ function NodeInfoDTOFromJSON(json) {
 }
 exports.NodeInfoDTOFromJSON = NodeInfoDTOFromJSON;
 function NodeInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        publicKey: json["publicKey"],
-        networkGenerationHashSeed: json["networkGenerationHashSeed"],
-        roles: json["roles"],
-        port: json["port"],
-        networkIdentifier: json["networkIdentifier"],
-        friendlyName: json["friendlyName"],
-        host: json["host"],
-        nodePublicKey: !(0, runtime_1.exists)(json, "nodePublicKey")
-            ? undefined
-            : json["nodePublicKey"],
+        'version': json['version'],
+        'publicKey': json['publicKey'],
+        'networkGenerationHashSeed': json['networkGenerationHashSeed'],
+        'roles': json['roles'],
+        'port': json['port'],
+        'networkIdentifier': json['networkIdentifier'],
+        'friendlyName': json['friendlyName'],
+        'host': json['host'],
+        'nodePublicKey': !(0, runtime_1.exists)(json, 'nodePublicKey') ? undefined : json['nodePublicKey'],
     };
 }
 exports.NodeInfoDTOFromJSONTyped = NodeInfoDTOFromJSONTyped;
@@ -62,15 +60,15 @@ function NodeInfoDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        publicKey: value.publicKey,
-        networkGenerationHashSeed: value.networkGenerationHashSeed,
-        roles: value.roles,
-        port: value.port,
-        networkIdentifier: value.networkIdentifier,
-        friendlyName: value.friendlyName,
-        host: value.host,
-        nodePublicKey: value.nodePublicKey,
+        'version': value.version,
+        'publicKey': value.publicKey,
+        'networkGenerationHashSeed': value.networkGenerationHashSeed,
+        'roles': value.roles,
+        'port': value.port,
+        'networkIdentifier': value.networkIdentifier,
+        'friendlyName': value.friendlyName,
+        'host': value.host,
+        'nodePublicKey': value.nodePublicKey,
     };
 }
 exports.NodeInfoDTOToJSON = NodeInfoDTOToJSON;

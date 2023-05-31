@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { Pagination } from "./Pagination";
-import type { SecretLockInfoDTO } from "./SecretLockInfoDTO";
+import type { Pagination } from './Pagination';
+import type { SecretLockInfoDTO } from './SecretLockInfoDTO';
 /**
  *
  * @export

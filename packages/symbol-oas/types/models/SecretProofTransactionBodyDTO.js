@@ -32,14 +32,14 @@ function SecretProofTransactionBodyDTOFromJSON(json) {
 }
 exports.SecretProofTransactionBodyDTOFromJSON = SecretProofTransactionBodyDTOFromJSON;
 function SecretProofTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        recipientAddress: json["recipientAddress"],
-        secret: json["secret"],
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json["hashAlgorithm"]),
-        proof: json["proof"],
+        'recipientAddress': json['recipientAddress'],
+        'secret': json['secret'],
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumFromJSON)(json['hashAlgorithm']),
+        'proof': json['proof'],
     };
 }
 exports.SecretProofTransactionBodyDTOFromJSONTyped = SecretProofTransactionBodyDTOFromJSONTyped;
@@ -51,10 +51,10 @@ function SecretProofTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        recipientAddress: value.recipientAddress,
-        secret: value.secret,
-        hashAlgorithm: (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
-        proof: value.proof,
+        'recipientAddress': value.recipientAddress,
+        'secret': value.secret,
+        'hashAlgorithm': (0, LockHashAlgorithmEnum_1.LockHashAlgorithmEnumToJSON)(value.hashAlgorithm),
+        'proof': value.proof,
     };
 }
 exports.SecretProofTransactionBodyDTOToJSON = SecretProofTransactionBodyDTOToJSON;

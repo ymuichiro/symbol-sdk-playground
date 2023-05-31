@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { LockHashAlgorithmEnum } from "./LockHashAlgorithmEnum";
-import type { LockStatus } from "./LockStatus";
+import type { LockHashAlgorithmEnum } from './LockHashAlgorithmEnum';
+import type { LockStatus } from './LockStatus';
 /**
  *
  * @export

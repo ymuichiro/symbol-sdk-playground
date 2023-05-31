@@ -31,14 +31,14 @@ function FinalizedBlockDTOFromJSON(json) {
 }
 exports.FinalizedBlockDTOFromJSON = FinalizedBlockDTOFromJSON;
 function FinalizedBlockDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        finalizationEpoch: json["finalizationEpoch"],
-        finalizationPoint: json["finalizationPoint"],
-        height: json["height"],
-        hash: json["hash"],
+        'finalizationEpoch': json['finalizationEpoch'],
+        'finalizationPoint': json['finalizationPoint'],
+        'height': json['height'],
+        'hash': json['hash'],
     };
 }
 exports.FinalizedBlockDTOFromJSONTyped = FinalizedBlockDTOFromJSONTyped;
@@ -50,10 +50,10 @@ function FinalizedBlockDTOToJSON(value) {
         return null;
     }
     return {
-        finalizationEpoch: value.finalizationEpoch,
-        finalizationPoint: value.finalizationPoint,
-        height: value.height,
-        hash: value.hash,
+        'finalizationEpoch': value.finalizationEpoch,
+        'finalizationPoint': value.finalizationPoint,
+        'height': value.height,
+        'hash': value.hash,
     };
 }
 exports.FinalizedBlockDTOToJSON = FinalizedBlockDTOToJSON;

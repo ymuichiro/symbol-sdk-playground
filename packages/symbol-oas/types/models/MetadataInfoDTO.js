@@ -30,12 +30,12 @@ function MetadataInfoDTOFromJSON(json) {
 }
 exports.MetadataInfoDTOFromJSON = MetadataInfoDTOFromJSON;
 function MetadataInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        id: json["id"],
-        metadataEntry: (0, MetadataEntryDTO_1.MetadataEntryDTOFromJSON)(json["metadataEntry"]),
+        'id': json['id'],
+        'metadataEntry': (0, MetadataEntryDTO_1.MetadataEntryDTOFromJSON)(json['metadataEntry']),
     };
 }
 exports.MetadataInfoDTOFromJSONTyped = MetadataInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function MetadataInfoDTOToJSON(value) {
         return null;
     }
     return {
-        id: value.id,
-        metadataEntry: (0, MetadataEntryDTO_1.MetadataEntryDTOToJSON)(value.metadataEntry),
+        'id': value.id,
+        'metadataEntry': (0, MetadataEntryDTO_1.MetadataEntryDTOToJSON)(value.metadataEntry),
     };
 }
 exports.MetadataInfoDTOToJSON = MetadataInfoDTOToJSON;

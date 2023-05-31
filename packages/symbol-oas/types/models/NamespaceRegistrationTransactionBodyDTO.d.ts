@@ -9,7 +9,7 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { NamespaceRegistrationTypeEnum } from "./NamespaceRegistrationTypeEnum";
+import type { NamespaceRegistrationTypeEnum } from './NamespaceRegistrationTypeEnum';
 /**
  *
  * @export

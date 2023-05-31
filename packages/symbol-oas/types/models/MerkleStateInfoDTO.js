@@ -30,12 +30,12 @@ function MerkleStateInfoDTOFromJSON(json) {
 }
 exports.MerkleStateInfoDTOFromJSON = MerkleStateInfoDTOFromJSON;
 function MerkleStateInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        raw: json["raw"],
-        tree: json["tree"].map(MerkleStateInfoDTOTreeInner_1.MerkleStateInfoDTOTreeInnerFromJSON),
+        'raw': json['raw'],
+        'tree': (json['tree'].map(MerkleStateInfoDTOTreeInner_1.MerkleStateInfoDTOTreeInnerFromJSON)),
     };
 }
 exports.MerkleStateInfoDTOFromJSONTyped = MerkleStateInfoDTOFromJSONTyped;
@@ -47,8 +47,8 @@ function MerkleStateInfoDTOToJSON(value) {
         return null;
     }
     return {
-        raw: value.raw,
-        tree: value.tree.map(MerkleStateInfoDTOTreeInner_1.MerkleStateInfoDTOTreeInnerToJSON),
+        'raw': value.raw,
+        'tree': (value.tree.map(MerkleStateInfoDTOTreeInner_1.MerkleStateInfoDTOTreeInnerToJSON)),
     };
 }
 exports.MerkleStateInfoDTOToJSON = MerkleStateInfoDTOToJSON;

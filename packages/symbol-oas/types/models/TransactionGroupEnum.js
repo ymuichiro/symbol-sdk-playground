@@ -23,10 +23,10 @@ exports.TransactionGroupEnumToJSON = exports.TransactionGroupEnumFromJSONTyped =
  * @export
  */
 exports.TransactionGroupEnum = {
-    Unconfirmed: "unconfirmed",
-    Confirmed: "confirmed",
-    Failed: "failed",
-    Partial: "partial",
+    Unconfirmed: 'unconfirmed',
+    Confirmed: 'confirmed',
+    Failed: 'failed',
+    Partial: 'partial'
 };
 function TransactionGroupEnumFromJSON(json) {
     return TransactionGroupEnumFromJSONTyped(json, false);

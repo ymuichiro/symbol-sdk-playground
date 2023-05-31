@@ -29,13 +29,11 @@ function MerkleProofInfoDTOFromJSON(json) {
 }
 exports.MerkleProofInfoDTOFromJSON = MerkleProofInfoDTOFromJSON;
 function MerkleProofInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        merklePath: !(0, runtime_1.exists)(json, "merklePath")
-            ? undefined
-            : json["merklePath"].map(MerklePathItemDTO_1.MerklePathItemDTOFromJSON),
+        'merklePath': !(0, runtime_1.exists)(json, 'merklePath') ? undefined : (json['merklePath'].map(MerklePathItemDTO_1.MerklePathItemDTOFromJSON)),
     };
 }
 exports.MerkleProofInfoDTOFromJSONTyped = MerkleProofInfoDTOFromJSONTyped;
@@ -47,9 +45,7 @@ function MerkleProofInfoDTOToJSON(value) {
         return null;
     }
     return {
-        merklePath: value.merklePath === undefined
-            ? undefined
-            : value.merklePath.map(MerklePathItemDTO_1.MerklePathItemDTOToJSON),
+        'merklePath': value.merklePath === undefined ? undefined : (value.merklePath.map(MerklePathItemDTO_1.MerklePathItemDTOToJSON)),
     };
 }
 exports.MerkleProofInfoDTOToJSON = MerkleProofInfoDTOToJSON;

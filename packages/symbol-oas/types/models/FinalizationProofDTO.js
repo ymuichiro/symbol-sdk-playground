@@ -34,16 +34,16 @@ function FinalizationProofDTOFromJSON(json) {
 }
 exports.FinalizationProofDTOFromJSON = FinalizationProofDTOFromJSON;
 function FinalizationProofDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        finalizationEpoch: json["finalizationEpoch"],
-        finalizationPoint: json["finalizationPoint"],
-        height: json["height"],
-        hash: json["hash"],
-        messageGroups: json["messageGroups"].map(MessageGroup_1.MessageGroupFromJSON),
+        'version': json['version'],
+        'finalizationEpoch': json['finalizationEpoch'],
+        'finalizationPoint': json['finalizationPoint'],
+        'height': json['height'],
+        'hash': json['hash'],
+        'messageGroups': (json['messageGroups'].map(MessageGroup_1.MessageGroupFromJSON)),
     };
 }
 exports.FinalizationProofDTOFromJSONTyped = FinalizationProofDTOFromJSONTyped;
@@ -55,12 +55,12 @@ function FinalizationProofDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        finalizationEpoch: value.finalizationEpoch,
-        finalizationPoint: value.finalizationPoint,
-        height: value.height,
-        hash: value.hash,
-        messageGroups: value.messageGroups.map(MessageGroup_1.MessageGroupToJSON),
+        'version': value.version,
+        'finalizationEpoch': value.finalizationEpoch,
+        'finalizationPoint': value.finalizationPoint,
+        'height': value.height,
+        'hash': value.hash,
+        'messageGroups': (value.messageGroups.map(MessageGroup_1.MessageGroupToJSON)),
     };
 }
 exports.FinalizationProofDTOToJSON = FinalizationProofDTOToJSON;

@@ -35,16 +35,16 @@ function MosaicAddressRestrictionEntryWrapperDTOFromJSON(json) {
 }
 exports.MosaicAddressRestrictionEntryWrapperDTOFromJSON = MosaicAddressRestrictionEntryWrapperDTOFromJSON;
 function MosaicAddressRestrictionEntryWrapperDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        version: json["version"],
-        compositeHash: json["compositeHash"],
-        entryType: (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumFromJSON)(json["entryType"]),
-        mosaicId: json["mosaicId"],
-        targetAddress: json["targetAddress"],
-        restrictions: json["restrictions"].map(MosaicAddressRestrictionEntryDTO_1.MosaicAddressRestrictionEntryDTOFromJSON),
+        'version': json['version'],
+        'compositeHash': json['compositeHash'],
+        'entryType': (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumFromJSON)(json['entryType']),
+        'mosaicId': json['mosaicId'],
+        'targetAddress': json['targetAddress'],
+        'restrictions': (json['restrictions'].map(MosaicAddressRestrictionEntryDTO_1.MosaicAddressRestrictionEntryDTOFromJSON)),
     };
 }
 exports.MosaicAddressRestrictionEntryWrapperDTOFromJSONTyped = MosaicAddressRestrictionEntryWrapperDTOFromJSONTyped;
@@ -56,12 +56,12 @@ function MosaicAddressRestrictionEntryWrapperDTOToJSON(value) {
         return null;
     }
     return {
-        version: value.version,
-        compositeHash: value.compositeHash,
-        entryType: (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumToJSON)(value.entryType),
-        mosaicId: value.mosaicId,
-        targetAddress: value.targetAddress,
-        restrictions: value.restrictions.map(MosaicAddressRestrictionEntryDTO_1.MosaicAddressRestrictionEntryDTOToJSON),
+        'version': value.version,
+        'compositeHash': value.compositeHash,
+        'entryType': (0, MosaicRestrictionEntryTypeEnum_1.MosaicRestrictionEntryTypeEnumToJSON)(value.entryType),
+        'mosaicId': value.mosaicId,
+        'targetAddress': value.targetAddress,
+        'restrictions': (value.restrictions.map(MosaicAddressRestrictionEntryDTO_1.MosaicAddressRestrictionEntryDTOToJSON)),
     };
 }
 exports.MosaicAddressRestrictionEntryWrapperDTOToJSON = MosaicAddressRestrictionEntryWrapperDTOToJSON;

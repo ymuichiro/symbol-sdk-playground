@@ -30,13 +30,13 @@ function DeploymentDTOFromJSON(json) {
 }
 exports.DeploymentDTOFromJSON = DeploymentDTOFromJSON;
 function DeploymentDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        deploymentTool: json["deploymentTool"],
-        deploymentToolVersion: json["deploymentToolVersion"],
-        lastUpdatedDate: json["lastUpdatedDate"],
+        'deploymentTool': json['deploymentTool'],
+        'deploymentToolVersion': json['deploymentToolVersion'],
+        'lastUpdatedDate': json['lastUpdatedDate'],
     };
 }
 exports.DeploymentDTOFromJSONTyped = DeploymentDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function DeploymentDTOToJSON(value) {
         return null;
     }
     return {
-        deploymentTool: value.deploymentTool,
-        deploymentToolVersion: value.deploymentToolVersion,
-        lastUpdatedDate: value.lastUpdatedDate,
+        'deploymentTool': value.deploymentTool,
+        'deploymentToolVersion': value.deploymentToolVersion,
+        'lastUpdatedDate': value.lastUpdatedDate,
     };
 }
 exports.DeploymentDTOToJSON = DeploymentDTOToJSON;

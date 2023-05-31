@@ -28,11 +28,11 @@ function AnnounceTransactionInfoDTOFromJSON(json) {
 }
 exports.AnnounceTransactionInfoDTOFromJSON = AnnounceTransactionInfoDTOFromJSON;
 function AnnounceTransactionInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        message: json["message"],
+        'message': json['message'],
     };
 }
 exports.AnnounceTransactionInfoDTOFromJSONTyped = AnnounceTransactionInfoDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function AnnounceTransactionInfoDTOToJSON(value) {
         return null;
     }
     return {
-        message: value.message,
+        'message': value.message,
     };
 }
 exports.AnnounceTransactionInfoDTOToJSON = AnnounceTransactionInfoDTOToJSON;

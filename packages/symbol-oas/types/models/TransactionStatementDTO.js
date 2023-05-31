@@ -32,13 +32,13 @@ function TransactionStatementDTOFromJSON(json) {
 }
 exports.TransactionStatementDTOFromJSON = TransactionStatementDTOFromJSON;
 function TransactionStatementDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        height: json["height"],
-        source: (0, SourceDTO_1.SourceDTOFromJSON)(json["source"]),
-        receipts: json["receipts"].map(TransactionStatementDTOReceiptsInner_1.TransactionStatementDTOReceiptsInnerFromJSON),
+        'height': json['height'],
+        'source': (0, SourceDTO_1.SourceDTOFromJSON)(json['source']),
+        'receipts': (json['receipts'].map(TransactionStatementDTOReceiptsInner_1.TransactionStatementDTOReceiptsInnerFromJSON)),
     };
 }
 exports.TransactionStatementDTOFromJSONTyped = TransactionStatementDTOFromJSONTyped;
@@ -50,9 +50,9 @@ function TransactionStatementDTOToJSON(value) {
         return null;
     }
     return {
-        height: value.height,
-        source: (0, SourceDTO_1.SourceDTOToJSON)(value.source),
-        receipts: value.receipts.map(TransactionStatementDTOReceiptsInner_1.TransactionStatementDTOReceiptsInnerToJSON),
+        'height': value.height,
+        'source': (0, SourceDTO_1.SourceDTOToJSON)(value.source),
+        'receipts': (value.receipts.map(TransactionStatementDTOReceiptsInner_1.TransactionStatementDTOReceiptsInnerToJSON)),
     };
 }
 exports.TransactionStatementDTOToJSON = TransactionStatementDTOToJSON;

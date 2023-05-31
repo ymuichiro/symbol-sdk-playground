@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import * as runtime from "../runtime";
-import type { AccountRestrictionsInfoDTO, AccountRestrictionsPage, MerkleStateInfoDTO, Order } from "../models";
+import * as runtime from '../runtime';
+import type { AccountRestrictionsInfoDTO, AccountRestrictionsPage, MerkleStateInfoDTO, Order } from '../models';
 export interface GetAccountRestrictionsRequest {
     address: string;
 }

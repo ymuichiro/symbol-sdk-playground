@@ -29,12 +29,12 @@ function PaginationFromJSON(json) {
 }
 exports.PaginationFromJSON = PaginationFromJSON;
 function PaginationFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        pageNumber: json["pageNumber"],
-        pageSize: json["pageSize"],
+        'pageNumber': json['pageNumber'],
+        'pageSize': json['pageSize'],
     };
 }
 exports.PaginationFromJSONTyped = PaginationFromJSONTyped;
@@ -46,8 +46,8 @@ function PaginationToJSON(value) {
         return null;
     }
     return {
-        pageNumber: value.pageNumber,
-        pageSize: value.pageSize,
+        'pageNumber': value.pageNumber,
+        'pageSize': value.pageSize,
     };
 }
 exports.PaginationToJSON = PaginationToJSON;

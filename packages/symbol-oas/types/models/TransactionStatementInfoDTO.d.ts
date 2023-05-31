@@ -9,8 +9,8 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
-import type { StatementMetaDTO } from "./StatementMetaDTO";
-import type { TransactionStatementDTO } from "./TransactionStatementDTO";
+import type { StatementMetaDTO } from './StatementMetaDTO';
+import type { TransactionStatementDTO } from './TransactionStatementDTO';
 /**
  * Collection of receipts related to a transaction.
  * @export

@@ -14,6 +14,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AccountAddressRestrictionTransactionBodyDTOToJSON = exports.AccountAddressRestrictionTransactionBodyDTOFromJSONTyped = exports.AccountAddressRestrictionTransactionBodyDTOFromJSON = exports.instanceOfAccountAddressRestrictionTransactionBodyDTO = void 0;
+const runtime_1 = require("../runtime");
 const AccountRestrictionFlagsEnum_1 = require("./AccountRestrictionFlagsEnum");
 /**
  * Check if a given object implements the AccountAddressRestrictionTransactionBodyDTO interface.
@@ -21,8 +22,6 @@ const AccountRestrictionFlagsEnum_1 = require("./AccountRestrictionFlagsEnum");
 function instanceOfAccountAddressRestrictionTransactionBodyDTO(value) {
     let isInstance = true;
     isInstance = isInstance && "restrictionFlags" in value;
-    isInstance = isInstance && "restrictionAdditions" in value;
-    isInstance = isInstance && "restrictionDeletions" in value;
     return isInstance;
 }
 exports.instanceOfAccountAddressRestrictionTransactionBodyDTO = instanceOfAccountAddressRestrictionTransactionBodyDTO;
@@ -31,13 +30,13 @@ function AccountAddressRestrictionTransactionBodyDTOFromJSON(json) {
 }
 exports.AccountAddressRestrictionTransactionBodyDTOFromJSON = AccountAddressRestrictionTransactionBodyDTOFromJSON;
 function AccountAddressRestrictionTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json["restrictionFlags"]),
-        restrictionAdditions: json["restrictionAdditions"],
-        restrictionDeletions: json["restrictionDeletions"],
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumFromJSON)(json['restrictionFlags']),
+        'restrictionAdditions': !(0, runtime_1.exists)(json, 'restrictionAdditions') ? undefined : json['restrictionAdditions'],
+        'restrictionDeletions': !(0, runtime_1.exists)(json, 'restrictionDeletions') ? undefined : json['restrictionDeletions'],
     };
 }
 exports.AccountAddressRestrictionTransactionBodyDTOFromJSONTyped = AccountAddressRestrictionTransactionBodyDTOFromJSONTyped;
@@ -49,9 +48,9 @@ function AccountAddressRestrictionTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        restrictionFlags: (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
-        restrictionAdditions: value.restrictionAdditions,
-        restrictionDeletions: value.restrictionDeletions,
+        'restrictionFlags': (0, AccountRestrictionFlagsEnum_1.AccountRestrictionFlagsEnumToJSON)(value.restrictionFlags),
+        'restrictionAdditions': value.restrictionAdditions,
+        'restrictionDeletions': value.restrictionDeletions,
     };
 }
 exports.AccountAddressRestrictionTransactionBodyDTOToJSON = AccountAddressRestrictionTransactionBodyDTOToJSON;

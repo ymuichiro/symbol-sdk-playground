@@ -28,11 +28,11 @@ function StatementMetaDTOFromJSON(json) {
 }
 exports.StatementMetaDTOFromJSON = StatementMetaDTOFromJSON;
 function StatementMetaDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        timestamp: json["timestamp"],
+        'timestamp': json['timestamp'],
     };
 }
 exports.StatementMetaDTOFromJSONTyped = StatementMetaDTOFromJSONTyped;
@@ -44,7 +44,7 @@ function StatementMetaDTOToJSON(value) {
         return null;
     }
     return {
-        timestamp: value.timestamp,
+        'timestamp': value.timestamp,
     };
 }
 exports.StatementMetaDTOToJSON = StatementMetaDTOToJSON;

@@ -29,11 +29,11 @@ function NodeTimeDTOFromJSON(json) {
 }
 exports.NodeTimeDTOFromJSON = NodeTimeDTOFromJSON;
 function NodeTimeDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        communicationTimestamps: (0, CommunicationTimestampsDTO_1.CommunicationTimestampsDTOFromJSON)(json["communicationTimestamps"]),
+        'communicationTimestamps': (0, CommunicationTimestampsDTO_1.CommunicationTimestampsDTOFromJSON)(json['communicationTimestamps']),
     };
 }
 exports.NodeTimeDTOFromJSONTyped = NodeTimeDTOFromJSONTyped;
@@ -45,7 +45,7 @@ function NodeTimeDTOToJSON(value) {
         return null;
     }
     return {
-        communicationTimestamps: (0, CommunicationTimestampsDTO_1.CommunicationTimestampsDTOToJSON)(value.communicationTimestamps),
+        'communicationTimestamps': (0, CommunicationTimestampsDTO_1.CommunicationTimestampsDTOToJSON)(value.communicationTimestamps),
     };
 }
 exports.NodeTimeDTOToJSON = NodeTimeDTOToJSON;

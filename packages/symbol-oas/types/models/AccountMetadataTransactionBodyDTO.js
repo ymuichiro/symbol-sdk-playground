@@ -32,15 +32,15 @@ function AccountMetadataTransactionBodyDTOFromJSON(json) {
 }
 exports.AccountMetadataTransactionBodyDTOFromJSON = AccountMetadataTransactionBodyDTOFromJSON;
 function AccountMetadataTransactionBodyDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        targetAddress: json["targetAddress"],
-        scopedMetadataKey: json["scopedMetadataKey"],
-        valueSizeDelta: json["valueSizeDelta"],
-        valueSize: json["valueSize"],
-        value: json["value"],
+        'targetAddress': json['targetAddress'],
+        'scopedMetadataKey': json['scopedMetadataKey'],
+        'valueSizeDelta': json['valueSizeDelta'],
+        'valueSize': json['valueSize'],
+        'value': json['value'],
     };
 }
 exports.AccountMetadataTransactionBodyDTOFromJSONTyped = AccountMetadataTransactionBodyDTOFromJSONTyped;
@@ -52,11 +52,11 @@ function AccountMetadataTransactionBodyDTOToJSON(value) {
         return null;
     }
     return {
-        targetAddress: value.targetAddress,
-        scopedMetadataKey: value.scopedMetadataKey,
-        valueSizeDelta: value.valueSizeDelta,
-        valueSize: value.valueSize,
-        value: value.value,
+        'targetAddress': value.targetAddress,
+        'scopedMetadataKey': value.scopedMetadataKey,
+        'valueSizeDelta': value.valueSizeDelta,
+        'valueSize': value.valueSize,
+        'value': value.value,
     };
 }
 exports.AccountMetadataTransactionBodyDTOToJSON = AccountMetadataTransactionBodyDTOToJSON;

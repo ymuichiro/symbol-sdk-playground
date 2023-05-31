@@ -29,11 +29,11 @@ function AccountRestrictionsInfoDTOFromJSON(json) {
 }
 exports.AccountRestrictionsInfoDTOFromJSON = AccountRestrictionsInfoDTOFromJSON;
 function AccountRestrictionsInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        accountRestrictions: (0, AccountRestrictionsDTO_1.AccountRestrictionsDTOFromJSON)(json["accountRestrictions"]),
+        'accountRestrictions': (0, AccountRestrictionsDTO_1.AccountRestrictionsDTOFromJSON)(json['accountRestrictions']),
     };
 }
 exports.AccountRestrictionsInfoDTOFromJSONTyped = AccountRestrictionsInfoDTOFromJSONTyped;
@@ -45,7 +45,7 @@ function AccountRestrictionsInfoDTOToJSON(value) {
         return null;
     }
     return {
-        accountRestrictions: (0, AccountRestrictionsDTO_1.AccountRestrictionsDTOToJSON)(value.accountRestrictions),
+        'accountRestrictions': (0, AccountRestrictionsDTO_1.AccountRestrictionsDTOToJSON)(value.accountRestrictions),
     };
 }
 exports.AccountRestrictionsInfoDTOToJSON = AccountRestrictionsInfoDTOToJSON;

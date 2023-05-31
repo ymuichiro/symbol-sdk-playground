@@ -30,13 +30,13 @@ function NamespaceNameDTOFromJSON(json) {
 }
 exports.NamespaceNameDTOFromJSON = NamespaceNameDTOFromJSON;
 function NamespaceNameDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        parentId: !(0, runtime_1.exists)(json, "parentId") ? undefined : json["parentId"],
-        id: json["id"],
-        name: json["name"],
+        'parentId': !(0, runtime_1.exists)(json, 'parentId') ? undefined : json['parentId'],
+        'id': json['id'],
+        'name': json['name'],
     };
 }
 exports.NamespaceNameDTOFromJSONTyped = NamespaceNameDTOFromJSONTyped;
@@ -48,9 +48,9 @@ function NamespaceNameDTOToJSON(value) {
         return null;
     }
     return {
-        parentId: value.parentId,
-        id: value.id,
-        name: value.name,
+        'parentId': value.parentId,
+        'id': value.id,
+        'name': value.name,
     };
 }
 exports.NamespaceNameDTOToJSON = NamespaceNameDTOToJSON;

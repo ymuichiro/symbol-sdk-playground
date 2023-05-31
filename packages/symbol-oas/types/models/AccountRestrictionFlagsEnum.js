@@ -34,7 +34,7 @@ exports.AccountRestrictionFlagsEnum = {
     NUMBER_32769: 32769,
     NUMBER_32770: 32770,
     NUMBER_49153: 49153,
-    NUMBER_49156: 49156,
+    NUMBER_49156: 49156
 };
 function AccountRestrictionFlagsEnumFromJSON(json) {
     return AccountRestrictionFlagsEnumFromJSONTyped(json, false);

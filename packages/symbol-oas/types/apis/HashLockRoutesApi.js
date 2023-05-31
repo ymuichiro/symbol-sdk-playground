@@ -58,15 +58,14 @@ class HashLockRoutesApi extends runtime.BaseAPI {
      */
     getHashLockRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.hash === null ||
-                requestParameters.hash === undefined) {
-                throw new runtime.RequiredError("hash", "Required parameter requestParameters.hash was null or undefined when calling getHashLock.");
+            if (requestParameters.hash === null || requestParameters.hash === undefined) {
+                throw new runtime.RequiredError('hash', 'Required parameter requestParameters.hash was null or undefined when calling getHashLock.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/lock/hash/{hash}`.replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -89,15 +88,14 @@ class HashLockRoutesApi extends runtime.BaseAPI {
      */
     getHashLockMerkleRaw(requestParameters, initOverrides) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (requestParameters.hash === null ||
-                requestParameters.hash === undefined) {
-                throw new runtime.RequiredError("hash", "Required parameter requestParameters.hash was null or undefined when calling getHashLockMerkle.");
+            if (requestParameters.hash === null || requestParameters.hash === undefined) {
+                throw new runtime.RequiredError('hash', 'Required parameter requestParameters.hash was null or undefined when calling getHashLockMerkle.');
             }
             const queryParameters = {};
             const headerParameters = {};
             const response = yield this.request({
                 path: `/lock/hash/{hash}/merkle`.replace(`{${"hash"}}`, encodeURIComponent(String(requestParameters.hash))),
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);
@@ -122,24 +120,24 @@ class HashLockRoutesApi extends runtime.BaseAPI {
         return __awaiter(this, void 0, void 0, function* () {
             const queryParameters = {};
             if (requestParameters.address !== undefined) {
-                queryParameters["address"] = requestParameters.address;
+                queryParameters['address'] = requestParameters.address;
             }
             if (requestParameters.pageSize !== undefined) {
-                queryParameters["pageSize"] = requestParameters.pageSize;
+                queryParameters['pageSize'] = requestParameters.pageSize;
             }
             if (requestParameters.pageNumber !== undefined) {
-                queryParameters["pageNumber"] = requestParameters.pageNumber;
+                queryParameters['pageNumber'] = requestParameters.pageNumber;
             }
             if (requestParameters.offset !== undefined) {
-                queryParameters["offset"] = requestParameters.offset;
+                queryParameters['offset'] = requestParameters.offset;
             }
             if (requestParameters.order !== undefined) {
-                queryParameters["order"] = requestParameters.order;
+                queryParameters['order'] = requestParameters.order;
             }
             const headerParameters = {};
             const response = yield this.request({
                 path: `/lock/hash`,
-                method: "GET",
+                method: 'GET',
                 headers: headerParameters,
                 query: queryParameters,
             }, initOverrides);

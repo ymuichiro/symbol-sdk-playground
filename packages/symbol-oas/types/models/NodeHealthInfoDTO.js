@@ -29,11 +29,11 @@ function NodeHealthInfoDTOFromJSON(json) {
 }
 exports.NodeHealthInfoDTOFromJSON = NodeHealthInfoDTOFromJSON;
 function NodeHealthInfoDTOFromJSONTyped(json, ignoreDiscriminator) {
-    if (json === undefined || json === null) {
+    if ((json === undefined) || (json === null)) {
         return json;
     }
     return {
-        status: (0, NodeHealthDTO_1.NodeHealthDTOFromJSON)(json["status"]),
+        'status': (0, NodeHealthDTO_1.NodeHealthDTOFromJSON)(json['status']),
     };
 }
 exports.NodeHealthInfoDTOFromJSONTyped = NodeHealthInfoDTOFromJSONTyped;
@@ -45,7 +45,7 @@ function NodeHealthInfoDTOToJSON(value) {
         return null;
     }
     return {
-        status: (0, NodeHealthDTO_1.NodeHealthDTOToJSON)(value.status),
+        'status': (0, NodeHealthDTO_1.NodeHealthDTOToJSON)(value.status),
     };
 }
 exports.NodeHealthInfoDTOToJSON = NodeHealthInfoDTOToJSON;
