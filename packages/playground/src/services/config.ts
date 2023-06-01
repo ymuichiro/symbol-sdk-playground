@@ -5,8 +5,24 @@ import { Configuration } from "symbol-oas/types/runtime";
 import { Account } from "symbol-sdk/dist/src/model/account";
 import { NamespaceId } from "symbol-sdk/dist/src/model/namespace/NamespaceId";
 
-dotenv.config();
+export interface SymbolConfig {
+  network: {
+    node: string;
+    websocket: string;
+    explorer: string;
+    networkType: NetworkType;
+    currencyMosaicId: NamespaceId;
+    generationHash: string;
+    epochAdjustment: number;
+  };
+  account: {
+    userA: Account;
+    userB: Account;
+    userC: Account;
+  };
+}
 
+dotenv.config();
 const NODE = process.env.SYMBOL_NODE as string;
 const NODE_WS = process.env.SYMBOL_NODE_WS as string;
 const PRIVATEKEY_A = process.env.SYMBOL_PRIVATE_KEY_A as string;

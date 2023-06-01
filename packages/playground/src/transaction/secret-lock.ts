@@ -26,7 +26,7 @@ import { logger } from "../services/tools";
 
   const secretLock = SecretLockTransaction.create(
     Deadline.create(configs.network.epochAdjustment),
-    new Mosaic(configs.network.currencyMosaicId, UInt64.fromUint(1 * Math.pow(10, 6))),
+    new Mosaic(configs.network.currencyMosaicId, UInt64.fromUint(1000 * Math.pow(10, 6))),
     UInt64.fromUint(480),
     LockHashAlgorithm.Op_Sha3_256,
     secret,
